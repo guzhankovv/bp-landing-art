@@ -1,0 +1,14 @@
+:root {
+  --bg_main: #000000;
+
+  --bd_primary: #786000;
+  --bd_secondary: #ffc977;
+
+  --tx_primary: #ffc977;
+  --tx_secondary: #b2b1b2;
+  --tx_tertiary: #8c8c8c;
+
+  --title_primary: #c980fe;
+  --title_secondary: #ffffff;
+  --title_tertiary: #d9d9d9;
+}
