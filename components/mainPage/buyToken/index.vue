@@ -118,6 +118,9 @@ export default {
         text-transform: uppercase;
 
         margin-top: 90px;
+        margin-left: 30px;
+
+        max-width: 282px;
     }
 
     &__linkRow {

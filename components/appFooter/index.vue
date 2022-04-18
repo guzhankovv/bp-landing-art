@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <h1 class="footer_title">
+    <h1 class="footer__title">
       Follow us on socials<br>to stay up-to-date
     </h1>
 
@@ -98,7 +98,7 @@ export default {
 
   padding-top: 127px;
 
-  &_title {
+  &__title {
     font-family: "Cinzel";
     font-weight: 400;
     font-size: 32px;
