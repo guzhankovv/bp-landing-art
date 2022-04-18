@@ -1,6 +1,7 @@
 <template>
   <div class="achivement">
     <ul class="achivement__list">
+      <a href="" />
       <li
         v-for="(item, index) in achivementList"
         :key="index"
@@ -64,9 +65,10 @@ export default {
         justify-content: space-between;
     }
 
-    &__listItem {
+    &__listItem:not(:first-child) {
         max-width: 350px;
-        padding: 0 114px 92px 0;
+        padding: 0 10px 92px 10px;
+        margin: 0 auto;
 
         border-right: 1px solid rgba(88, 88, 88, 0.5);
     }

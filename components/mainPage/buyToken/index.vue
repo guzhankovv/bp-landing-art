@@ -2,11 +2,11 @@
   <div class="token">
     <div class="token__inner">
       <div class="token__top">
-        <h1 class="token__title">
+        <h1 class="token__title subtitle_cin_56">
           Bold Point was built <br> by experts
         </h1>
 
-        <p class="token__topText">
+        <p class="token__topText text_inter_18">
           Join a reliable partner in a long-lasting journey towards supremacy on the play-<br>to-earn market. Bold Point is a solid player in the DeFi industry that has reached<br>notable achievements:
         </p>
       </div>
@@ -22,9 +22,9 @@
           </p>
         </div>
         <div class="token__linkRow">
-          <nuxt-link
+          <a
             class="token__link btn"
-            to="/"
+            href="https://traderjoexyz.com/trade?outputCurrency=0x1111111111182587795ef1098ac7da81a108c97a#/"
           >
             <img
               class="token__btnIcon btn__icon btn__icon--left"
@@ -41,7 +41,7 @@
               src="/icons/ornament.png"
               alt="ornament"
             >
-          </nuxt-link>
+          </a>
         </div>
       </div>
     </div>
@@ -64,8 +64,8 @@ export default {
 @import "~/assets/scss/styles/variables.scss";
 
 .token {
-    margin: 0 auto 0 auto;
-    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    padding: 0 15px 0px 15px;
 
     max-width: 1728px;
     border-bottom-style: solid;
@@ -82,29 +82,6 @@ export default {
         justify-content: space-between;
 
         margin-bottom: 50px;
-    }
-
-    &__title {
-        font-family: "Cinzel";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 56px;
-        line-height: 56px;
-
-        color: $lilac;
-
-        letter-spacing: -0.02em;
-        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.9);
-    }
-
-    &__topText {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-
-        opacity: 0.7;
     }
 
     &__bottom {
