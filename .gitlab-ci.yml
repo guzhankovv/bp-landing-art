@@ -1,12 +1,8 @@
 variables:
   GIT_STRATEGY: clone
-  TELEGRAM_BOT_TOKEN: 1030266407:AAGfPZAaSZWhDavtbAOjJkB850W4rFxs78s
-  TELEGRAM_CHAT_ID: -498617703
 
 stages:
   - deploy_app
-  - success_jobs
-  - failure_jobs
 
 deploy_app:
   stage: deploy_app
