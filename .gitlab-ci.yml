@@ -18,18 +18,3 @@ deploy_app:
     - sudo pm2 restart ecosystem.config.js
   tags:
     - main
-
-success_jobs:
-  stage: success_jobs
-  script:
-    - sh ./scripts/cicd-notification.sh ✅
-  when: on_success
-  tags:
-    - main
-failure_jobs:
-  stage: failure_jobs
-  script:
-    - sh ./scripts/cicd-notification.sh ❌
-  when: on_failure
-  tags:
-    - main
