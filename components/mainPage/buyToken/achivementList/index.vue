@@ -1,19 +1,24 @@
 <template>
   <div class="achivement">
     <ul class="achivement__list">
-      <a href="" />
       <li
         v-for="(item, index) in achivementList"
         :key="index"
         class="achivement__listItem"
       >
-        <div class="achivement__logoInner">
-          <img
-            class="achivement__logo"
-            :src="item.logo"
-            :alt="item.title"
-          >
-        </div>
+        <a
+          class="achivement__link"
+          :href="item.link"
+          target="_blank"
+        >
+          <div class="achivement__logoInner">
+            <img
+              class="achivement__logo"
+              :src="item.logo"
+              :alt="item.title"
+            >
+          </div>
+        </a>
 
         <h1 class="achivement__title">
           {{ item.title }}
@@ -35,18 +40,21 @@ export default {
     return {
       achivementList: [
         {
+          link: 'https://www.yay.games/',
           logo: '/images/token/yay.png',
           title: 'Partnership with YAY Games',
           text: 'leading GameFi marketplace, whose token launched with over 10x performance'
         },
 
         {
+          link: 'https://indacoin.io/',
           logo: '/images/token/indacoin.png',
           title: 'Partnership with Indacoin',
           text: '7+years of expertise in the crypto industry, bridging the gap with traditional finance market'
         },
 
         {
+          link: 'https://www.avax.network/',
           logo: '/images/token/avalanche.png',
           title: 'Partnership with Avalanche',
           text: 'leading crypto ecosystem and fastest smart contracts platform in the blockchain industry'
@@ -61,36 +69,35 @@ export default {
 @import "~/assets/scss/styles/variables.scss";
 .achivement {
     &__list {
-        display: flex;
-        justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
     }
 
-    &__listItem:not(:first-child) {
-        max-width: 350px;
-        padding: 0 10px 92px 10px;
-        margin: 0 auto;
+    &__listItem {
+      max-width: 350px;
+      padding: 0 10px 92px 10px;
 
-        border-right: 1px solid rgba(88, 88, 88, 0.5);
+      border-right: 1px solid rgba(88, 88, 88, 0.5);
     }
 
     &__logoInner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        margin-bottom: 24px;
+      margin-bottom: 24px;
 
-        width: 260px;
-        height: 173px;
+      width: 260px;
+      height: 173px;
 
-        border: 2px solid $gold;
-        border-radius: 12px;
+      border: 2px solid $gold;
+      border-radius: 12px;
 
-        box-shadow: -24px 24px 64px rgba(191, 102, 255, 0.28);
+      box-shadow: -24px 24px 64px rgba(191, 102, 255, 0.28);
     }
 
     &__logo {
-        margin: 50px auto;
+      margin: 50px auto;
     }
 
     &__title {
