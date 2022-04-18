@@ -1,7 +1,7 @@
 variables:
   GIT_STRATEGY: clone
-  # TELEGRAM_BOT_TOKEN: 1030266407:AAGfPZAaSZWhDavtbAOjJkB850W4rFxs78s
-  # TELEGRAM_CHAT_ID: -430205717
+  TELEGRAM_BOT_TOKEN: 1030266407:AAGfPZAaSZWhDavtbAOjJkB850W4rFxs78s
+  TELEGRAM_CHAT_ID: -498617703
 
 stages:
   - deploy_app
@@ -22,16 +22,14 @@ deploy_app:
 success_jobs:
   stage: success_jobs
   script:
-    - echo "good"
-    # - sh ./scripts/cicd-notification.sh ✅
+    - sh ./scripts/cicd-notification.sh ✅
   when: on_success
   tags:
     - main
 failure_jobs:
   stage: failure_jobs
   script:
-    - echo "bad"
-    # - sh ./scripts/cicd-notification.sh ❌
+    - sh ./scripts/cicd-notification.sh ❌
   when: on_failure
   tags:
     - main
