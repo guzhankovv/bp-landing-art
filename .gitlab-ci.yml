@@ -16,9 +16,8 @@ deploy_app:
     - sudo git pull
     - sudo npm i && sudo npm run build
     - sudo pm2 restart ecosystem.config.js
-  only:
-    refs:
-      - main
+  tags:
+    - main
 
 success_jobs:
   stage: success_jobs
@@ -26,15 +25,13 @@ success_jobs:
     - echo "good"
     # - sh ./scripts/cicd-notification.sh ✅
   when: on_success
-  only:
-    refs:
-      - main
+  tags:
+    - main
 failure_jobs:
   stage: failure_jobs
   script:
     - echo "bad"
     # - sh ./scripts/cicd-notification.sh ❌
   when: on_failure
-  only:
-    refs:
-      - main
+  tags:
+    - main
