@@ -23,6 +23,7 @@ deploy_app:
 success_jobs:
   stage: success_jobs
   script:
+    - echo "good"
     # - sh ./scripts/cicd-notification.sh ✅
   when: on_success
   only:
@@ -31,6 +32,7 @@ success_jobs:
 failure_jobs:
   stage: failure_jobs
   script:
+    - echo "bad"
     # - sh ./scripts/cicd-notification.sh ❌
   when: on_failure
   only:
