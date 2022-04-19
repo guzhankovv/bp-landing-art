@@ -109,11 +109,8 @@ export default {
     );
 
     pointer-events: none;
-<<<<<<< HEAD
 
     opacity: 0.8;
-=======
->>>>>>> origin/master
   }
 
   &__top {
@@ -190,11 +187,8 @@ export default {
   &__chat {
     display: grid;
     gap: 30px;
-<<<<<<< HEAD
 
     padding-bottom: 80px;
-=======
->>>>>>> origin/master
   }
 
   &__message {

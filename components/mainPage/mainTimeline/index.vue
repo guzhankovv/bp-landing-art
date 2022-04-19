@@ -34,7 +34,6 @@
               </p>
 
               <div class="timeline__avatar avatar">
-<<<<<<< HEAD
                 <div class="avatar__inner">
                   <img
                     class="avatar__img"
@@ -42,13 +41,6 @@
                     :alt="item.artist"
                   >
                 </div>
-=======
-                <img
-                  class="avatar__img"
-                  :src="item.avatar"
-                  :alt="item.artist"
-                >
->>>>>>> origin/master
 
                 <p class="avatar__name">
                   {{ item.artist }}
@@ -276,13 +268,10 @@ export default {
     margin-top: 120px;
 
     width: 405px;
-<<<<<<< HEAD
 
     @media (max-width: 1280px) {
       width: auto;
     }
-=======
->>>>>>> origin/master
   }
 
   &__date {
@@ -355,7 +344,6 @@ export default {
 }
 
 .avatar {
-<<<<<<< HEAD
   &__inner {
     position: relative;
 
@@ -376,12 +364,6 @@ export default {
     margin-bottom: 16px;
 
     width: 190px;
-=======
-  &__img {
-    margin-bottom: 16px;
-
-    width: 220px;
->>>>>>> origin/master
     height: 220px;
   }
 

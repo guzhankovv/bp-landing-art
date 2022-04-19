@@ -38,43 +38,24 @@ export default {
     return {
       cardPointList: [
         {
-<<<<<<< HEAD
           bg: '/images/cardPoint/pool.jpg',
           title: 'YAY Games Pool on Dexsport is LIVE',
           text: 'One of the core missions of the YAY team is a consistent increase of token demand. And it’s a true pleasure to see our partners’ contribution to $YAY growth. Today we’re...',
-=======
-          bg: '/images/cardPoint/settingBg.jpg',
-          title: 'Bold Point is getting ready for public sale: get your hands on 250,000 $BPT prize pool',
-          text: 'Exciting times await us! After the rollout of our latest article about the upcoming plans for the first quarter, we feel that it is time to award...',
->>>>>>> origin/master
           time: '1 day ago'
         },
 
         {
-<<<<<<< HEAD
           bg: '/images/cardPoint/token.jpg',
           title: 'Bold Point — Token Utilization, Gaming Mechanics, and GameCore Protocol',
           text: 'Ancient lands filled with magic and dangerous creatures are...',
-=======
-          bg: '/images/cardPoint/detailBg.jpg',
-          title: 'Bold Point Q1 Milestones in Detail',
-          text: 'The support from our dear community has been overwhelming during the past few months. Now that the release of $BPT is nearing, we want to highlight some of the main traits that the team is currently working on.',
->>>>>>> origin/master
           time: '3 day ago'
         },
 
         {
-<<<<<<< HEAD
           bg: '/images/cardPoint/trader.jpg',
           title: 'Bold Point & Trader Joe: Strategic Partnership for the $BPT Listing',
           text: 'With the current announcement of Bold Points IDO on Avalaunch scheduled for April 11th, and with the fast-paced growth...',
           time: '6 day ago'
-=======
-          bg: '/images/cardPoint/seriesBg.jpg',
-          title: 'Bold Point In-game Series — How to beat the game and enemies.',
-          text: 'Feeling bored already? Oh, we got another interesting piece of information related to the Bold Point universe to cheer you up! What is an RPG without a cool and varied combat system? YAY Games developers...',
-          time: '1 day ago'
->>>>>>> origin/master
         }
       ]
     }
@@ -89,11 +70,8 @@ export default {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-<<<<<<< HEAD
 
     padding: 0 15px 0 15px;
-=======
->>>>>>> origin/master
   }
 
   &__listItem {

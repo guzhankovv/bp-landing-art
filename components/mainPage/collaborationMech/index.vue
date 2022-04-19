@@ -105,23 +105,6 @@
             alt="ornament"
           >
         </a>
-<<<<<<< HEAD
-=======
-
-        <div class="collab__LineRow">
-          <svgicon
-            class="collab__Line collab__Line--left"
-            :name="'lineGray'"
-            :original="true"
-          />
-
-          <svgicon
-            class="collab__Line collab__Line--right"
-            :name="'lineGray'"
-            :original="true"
-          />
-        </div>
->>>>>>> origin/master
       </div>
     </div>
   </div>
@@ -140,7 +123,6 @@ export default {
   margin: 0 auto;
 
   &__inner {
-<<<<<<< HEAD
     margin: 0 auto;
   }
 
@@ -150,18 +132,6 @@ export default {
     max-width: 1260px;
 
     font-family: "Cinzel";
-=======
-    margin: 202px 150px 196px 96px;
-
-    @media (max-width: $media_xl) {
-      margin: 110px 54px 110px 54px;
-    }
-  }
-
-  &__title {
-    font-family: "Cinzel";
-    font-weight: 400;
->>>>>>> origin/master
     font-size: 72px;
     line-height: 64px;
     color: $lilac;
@@ -169,11 +139,6 @@ export default {
     text-align: center;
     letter-spacing: 0.04em;
 
-<<<<<<< HEAD
-=======
-    margin: 0 auto;
-
->>>>>>> origin/master
     @media (max-width: $media_xl) {
       font-size: 50px;
       line-height: 58px;
@@ -185,7 +150,6 @@ export default {
     justify-content: space-between;
     gap: 78px;
 
-<<<<<<< HEAD
     margin: 88px auto 0;
     padding: 0 12px;
 
@@ -194,31 +158,16 @@ export default {
     @media (max-width: $media_xl) {
       gap: 25px;
 
-=======
-    margin-top: 94px;
-
-    @media (max-width: $media_xl) {
-      gap: 25px;
->>>>>>> origin/master
       margin-top: 55px;
     }
   }
 
   &__descrBox {
-<<<<<<< HEAD
     padding: 28px 4px;
 
     width: 100%;
     height: 100%;
 
-=======
-    width: 100%;
-    min-width: 330px;
-    height: 100%;
-
-    padding: 29px 0 29px 0;
-    border-width: 0 3px 4px 5px;
->>>>>>> origin/master
     border: 4px solid $gold;
 
     border-radius: 12px;
@@ -228,11 +177,7 @@ export default {
     }
 
     @media (max-width: $media_xl) {
-<<<<<<< HEAD
       padding: 15px 4px;
-=======
-      padding: 15px 0 15px 0;
->>>>>>> origin/master
     }
   }
 
@@ -271,11 +216,7 @@ export default {
         rgba(0, 0, 0, 0.3) 83.77%,
         #000000 100%
       ),
-<<<<<<< HEAD
       url("/images/bgMechanics.jpg");
-=======
-      url("/images/nftBg.png");
->>>>>>> origin/master
     background-repeat: no-repeat;
     background-position-x: center;
 
@@ -283,11 +224,8 @@ export default {
   }
 
   &__main {
-<<<<<<< HEAD
     margin-bottom: 60px;
 
-=======
->>>>>>> origin/master
     padding-top: 100px;
     padding-bottom: 88px;
 
@@ -347,15 +285,6 @@ export default {
     position: relative;
   }
 
-<<<<<<< HEAD
-=======
-  &__LineRow {
-    display: flex;
-
-    align-items: center;
-  }
-
->>>>>>> origin/master
   &__Line {
     position: absolute;
 

@@ -55,15 +55,11 @@
       </div>
     </div>
 
-<<<<<<< HEAD
     <a
       href="#about"
       class="banner__scroll"
       @click.prevent="scrollTo(80, $event)"
     >
-=======
-    <div class="banner__scroll">
->>>>>>> origin/master
       <img
         class="banner__iconScroll"
         src="/icons/scrollDown.svg"
@@ -73,18 +69,11 @@
       <p class="banner__scrollText">
         Learn more
       </p>
-<<<<<<< HEAD
     </a>
-=======
-    </div>
-
-    <svgicon class="banner__icon" :name="'blackLine'" :original="true" />
->>>>>>> origin/master
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 export default {
   name: 'AppBanner',
 
@@ -100,16 +89,10 @@ export default {
       })
     }
   }
-=======
-
-export default {
-  name: 'AppBanner'
->>>>>>> origin/master
 }
 </script>
 
 <style lang="scss" scoped>
-<<<<<<< HEAD
 .banner {
   position: relative;
 
@@ -118,15 +101,6 @@ export default {
   max-width: 1920px;
 
   border-bottom-right-radius: 90px;
-=======
-@import "~/assets/scss/styles/variables.scss";
-
-.banner {
-  max-width: 1920px;
-
-  margin: 0 auto;
-  padding-bottom: 112px;
->>>>>>> origin/master
 
   background-image: linear-gradient(
       90.39deg,
@@ -137,11 +111,7 @@ export default {
   background-repeat: no-repeat;
   background-position-x: right;
 
-<<<<<<< HEAD
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
-=======
-  position: relative;
->>>>>>> origin/master
 
   &__inner {
     padding: 62px 100px 1px 100px;
@@ -185,11 +155,7 @@ export default {
     margin-top: 291px;
     margin-bottom: 290px;
 
-<<<<<<< HEAD
     max-width: 932px;
-=======
-    width: 932px;
->>>>>>> origin/master
 
     @media (max-width: $media_xl) {
       margin-top: 238px;
@@ -219,7 +185,6 @@ export default {
   }
 
   &__scroll {
-<<<<<<< HEAD
     position: relative;
     z-index: 1;
     top: -80px;
@@ -237,35 +202,11 @@ export default {
   }
 
   &__iconScroll {
-=======
-    display: flex;
-    justify-content: center;
-
-    margin: 0 auto -113px;
-    width: 77px;
-    z-index: 10;
-  }
-
-  &__iconScroll {
-    position: absolute;
-    z-index: 1;
-
-    width: 17px;
->>>>>>> origin/master
     height: 156px;
   }
 
   &__scrollText {
-<<<<<<< HEAD
     font-family: "Cinzel";
-=======
-    position: relative;
-    top: 158px;
-
-    font-family: "Cinzel";
-    font-style: normal;
-    font-weight: 400;
->>>>>>> origin/master
     font-size: 24px;
     line-height: 32px;
 
@@ -273,21 +214,11 @@ export default {
 
     text-align: center;
   }
-<<<<<<< HEAD
-=======
-
-  &__icon {
-    position: absolute;
-    top: 1017px;
-    left: -45px;
-  }
->>>>>>> origin/master
 }
 
 .border {
   width: 100%;
 }
-<<<<<<< HEAD
 
 @keyframes moving-y {
   0%, 100% {
@@ -298,6 +229,4 @@ export default {
     transform: translateY(16px);
   }
 }
-=======
->>>>>>> origin/master
 </style>

@@ -17,10 +17,7 @@
           <a
             class="header__link"
             href="#main"
-<<<<<<< HEAD
             @click.prevent="scrollTo(200, $event)"
-=======
->>>>>>> origin/master
           >
             <p class="header__linkText">
               Main
@@ -30,10 +27,7 @@
           <a
             class="header__link"
             href="#about"
-<<<<<<< HEAD
             @click.prevent="scrollTo(200, $event)"
-=======
->>>>>>> origin/master
           >
             <p class="header__linkText">
               ABOUT GAME
@@ -43,10 +37,7 @@
           <a
             class="header__link"
             href="#mechanics"
-<<<<<<< HEAD
             @click.prevent="scrollTo(200, $event)"
-=======
->>>>>>> origin/master
           >
             <p class="header__linkText">
               Mechanics
@@ -56,10 +47,7 @@
           <a
             class="header__link"
             href="#artists"
-<<<<<<< HEAD
             @click.prevent="scrollTo(200, $event)"
-=======
->>>>>>> origin/master
           >
             <p class="header__linkText">
               Artist’s
@@ -69,10 +57,7 @@
           <a
             class="header__link"
             href="#timeline"
-<<<<<<< HEAD
             @click.prevent="scrollTo(200, $event)"
-=======
->>>>>>> origin/master
           >
             <p class="header__linkText">
               Timeline
@@ -82,10 +67,7 @@
           <a
             class="header__link"
             href="#faq"
-<<<<<<< HEAD
             @click.prevent="scrollTo(200, $event)"
-=======
->>>>>>> origin/master
           >
             <p class="header__linkText">
               FAQ
@@ -112,7 +94,6 @@
 
 <script>
 export default {
-<<<<<<< HEAD
   name: 'AppHeader',
 
   methods: {
@@ -127,9 +108,6 @@ export default {
       })
     }
   }
-=======
-  name: 'AppHeader'
->>>>>>> origin/master
 }
 </script>
 
@@ -255,14 +233,11 @@ export default {
     }
   }
 
-<<<<<<< HEAD
   &__logo {
     object-fit: contain;
     width: 100%;
   }
 
-=======
->>>>>>> origin/master
   &__linkText {
     &::after {
       content: "";

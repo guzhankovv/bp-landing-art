@@ -165,11 +165,7 @@ export default {
     },
     {
       locked: true,
-<<<<<<< HEAD
       date: '21.04.2022',
-=======
-      date: '.04.2022',
->>>>>>> origin/master
       avatar: '/images/avatars/niko.png',
       name: 'Niko',
       preview: 'Art director, Founder mossycrew.com, Maker of tutorials, creator of WOMNFT (https://twitter.com/wom_nft). Compound effect in everything.',
@@ -318,7 +314,6 @@ export default {
     },
     {
       locked: true,
-<<<<<<< HEAD
       date: '24.04.2022'
     },
     {
@@ -352,41 +347,6 @@ export default {
     {
       locked: true,
       date: '18.05.2022'
-=======
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
-    },
-    {
-      locked: true,
-      date: '.04.2022'
->>>>>>> origin/master
     }
   ]
 }
