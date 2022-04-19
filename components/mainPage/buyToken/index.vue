@@ -97,24 +97,36 @@ export default {
     &__bottomRow {
       display: grid;
       grid-template-columns: auto auto;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+
+      @media (max-width: $media_xl) {
+        gap: 10px;
+      }
     }
 
     &__bottomText {
-        font-family: "Cinzel";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
+      font-family: "Cinzel";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
 
-        color: $gold;
+      color: $gold;
 
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
 
-        margin-top: 90px;
-        margin-left: 30px;
+      margin: 90px 0 0 30px;
+
+      max-width: 282px;
+
+      @media (max-width: $media_xl) {
+        font-size: 32px;
+        line-height: 38px;
 
         max-width: 282px;
+      }
 
         @media (max-width: 1280px) {
           grid-row: 2;

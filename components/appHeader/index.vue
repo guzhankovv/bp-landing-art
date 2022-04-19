@@ -233,6 +233,11 @@ export default {
     }
   }
 
+  &__logo {
+    object-fit: contain;
+    width: 100%;
+  }
+
   &__linkText {
     &::after {
       content: "";

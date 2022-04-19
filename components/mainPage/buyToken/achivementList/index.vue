@@ -20,11 +20,11 @@
           </div>
         </a>
 
-        <h1 class="achivement__title">
+        <h1 class="achivement__title text_cin_24">
           {{ item.title }}
         </h1>
 
-        <p class="achivement__text">
+        <p class="achivement__text text_inter_16">
           {{ item.text }}
         </p>
       </li>
@@ -75,7 +75,7 @@ export default {
 
     &__listItem {
       max-width: 350px;
-      padding: 0 10px 92px 10px;
+      padding: 0 8px 92px 8px;
 
       border-right: 1px solid rgba(88, 88, 88, 0.5);
     }
@@ -94,6 +94,11 @@ export default {
       border-radius: 12px;
 
       box-shadow: -24px 24px 64px rgba(191, 102, 255, 0.28);
+
+      @media (max-width: $media_xl) {
+        width: 222px;
+        height: 128px;
+      }
     }
 
     &__logo {
@@ -101,28 +106,11 @@ export default {
     }
 
     &__title {
-        font-family: "Cinzel";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-
-        margin-bottom: 8px;
+      margin-bottom: 8px;
     }
 
     &__text {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-
-        opacity: 0.6;
-
-        max-width: 260px;
+      max-width: 260px;
     }
 }
 </style>
