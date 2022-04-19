@@ -7,9 +7,13 @@
       <BoldPoint />
     </section>
 
+<<<<<<< HEAD
     <section class="mainPage__colab">
       <CollaborationMech id="mechanics" />
     </section>
+=======
+    <CollaborationMech id="mechanics" />
+>>>>>>> origin/master
 
     <section
       id="artists"
@@ -64,7 +68,11 @@ export default {
 <style lang="scss" scoped>
 .mainPage {
   &__artistTeam {
+<<<<<<< HEAD
     margin: 0 auto 80px;
+=======
+    margin: 0 auto;
+>>>>>>> origin/master
 
     max-width: 2000px;
 
@@ -72,6 +80,7 @@ export default {
 
     background: url('/images/artists/artistsBg.png');
   }
+<<<<<<< HEAD
 
   &__about {
     margin-bottom: 40px;
@@ -80,5 +89,7 @@ export default {
   &__colab {
     margin-bottom: 160px;
   }
+=======
+>>>>>>> origin/master
 }
 </style>

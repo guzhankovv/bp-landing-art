@@ -83,15 +83,22 @@ export default {
 
 <style lang="scss" scoped>
 .bold {
+<<<<<<< HEAD
   margin: 0 auto;
+=======
+  margin: 150px auto 0 auto;
+>>>>>>> origin/master
   padding: 80px 16px;
 
   max-width: 1920px;
 
   background: url("/images/mainAbout/bgAbout.jpg") no-repeat 50% 50%/cover;
 
+<<<<<<< HEAD
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
+=======
+>>>>>>> origin/master
   &__title {
     margin: 0 auto 32px;
     padding: 0 100px 20px;

@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+<<<<<<< HEAD
     "@nuxtjs/style-resources": "^1.2.1",
     "core-js": "^3.19.3",
     "generate-icons": "^0.1.10",
@@ -25,6 +26,19 @@
     "vue-svgicon": "^3.2.9",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
+=======
+    "core-js": "^3.19.3",
+    "generate-icons": "^0.1.10",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-svgicon": "^3.2.9",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1",
+    "@nuxtjs/style-resources": "^1.2.1"
+>>>>>>> origin/master
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",

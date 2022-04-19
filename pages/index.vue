@@ -1,7 +1,13 @@
 <template>
+<<<<<<< HEAD
   <div class="mainPage">
     <AppHeader />
     <AppBanner class="mainPage__banner" />
+=======
+  <div class="pageTop">
+    <AppHeader />
+    <AppBanner />
+>>>>>>> origin/master
     <MainPage />
     <AppFooter />
 
@@ -30,11 +36,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+<<<<<<< HEAD
 .mainPage {
   background: var(--bg_main);
 
   &__banner {
     margin-bottom: 160px;
   }
+=======
+.pageTop {
+  background: var(--bg_main);
+>>>>>>> origin/master
 }
 </style>

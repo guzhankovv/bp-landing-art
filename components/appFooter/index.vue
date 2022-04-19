@@ -1,6 +1,10 @@
 <template>
   <footer class="footer">
+<<<<<<< HEAD
     <h1 class="footer__title">
+=======
+    <h1 class="footer_title">
+>>>>>>> origin/master
       Follow us on socials<br>to stay up-to-date
     </h1>
 
@@ -98,7 +102,11 @@ export default {
 
   padding-top: 127px;
 
+<<<<<<< HEAD
   &__title {
+=======
+  &_title {
+>>>>>>> origin/master
     font-family: "Cinzel";
     font-weight: 400;
     font-size: 32px;
