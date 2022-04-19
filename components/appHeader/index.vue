@@ -17,6 +17,7 @@
           <a
             class="header__link"
             href="#main"
+            @click.prevent="scrollTo(200, $event)"
           >
             <p class="header__linkText">
               Main
@@ -26,6 +27,7 @@
           <a
             class="header__link"
             href="#about"
+            @click.prevent="scrollTo(200, $event)"
           >
             <p class="header__linkText">
               ABOUT GAME
@@ -35,6 +37,7 @@
           <a
             class="header__link"
             href="#mechanics"
+            @click.prevent="scrollTo(200, $event)"
           >
             <p class="header__linkText">
               Mechanics
@@ -44,6 +47,7 @@
           <a
             class="header__link"
             href="#artists"
+            @click.prevent="scrollTo(200, $event)"
           >
             <p class="header__linkText">
               Artist’s
@@ -53,6 +57,7 @@
           <a
             class="header__link"
             href="#timeline"
+            @click.prevent="scrollTo(200, $event)"
           >
             <p class="header__linkText">
               Timeline
@@ -62,6 +67,7 @@
           <a
             class="header__link"
             href="#faq"
+            @click.prevent="scrollTo(200, $event)"
           >
             <p class="header__linkText">
               FAQ
@@ -88,7 +94,20 @@
 
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+
+  methods: {
+    scrollTo (indent, elem) {
+      const targetElem = document.getElementById(elem.currentTarget.hash.replace('#', ''))
+      const elementPosition = targetElem.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - indent
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
 }
 </script>
 

@@ -105,20 +105,6 @@
             alt="ornament"
           >
         </a>
-
-        <div class="collab__LineRow">
-          <svgicon
-            class="collab__Line collab__Line--left"
-            :name="'lineGray'"
-            :original="true"
-          />
-
-          <svgicon
-            class="collab__Line collab__Line--right"
-            :name="'lineGray'"
-            :original="true"
-          />
-        </div>
       </div>
     </div>
   </div>
@@ -137,24 +123,21 @@ export default {
   margin: 0 auto;
 
   &__inner {
-    margin: 202px 150px 196px 96px;
-
-    @media (max-width: $media_xl) {
-      margin: 110px 54px 110px 54px;
-    }
+    margin: 0 auto;
   }
 
   &__title {
+    margin: 0 auto;
+
+    max-width: 1260px;
+
     font-family: "Cinzel";
-    font-weight: 400;
     font-size: 72px;
     line-height: 64px;
     color: $lilac;
 
     text-align: center;
     letter-spacing: 0.04em;
-
-    margin: 0 auto;
 
     @media (max-width: $media_xl) {
       font-size: 50px;
@@ -167,21 +150,24 @@ export default {
     justify-content: space-between;
     gap: 78px;
 
-    margin-top: 94px;
+    margin: 88px auto 0;
+    padding: 0 12px;
+
+    max-width: 1620px;
 
     @media (max-width: $media_xl) {
       gap: 25px;
+
       margin-top: 55px;
     }
   }
 
   &__descrBox {
+    padding: 28px 4px;
+
     width: 100%;
-    min-width: 330px;
     height: 100%;
 
-    padding: 29px 0 29px 0;
-    border-width: 0 3px 4px 5px;
     border: 4px solid $gold;
 
     border-radius: 12px;
@@ -191,7 +177,7 @@ export default {
     }
 
     @media (max-width: $media_xl) {
-      padding: 15px 0 15px 0;
+      padding: 15px 4px;
     }
   }
 
@@ -230,7 +216,7 @@ export default {
         rgba(0, 0, 0, 0.3) 83.77%,
         #000000 100%
       ),
-      url("/images/nftBg.png");
+      url("/images/bgMechanics.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
 
@@ -238,6 +224,8 @@ export default {
   }
 
   &__main {
+    margin-bottom: 60px;
+
     padding-top: 100px;
     padding-bottom: 88px;
 
@@ -295,12 +283,6 @@ export default {
 
   &__link {
     position: relative;
-  }
-
-  &__LineRow {
-    display: flex;
-
-    align-items: center;
   }
 
   &__Line {

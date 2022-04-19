@@ -55,7 +55,11 @@
       </div>
     </div>
 
-    <div class="banner__scroll">
+    <a
+      href="#about"
+      class="banner__scroll"
+      @click.prevent="scrollTo(80, $event)"
+    >
       <img
         class="banner__iconScroll"
         src="/icons/scrollDown.svg"
@@ -65,27 +69,38 @@
       <p class="banner__scrollText">
         Learn more
       </p>
-    </div>
-
-    <svgicon class="banner__icon" :name="'blackLine'" :original="true" />
+    </a>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'AppBanner'
+  name: 'AppBanner',
+
+  methods: {
+    scrollTo (indent, elem) {
+      const targetElem = document.getElementById(elem.currentTarget.hash.replace('#', ''))
+      const elementPosition = targetElem.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - indent
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/styles/variables.scss";
-
 .banner {
-  max-width: 1920px;
+  position: relative;
 
   margin: 0 auto;
-  padding-bottom: 112px;
+
+  max-width: 1920px;
+
+  border-bottom-right-radius: 90px;
 
   background-image: linear-gradient(
       90.39deg,
@@ -96,7 +111,7 @@ export default {
   background-repeat: no-repeat;
   background-position-x: right;
 
-  position: relative;
+  box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
   &__inner {
     padding: 62px 100px 1px 100px;
@@ -140,7 +155,7 @@ export default {
     margin-top: 291px;
     margin-bottom: 290px;
 
-    width: 932px;
+    max-width: 932px;
 
     @media (max-width: $media_xl) {
       margin-top: 238px;
@@ -170,29 +185,28 @@ export default {
   }
 
   &__scroll {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    z-index: 1;
+    top: -80px;
 
-    margin: 0 auto -113px;
-    width: 77px;
-    z-index: 10;
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+
+    margin: 0 auto;
+
+    width: 80px;
+    height: 0;
+
+    animation: moving-y 3s linear infinite;
   }
 
   &__iconScroll {
-    position: absolute;
-    z-index: 1;
-
-    width: 17px;
     height: 156px;
   }
 
   &__scrollText {
-    position: relative;
-    top: 158px;
-
     font-family: "Cinzel";
-    font-style: normal;
-    font-weight: 400;
     font-size: 24px;
     line-height: 32px;
 
@@ -200,15 +214,19 @@ export default {
 
     text-align: center;
   }
-
-  &__icon {
-    position: absolute;
-    top: 1017px;
-    left: -45px;
-  }
 }
 
 .border {
   width: 100%;
+}
+
+@keyframes moving-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(16px);
+  }
 }
 </style>

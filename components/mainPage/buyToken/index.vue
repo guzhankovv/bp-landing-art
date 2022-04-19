@@ -13,36 +13,33 @@
 
       <div class="token__bottom">
         <div class="token__bottomRow">
-          <div class="token__achivement">
-            <AchivementList />
-          </div>
+          <AchivementList />
 
           <p class="token__bottomText">
             Single top management Indacoin & YAY Games & BOLD POINT
           </p>
         </div>
-        <div class="token__linkRow">
-          <a
-            class="token__link btn"
-            href="https://traderjoexyz.com/trade?outputCurrency=0x1111111111182587795ef1098ac7da81a108c97a#/"
+
+        <a
+          class="token__link btn"
+          href="https://traderjoexyz.com/trade?outputCurrency=0x1111111111182587795ef1098ac7da81a108c97a#/"
+        >
+          <img
+            class="token__btnIcon btn__icon btn__icon--left"
+            src="/icons/ornament.png"
+            alt="ornament"
           >
-            <img
-              class="token__btnIcon btn__icon btn__icon--left"
-              src="/icons/ornament.png"
-              alt="ornament"
-            >
 
-            <p class="token__btnText btn__text txWhite">
-              buy token
-            </p>
+          <p class="token__btnText btn__text txWhite">
+            buy token
+          </p>
 
-            <img
-              class="token__btnIcon btn__icon btn__icon--right"
-              src="/icons/ornament.png"
-              alt="ornament"
-            >
-          </a>
-        </div>
+          <img
+            class="token__btnIcon btn__icon btn__icon--right"
+            src="/icons/ornament.png"
+            alt="ornament"
+          >
+        </a>
       </div>
     </div>
   </div>
@@ -61,8 +58,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/styles/variables.scss";
-
 .token {
     margin: 0 auto;
     padding: 0 15px 0px 15px;
@@ -100,9 +95,8 @@ export default {
     }
 
     &__bottomRow {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 20px;
+      display: grid;
+      grid-template-columns: auto auto;
     }
 
     &__bottomText {
@@ -121,18 +115,26 @@ export default {
         margin-left: 30px;
 
         max-width: 282px;
-    }
 
-    &__linkRow {
-        height: 0;
+        @media (max-width: 1280px) {
+          grid-row: 2;
+          grid-column: 1/2;
 
-        display: flex;
-        justify-content: center;
+          margin-bottom: 80px;
+          margin-left: 0;
+
+          max-width: 100%;
+          width: 100%;
+
+          text-align: center;
+        }
     }
 
     &__link {
-        position: absolute;
-        bottom: -30px;
+      position: relative;
+      top: 30px;
+
+      margin-top: -56px;
     }
 }
 </style>

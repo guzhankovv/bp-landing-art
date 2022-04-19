@@ -83,12 +83,14 @@ export default {
 
 <style lang="scss" scoped>
 .bold {
-  margin: 150px auto 0 auto;
+  margin: 0 auto;
   padding: 80px 16px;
 
   max-width: 1920px;
 
   background: url("/images/mainAbout/bgAbout.jpg") no-repeat 50% 50%/cover;
+
+  box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
   &__title {
     margin: 0 auto 32px;

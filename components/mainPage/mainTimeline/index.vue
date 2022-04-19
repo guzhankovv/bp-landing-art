@@ -34,11 +34,13 @@
               </p>
 
               <div class="timeline__avatar avatar">
-                <img
-                  class="avatar__img"
-                  :src="item.avatar"
-                  :alt="item.artist"
-                >
+                <div class="avatar__inner">
+                  <img
+                    class="avatar__img"
+                    :src="item.avatar"
+                    :alt="item.artist"
+                  >
+                </div>
 
                 <p class="avatar__name">
                   {{ item.artist }}
@@ -266,6 +268,10 @@ export default {
     margin-top: 120px;
 
     width: 405px;
+
+    @media (max-width: 1280px) {
+      width: auto;
+    }
   }
 
   &__date {
@@ -338,10 +344,26 @@ export default {
 }
 
 .avatar {
+  &__inner {
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      background: url('/images/hexagonBase.png');
+    }
+  }
+
   &__img {
     margin-bottom: 16px;
 
-    width: 220px;
+    width: 190px;
     height: 220px;
   }
 

@@ -1,7 +1,7 @@
 <template>
-  <div class="pageTop">
+  <div class="mainPage">
     <AppHeader />
-    <AppBanner />
+    <AppBanner class="mainPage__banner" />
     <MainPage />
     <AppFooter />
 
@@ -30,7 +30,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.pageTop {
+.mainPage {
   background: var(--bg_main);
+
+  &__banner {
+    margin-bottom: 160px;
+  }
 }
 </style>

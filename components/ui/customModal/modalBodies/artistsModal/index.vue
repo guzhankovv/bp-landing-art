@@ -109,6 +109,8 @@ export default {
     );
 
     pointer-events: none;
+
+    opacity: 0.8;
   }
 
   &__top {
@@ -185,6 +187,8 @@ export default {
   &__chat {
     display: grid;
     gap: 30px;
+
+    padding-bottom: 80px;
   }
 
   &__message {

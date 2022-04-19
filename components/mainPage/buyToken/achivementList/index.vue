@@ -66,11 +66,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/styles/variables.scss";
 .achivement {
     &__list {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
     &__listItem {
