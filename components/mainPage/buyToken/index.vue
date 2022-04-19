@@ -19,28 +19,28 @@
             Single top management Indacoin & YAY Games & BOLD POINT
           </p>
         </div>
-
-        <a
-          class="token__link btn"
-          href="https://traderjoexyz.com/trade?outputCurrency=0x1111111111182587795ef1098ac7da81a108c97a#/"
-        >
-          <img
-            class="token__btnIcon btn__icon btn__icon--left"
-            src="/icons/ornament.png"
-            alt="ornament"
-          >
-
-          <p class="token__btnText btn__text txWhite">
-            buy token
-          </p>
-
-          <img
-            class="token__btnIcon btn__icon btn__icon--right"
-            src="/icons/ornament.png"
-            alt="ornament"
-          >
-        </a>
       </div>
+
+      <a
+        class="token__link btn"
+        href="https://traderjoexyz.com/trade?outputCurrency=0x1111111111182587795ef1098ac7da81a108c97a#/"
+      >
+        <img
+          class="token__btnIcon btn__icon btn__icon--left"
+          src="/icons/ornament.png"
+          alt="ornament"
+        >
+
+        <p class="token__btnText btn__text txWhite">
+          buy token
+        </p>
+
+        <img
+          class="token__btnIcon btn__icon btn__icon--right"
+          src="/icons/ornament.png"
+          alt="ornament"
+        >
+      </a>
     </div>
   </div>
 </template>
@@ -97,7 +97,6 @@ export default {
     &__bottomRow {
       display: grid;
       grid-template-columns: auto auto;
-      grid-template-columns: 3fr 1fr;
       gap: 20px;
 
       @media (max-width: $media_xl) {
