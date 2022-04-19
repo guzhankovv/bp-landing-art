@@ -107,6 +107,7 @@ export default {
 
     &__title {
       margin-bottom: 8px;
+      align-items: start;
     }
 
     &__text {

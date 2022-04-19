@@ -1,11 +1,11 @@
 <template>
   <div class="artist">
-    <h1 class="artist__title border border--line">
+    <h1 class="artist__title title_1 border border--line">
       Artist’s
     </h1>
 
     <div class="artist__textRow">
-      <p class="artist__text">
+      <p class="artist__text text_inter_24">
         Art and its creators have always been an integral part of our lives, and the artist Point universe is no exception Artists have always expressed relevant and modern ideas that have consistently forced our world to change
       </p>
     </div>
@@ -39,22 +39,12 @@ export default {
 .artist {
   &__title {
     margin: 0 auto 48px;
-    padding: 0 100px 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     width: fit-content;
 
-    font-family: "Cinzel";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 72px;
-
-    color: $lilac;
-
     text-align: center;
-    letter-spacing: -0.02em;
-
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.9);
   }
 
   &__textRow {
@@ -96,18 +86,7 @@ export default {
   &__text {
     max-width: 1366px;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-
-    color: $white;
-
     text-align: center;
-    letter-spacing: 0.04em;
-
-    opacity: 0.7;
   }
 
   &__innerText {

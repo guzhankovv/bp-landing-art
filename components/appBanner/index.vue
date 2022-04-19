@@ -15,6 +15,13 @@
         >
           medium
         </a>
+
+        <a
+          href="https://discord.com/invite/dNUdTDQr8r"
+          class="banner__link"
+        >
+          discord
+        </a>
       </div>
 
       <div class="banner__center">
@@ -52,6 +59,12 @@
             alt="ornament"
           >
         </nuxt-link>
+      </div>
+
+      <div class="banner__paralax paralax">
+        <div class="paralax__clouds" />
+
+        <div class="paralax__person" />
       </div>
     </div>
 
@@ -94,36 +107,53 @@ export default {
 
 <style lang="scss" scoped>
 .banner {
-  position: relative;
-
   margin: 0 auto;
 
   max-width: 1920px;
+  height: 1050px;
 
-  border-bottom-right-radius: 90px;
-
-  background-image: linear-gradient(
-      90.39deg,
-      #000000 17.86%,
-      rgba(0, 0, 0, 0.58) 52.83%,
-      rgba(30, 30, 30, 0.26) 99.67%
-    ),  url("/images/plot.jpg");
+  background-image: url("/images/mainBanner/plot.jpg");
   background-repeat: no-repeat;
   background-position-x: right;
 
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
   &__inner {
+    position: relative;
+
     padding: 62px 100px 1px 100px;
+
+    height: 100%;
 
     @media (max-width: $media_xl) {
       padding: 31px 15px;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      background-image: linear-gradient(
+          90.39deg,
+          #000000 17.86%,
+          rgba(0, 0, 0, 0.58) 52.83%,
+          rgba(30, 30, 30, 0.26) 99.67%
+        );
+    }
   }
 
   &__top {
+    position: relative;
+    z-index: 1;
+
     display: flex;
     gap: 24px;
+
     text-transform: uppercase;
   }
 
@@ -152,21 +182,22 @@ export default {
   }
 
   &__center {
+    position: relative;
+    z-index: 2;
+
     margin-top: 291px;
     margin-bottom: 290px;
 
     max-width: 932px;
-
-    @media (max-width: $media_xl) {
-      margin-top: 238px;
-    }
   }
 
   &__centerTitle {
+    margin-bottom: 20px;
+
+    width: 100%;
+
     text-align: center;
     color: $gold;
-
-    margin-bottom: 20px;
   }
 
   &__centerText {
@@ -182,6 +213,9 @@ export default {
     text-align: center;
 
     margin-bottom: 40px;
+  }
+
+  &__paralax {
   }
 
   &__scroll {
@@ -216,8 +250,52 @@ export default {
   }
 }
 
-.border {
-  width: 100%;
+.paralax {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  &__clouds {
+    position: absolute;
+    top: 70px;
+
+    width: 100%;
+    height: 100%;
+
+    background: url('/images/mainBanner/clouds.png') no-repeat 50% bottom/cover;
+
+    animation: clouds-move 30s linear infinite;
+  }
+
+  &__person {
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+
+    max-width: 1540px;
+    width: 100%;
+    height: 100%;
+
+    background: url('/images/mainBanner/character.png') no-repeat 50% bottom/contain;
+  }
+}
+
+@keyframes clouds-move {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(100px, 20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes moving-y {
