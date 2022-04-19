@@ -74,7 +74,7 @@ export default {
   }
 
   &__about {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
 
   &__colab {
