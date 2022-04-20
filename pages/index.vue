@@ -1,8 +1,13 @@
 <template>
   <div class="mainPage">
     <AppHeader />
-    <AppBanner class="mainPage__banner" />
+
+    <section class="mainPage__banner">
+      <AppBanner />
+    </section>
+
     <MainPage />
+
     <AppFooter />
 
     <CustomModal v-if="$store.getters['modal/MODAL_NAME']">

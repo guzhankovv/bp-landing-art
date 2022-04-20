@@ -12,18 +12,23 @@
       </div>
     </div>
 
-    <div class="bold__bottom">
+    <div class="bold__aboutSlider aboutSlider">
       <Swiper
         :options="swiperOptions"
-        class="timelineCards__swiper"
+        class="aboutSlider__swiper"
       >
         <SwiperSlide
           v-for="(item, index) in slideList"
           :key="index"
-          class="timelineCards__slide"
+          class="aboutSlider__slide"
         >
           <AboutSlide :slide-data="item" />
         </SwiperSlide>
+
+        <div
+          slot="pagination"
+          class="aboutSlider__pagination"
+        />
       </Swiper>
     </div>
   </div>
@@ -47,8 +52,22 @@ export default {
         autoplay: {
           delay: 3000
         },
-        loop: true
+        speed: 700,
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.aboutSlider__pagination',
+          bulletClass: 'aboutSlider__bullet',
+          bulletActiveClass: 'aboutSlider__bullet--active',
+          clickable: true,
+          dynamicBullets: true,
+          renderBullet (index, className) {
+            return `<button class="${className} swiper-pagination-bullet-custom"></button>`
+          }
+        }
       },
+
       slideList: [
         {
           title: 'The Plot and Setting',
@@ -84,9 +103,11 @@ export default {
 <style lang="scss" scoped>
 .bold {
   margin: 0 auto;
-  padding: 80px 16px;
+  padding: 80px 16px 100px;
 
   max-width: 1920px;
+
+  overflow: hidden;
 
   background: url("/images/mainAbout/bgAbout.jpg") no-repeat 50% 50%/cover;
 
@@ -165,6 +186,49 @@ export default {
 
   &__text {
     text-align: center;
+  }
+}
+</style>
+
+<style lang="scss">
+.aboutSlider {
+  &__swiper {
+    overflow: visible !important;
+  }
+
+  &__pagination {
+    position: absolute;
+    z-index: 2;
+    bottom: -100px !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    width: 100% !important;
+    height: 22px;
+  }
+
+  &__bullet {
+    flex-shrink: 0;
+
+    width: 14px;
+    height: 14px;
+
+    background: url('~/static/icons/circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    filter: grayscale(1);
+
+    transition: 0.3s;
+
+    &--active {
+      filter: grayscale(0);
+      transform: scale(1.6);
+    }
   }
 }
 </style>

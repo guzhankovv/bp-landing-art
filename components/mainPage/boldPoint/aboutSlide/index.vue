@@ -12,11 +12,13 @@
 
     <div class="aboutSlide__right">
       <div class="aboutSlide__imgWrap">
-        <img
-          class="aboutSlide__img"
-          :src="slideData.img"
-          :alt="slideData.title"
-        >
+        <div class="aboutSlide__wrapInner">
+          <img
+            class="aboutSlide__img"
+            :src="slideData.img"
+            :alt="slideData.title"
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -86,6 +88,35 @@ export default {
       border-radius: 12px;
 
       background: url('/images/bg.jpg');
+    }
+  }
+
+  &__wrapInner {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+
+      display: block;
+      width: 100%;
+      height: 120px;
+
+      background: url("/images/borderPurple.png") no-repeat bottom/contain;
+
+      opacity: 1;
+
+      transition: opacity 0.3s;
+    }
+
+    &::after {
+      top: 100%;
+
+      transform: rotate(180deg);
     }
   }
 

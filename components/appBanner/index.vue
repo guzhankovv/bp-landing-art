@@ -2,16 +2,23 @@
   <div class="banner">
     <div class="banner__inner">
       <div class="banner__top txGreyMed">
-        <a href="https://t.me/bold_point" class="banner__link">telegram</a>
         <a
-          href="https://twitter.com/bold_point"
           class="banner__link"
+          href="https://t.me/bold_point"
+        >
+          telegram
+        </a>
+
+        <a
+          class="banner__link"
+          href="https://twitter.com/bold_point"
         >
           Twitter
         </a>
+
         <a
-          href="https://yay-games.medium.com/"
           class="banner__link"
+          href="https://yay-games.medium.com/"
         >
           medium
         </a>
@@ -148,6 +155,22 @@ export default {
           rgba(30, 30, 30, 0.26) 99.67%
         );
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 60px;
+
+      background: url("/images/bgBorder.png");
+    }
   }
 
   &__top {
@@ -231,7 +254,6 @@ export default {
     margin: 0 auto;
 
     width: 80px;
-    height: 0;
 
     animation: moving-y 3s linear infinite;
   }
