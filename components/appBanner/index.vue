@@ -176,7 +176,7 @@ export default {
 
     text-transform: uppercase;
 
-    margin-top: 57px;
+    margin-top: 33px;
   }
 
   &__link {
@@ -208,8 +208,7 @@ export default {
     position: relative;
     z-index: 2;
 
-    margin-top: 291px;
-    margin-bottom: 290px;
+    margin-top: 200px;
 
     max-width: 932px;
   }
