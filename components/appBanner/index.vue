@@ -120,8 +120,6 @@ export default {
   background-repeat: no-repeat;
   background-position-x: right;
 
-  box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
-
   &__inner {
     position: relative;
 
@@ -148,6 +146,8 @@ export default {
           rgba(0, 0, 0, 0.58) 52.83%,
           rgba(30, 30, 30, 0.26) 99.67%
         );
+
+      box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
     }
 
     &::after {
@@ -175,6 +175,8 @@ export default {
     gap: 24px;
 
     text-transform: uppercase;
+
+    margin-top: 57px;
   }
 
   &__link {

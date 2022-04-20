@@ -493,8 +493,7 @@ export default {
       name: 'ERMKV',
       preview: 'Graphic Designer. Digital artist. Experimenter.',
       links: {
-        instArt: 'https://instagram.com/ermkv.world',
-        inst: 'https://www.instagram.com/georgiy_ermakov/',
+        instagram: 'https://instagram.com/ermkv.world',
         foundation: 'https://foundation.app/@ERMKV',
         facebook: 'https://www.facebook.com/georgiy.ermakov.3'
       },

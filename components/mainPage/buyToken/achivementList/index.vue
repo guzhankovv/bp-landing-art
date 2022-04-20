@@ -99,6 +99,12 @@ export default {
         width: 222px;
         height: 128px;
       }
+
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: 20px -19px 64px rgb(191 102 255 / 28%);
+      }
     }
 
     &__logo {
