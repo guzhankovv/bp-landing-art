@@ -66,7 +66,6 @@ export default {
 
 <style lang="scss" scoped>
 .mainPage {
-
   background: var(--bg_main);
 
   &__banner {

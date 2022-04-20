@@ -59,7 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .token {
-    margin: 0 auto;
+    margin: 0 auto 70px;
     padding: 0 15px 0px 15px;
 
     max-width: 1728px;

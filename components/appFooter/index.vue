@@ -90,13 +90,15 @@ export default {
 @import "~/assets/scss/styles/variables.scss";
 .footer {
   margin: 0 auto;
+  padding-top: 127px;
+
   max-width: 1728px;
 
   background-image: url(/images/footerBg.png);
   background-repeat: no-repeat;
   background-position-x: center;
 
-  padding-top: 127px;
+  box-shadow: inset 1px 20px 20px 20px #000, inset -51px -49px 20px 0 rgb(0 0 0 / 54%);
 
   &__title {
     font-family: "Cinzel";
