@@ -70,12 +70,6 @@
 
         <div class="paralax__person" />
       </div>
-
-      <img
-        class="banner__lineBg"
-        src="/icons/tornLine.svg"
-        alt="line"
-      >
     </div>
 
     <a
@@ -245,7 +239,7 @@ export default {
   &__scroll {
     position: relative;
     z-index: 1;
-    top: -80px;
+    top: -129px;
 
     display: grid;
     justify-items: center;
@@ -271,15 +265,6 @@ export default {
 
     text-align: center;
   }
-    &__lineBg {
-      position: absolute;
-      bottom: -65px;
-      left: 10px;
-
-      width: 100%;
-
-      z-index: 1;
-    }
 }
 
 .paralax {
