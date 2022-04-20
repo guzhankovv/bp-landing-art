@@ -50,11 +50,11 @@
           </div>
 
           <div class="timeline__line">
-            <svgicon
+            <img
               class="timeline__dot"
-              name="dotStyled"
-              :original="true"
-            />
+              src="/icons/dotStyled.svg"
+              alt="dot"
+            >
           </div>
 
           <div class="timeline__slider">
@@ -129,38 +129,32 @@ export default {
               link: 'https://www.dropbox.com/s/uff07yccoekd7ax/4%20%28Hoshi%29.jpg?dl=0'
             }
           ]
+        },
+        {
+          artist: 'nico',
+          date: '21.04.2022',
+          avatar: '/images/avatars/niko.png',
+          nftList: [
+            {
+              name: 'Ancient Runes',
+              prcie: '0.15 ETH 1/1',
+              img: 'ancientRunes.jpg',
+              link: 'https://www.dropbox.com/s/ixol63drugqi2x5/Nico%20-%20BP%20NFT%20-%20Ancient%20Runes.gif?dl=0'
+            },
+            {
+              name: 'Portal Gate',
+              prcie: '0.09 ETH 1/3',
+              img: 'portalGate.jpg',
+              link: 'https://www.dropbox.com/s/0sa8p9mef5ej6v7/Nico%20-%20BP%20NFT%20-%20Portal%20Gate.gif?dl=0'
+            },
+            {
+              name: 'Silver',
+              prcie: '0.07 ETH 1/5',
+              img: 'silver.jpg',
+              link: 'https://www.dropbox.com/s/61kfjftfc8dbs3m/Nico%20-%20BP%20NFT%20-%20Silver.gif?dl=0'
+            }
+          ]
         }
-        // {
-        //   artist: 'nikvsio',
-        //   date: '10.04.2022',
-        //   avatar: 'https://via.placeholder.com/50x20/2eee1',
-        //   nftList: [
-        //     {
-        //       name: 'KNIGHT OF LIGHT',
-        //       prcie: '0.09 ETH 1/1',
-        //       img: 'knightOfLight.jpg',
-        //       link: '/'
-        //     },
-        //     {
-        //       name: 'KNIGHT OF LIGHT',
-        //       prcie: '0.09 ETH 1/1',
-        //       img: 'knightOfLight.jpg',
-        //       link: '/'
-        //     },
-        //     {
-        //       name: 'KNIGHT OF LIGHT',
-        //       prcie: '0.09 ETH 1/1',
-        //       img: 'knightOfLight.jpg',
-        //       link: '/'
-        //     },
-        //     {
-        //       name: 'Desert Artifact',
-        //       prcie: '0.05 ETH 1/5',
-        //       img: 'desertArtifact.jpg',
-        //       link: '/'
-        //     }
-        //   ]
-        // }
       ]
     }
   }
@@ -241,7 +235,7 @@ export default {
     display: flex;
     justify-content: center;
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       flex-direction: row-reverse;
 
       & .timeline__artist {
@@ -250,9 +244,9 @@ export default {
 
       & .timeline__slider {
         &::before {
-          background: rgb(154 161 56 / 28%);
+          background: rgb(166 61 255 / 25%);
 
-          box-shadow: 50px -17px 90px 80px rgba(154, 161, 56, 0.28);
+          box-shadow: 20px -17px 90px 80px rgb(166 61 255 / 28%);
 
           animation: rotation 5s infinite linear;
         }
@@ -317,6 +311,12 @@ export default {
 
   &__dot{
     position: relative;
+
+    margin: 0 auto;
+
+    width: 160px;
+
+    object-fit: contain;
   }
 
   &__slider{
@@ -334,9 +334,9 @@ export default {
 
       border-radius: 50%;
 
-      background: rgb(166 61 255 / 25%);
+      background: rgb(154 161 56 / 28%);
 
-      box-shadow: 20px -17px 90px 80px rgb(166 61 255 / 28%);
+      box-shadow: 50px -17px 90px 80px rgba(154, 161, 56, 0.28);
 
       animation: rotation 5s infinite linear reverse;
     }
