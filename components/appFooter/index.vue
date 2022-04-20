@@ -27,13 +27,21 @@
             src="/images/social/socialTelegramm.png"
             alt="telegramm"
           >
-
         </a>
+
         <a class="footer__socialLink" href="https://yay-games.medium.com/">
           <img
             class="footer__socialImg"
             src="/images/social/socialM.png"
             alt="medium"
+          >
+        </a>
+
+        <a class="footer__socialLink" href="https://discord.com/invite/dNUdTDQr8r">
+          <img
+            class="footer__socialImg"
+            src="/images/social/socialDiscord.png"
+            alt="discord"
           >
         </a>
       </div>
@@ -116,10 +124,12 @@ export default {
 
     &__social {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 12px;
 
-      width: 144px;
+      align-items: center;
+
+      width: 166px;
 
       margin: 0 auto;
       height: 0;
