@@ -10,7 +10,10 @@
 
     <div class="footer__bottom">
       <div class="footer__social">
-        <a class="footer__socialLink" href="/">
+        <a
+          class="footer__socialLink"
+          href="https://twitter.com/bold_point"
+        >
           <img
             class="footer__socialImg"
             src="/images/social/socialTwitter.png"
@@ -18,19 +21,19 @@
           >
         </a>
 
-        <a class="footer__socialLink" href="">
+        <a class="footer__socialLink" href="https://t.me/bold_point">
           <img
             class="footer__socialImg"
             src="/images/social/socialTelegramm.png"
-            alt="twitter"
+            alt="telegramm"
           >
 
         </a>
-        <a class="footer__socialLink" href="">
+        <a class="footer__socialLink" href="https://yay-games.medium.com/">
           <img
             class="footer__socialImg"
             src="/images/social/socialM.png"
-            alt="twitter"
+            alt="medium"
           >
         </a>
       </div>
@@ -46,27 +49,16 @@
           </p>
 
           <div class="footer__links">
-            <a
-              class="footer__link"
-              href="/"
+            <img
+              class="footer__img"
+              src="/images/social/downloadApp.png"
+              alt="item.title"
             >
-              <img
-                class="footer__img"
-                src="/images/social/downloadApp.png"
-                alt="item.title"
-              >
-            </a>
-
-            <a
-              class="footer__link"
-              href="/"
+            <img
+              class="footer__img"
+              src="/images/social/downloadGoogle.png"
+              alt="item.title"
             >
-              <img
-                class="footer__img"
-                src="/images/social/downloadGoogle.png"
-                alt="item.title"
-              >
-            </a>
           </div>
         </div>
       </div>

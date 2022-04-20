@@ -21,11 +21,11 @@
           </template>
 
           <template slot="headIcon">
-            <svgicon
+            <img
               class="question__accordionCross"
-              :name="'crossPlus'"
-              :original="true"
-            />
+              src="/icons/crossPlus.svg"
+              alt="cross"
+            >
           </template>
 
           <template slot="body">
@@ -96,6 +96,9 @@ export default {
 
     position: relative;
     overflow: hidden;
+
+// TODO
+    box-shadow: inset 0px -20px 20px 20px var(--bg_main);
 
     &::before {
       content: "";

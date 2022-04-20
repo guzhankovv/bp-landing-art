@@ -39,10 +39,7 @@
           Point metaverse!
         </p>
 
-        <nuxt-link
-          class="banner__centerLink btn"
-          to="https://opensea.io/collection/boldpoint"
-        >
+        <a class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
           <img
             class="banner__cenerBtnIcon btn__icon btn__icon--left"
             src="/icons/ornament.png"
@@ -58,7 +55,7 @@
             src="/icons/ornament.png"
             alt="ornament"
           >
-        </nuxt-link>
+        </a>
       </div>
 
       <div class="banner__paralax paralax">
@@ -66,6 +63,12 @@
 
         <div class="paralax__person" />
       </div>
+
+      <img
+        class="banner__lineBg"
+        src="/icons/tornLine.svg"
+        alt="line"
+      >
     </div>
 
     <a
@@ -164,6 +167,7 @@ export default {
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
+    color: #BFBFBF;
 
     &:not(:last-child) {
       &::after {
@@ -215,9 +219,6 @@ export default {
     margin-bottom: 40px;
   }
 
-  &__paralax {
-  }
-
   &__scroll {
     position: relative;
     z-index: 1;
@@ -248,6 +249,15 @@ export default {
 
     text-align: center;
   }
+    &__lineBg {
+      position: absolute;
+      bottom: -65px;
+      left: 10px;
+
+      width: 100%;
+
+      z-index: 1;
+    }
 }
 
 .paralax {
@@ -282,6 +292,7 @@ export default {
 
     background: url('/images/mainBanner/character.png') no-repeat 50% bottom/contain;
   }
+
 }
 
 @keyframes clouds-move {

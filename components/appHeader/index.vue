@@ -239,6 +239,7 @@ export default {
   }
 
   &__linkText {
+    opacity: 0.4;
     &::after {
       content: "";
 

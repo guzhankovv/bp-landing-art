@@ -6,13 +6,18 @@
         :key="index"
         class="card__listItem"
       >
-        <div class="card__bg">
-          <img
-            class="card__bgInner"
-            :src="item.bg"
-            :alt="item.title"
-          >
-        </div>
+        <a
+          class="card__link"
+          :href="item.link"
+        >
+          <div class="card__bg">
+            <img
+              class="card__bgInner"
+              :src="item.bg"
+              :alt="item.title"
+            >
+          </div>
+        </a>
 
         <h2 class="card__title">
           {{ item.title }}
@@ -38,6 +43,7 @@ export default {
     return {
       cardPointList: [
         {
+          link: 'https://yay-games.medium.com/yay-games-pool-on-dexsport-is-live-64946626b82d',
           bg: '/images/cardPoint/pool.jpg',
           title: 'YAY Games Pool on Dexsport is LIVE',
           text: 'One of the core missions of the YAY team is a consistent increase of token demand. And it’s a true pleasure to see our partners’ contribution to $YAY growth. Today we’re...',
@@ -45,6 +51,7 @@ export default {
         },
 
         {
+          link: 'https://yay-games.medium.com/bold-point-token-utilization-gaming-mechanics-and-gamecore-protocol-dc32e85f8ba3',
           bg: '/images/cardPoint/token.jpg',
           title: 'Bold Point — Token Utilization, Gaming Mechanics, and GameCore Protocol',
           text: 'Ancient lands filled with magic and dangerous creatures are...',
@@ -52,6 +59,7 @@ export default {
         },
 
         {
+          link: 'https://yay-games.medium.com/bold-point-trader-joe-strategic-partnership-for-the-bpt-listing-6cea5fde3d18',
           bg: '/images/cardPoint/trader.jpg',
           title: 'Bold Point & Trader Joe: Strategic Partnership for the $BPT Listing',
           text: 'With the current announcement of Bold Points IDO on Avalaunch scheduled for April 11th, and with the fast-paced growth...',
