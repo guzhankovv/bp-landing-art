@@ -1,15 +1,9 @@
 <template>
   <div class="token">
     <div class="token__inner">
-      <div class="token__top">
-        <h1 class="token__title subtitle_cin_56">
-          Bold Point was built by experts
-        </h1>
-
-        <p class="token__topText text_inter_18">
-          Join a reliable partner in a long-lasting journey towards supremacy on the play-to-earn market. Bold Point is a solid player in the DeFi industry that has reachednotable achievements:
-        </p>
-      </div>
+      <h1 class="token__title subtitle_cin_56">
+        Bold Point was built by experts
+      </h1>
 
       <div class="token__bottom">
         <div class="token__bottomRow">
@@ -72,17 +66,11 @@ export default {
         rgba(201, 128, 254, 0) 0%
     );
 
-    &__top {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-
-      margin-bottom: 50px;
-    }
-
     &__title {
       max-width: 600px;
       min-width: 350px;
+
+      margin-bottom: 48px;
     }
 
     &__topText {
