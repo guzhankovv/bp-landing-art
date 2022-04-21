@@ -41,45 +41,90 @@ export default {
 
 <style lang="scss" scoped>
 .cookies {
-display: none;
+// display: none;
 
   position: fixed;
   right: 0;
   left: 0;
-  bottom: 50px;
+  bottom: 60px;
 
   max-width: 1418px;
-  height: 90px;
-  padding: 25px;
-  opacity: 1;
-  background: rgb(20, 16, 22);
-  border-radius: 8px;
 
   margin: 0 auto;
+  padding: 0 15px;
+
+  z-index: 3;
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    height: 90px;
+    padding: 25px;
+
+    opacity: 1;
+    background: rgb(20, 16, 22);
+    border-radius: 8px;
+
+    @media (max-width: $media_lg) {
+      padding: 15px;
+    }
+
+    @media (max-width: $media_md) {
+      flex-direction: r;
+      gap: 5px;
+
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__icon {
-      border-radius: 10px;
-      background: rgb(49, 49, 49);
-      padding: 10px;
+    border-radius: 10px;
+    background: rgb(49, 49, 49);
+    padding: 10px;
+
+    margin-right: 15px;
+
+    @media (max-width: $media_md) {
+      display: none;
+    }
   }
 
   &__textRow {
     display: flex;
     flex-direction: row;
     gap: 5px;
+    margin-right: 15px;
+    white-space: nowrap;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $media_md) {
+      margin-right: 0;
+    }
   }
 
   &__text {
     color: $white;
     font-weight: 700;
+    font-size: 20px;
     &--gray {
       color: rgb(204, 203, 207);
+      font-weight: 500;
+    }
+
+    @media (max-width: $media_md) {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    @media (max-width: $media_sm) {
+      font-weight: 500;
+      font-size: 16px;
     }
   }
 
@@ -111,8 +156,14 @@ display: none;
   }
 
   &__textBtn {
-    padding: 10px;
+    font-size: 20px;
     color: $white;
+
+    padding: 10px;
+
+    @media (max-width: $media_md) {
+      font-size: 16px;
+    }
   }
 }
 </style>
