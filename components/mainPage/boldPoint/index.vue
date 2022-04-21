@@ -2,7 +2,7 @@
   <div class="bold">
     <div class="bold__top">
       <h1 class="bold__title title_1 border border--line">
-        Bold Point is
+        Discover new dimension
       </h1>
 
       <div class="bold__textRow">
