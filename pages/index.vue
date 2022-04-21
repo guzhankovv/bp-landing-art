@@ -74,7 +74,6 @@ export default {
 
   &__main {
     max-width: 100vw;
-    overflow: hidden;
   }
 }
 </style>
