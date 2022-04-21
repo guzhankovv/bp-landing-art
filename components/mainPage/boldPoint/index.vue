@@ -2,12 +2,12 @@
   <div class="bold">
     <div class="bold__top">
       <h1 class="bold__title title_1 border border--line">
-        Discover new dimension
+        Explore new worlds
       </h1>
 
       <div class="bold__textRow">
         <p class="bold__text text text_inter_20">
-          Bold Point is your portal to a parallel universe
+          Bold Point is your portal to a parallel universe and a unique NFT-based RPG game based on Avalanche
         </p>
       </div>
     </div>

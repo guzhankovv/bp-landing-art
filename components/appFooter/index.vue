@@ -92,7 +92,7 @@ export default {
   margin: 0 auto;
   padding-top: 127px;
 
-  max-width: 1920px;
+  max-width: 1728px;
 
   background-image: url(/images/footerBg.png);
   background-repeat: no-repeat;
