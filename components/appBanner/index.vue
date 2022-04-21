@@ -188,6 +188,8 @@ export default {
     line-height: 22px;
     color: #BFBFBF;
 
+    transition: 0.2s;
+
     &:not(:last-child) {
       &::after {
         content: "";
@@ -201,6 +203,10 @@ export default {
         width: 1px;
         height: 28px;
       }
+    }
+
+    &:hover {
+        color: #ffc977;
     }
   }
 
