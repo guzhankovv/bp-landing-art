@@ -106,9 +106,6 @@ export default {
 .timelineCards {
   width: 405px;
 
-  &__swiper {
-  }
-
   &__slide {
     padding: 3px;
 

@@ -92,7 +92,7 @@ export default {
   margin: 0 auto;
   padding-top: 127px;
 
-  max-width: 1728px;
+  max-width: 1920px;
 
   background-image: url(/images/footerBg.png);
   background-repeat: no-repeat;
@@ -111,7 +111,6 @@ export default {
     text-transform: uppercase;
 
     margin-bottom: 42px;
-
   }
 
   &__cards {

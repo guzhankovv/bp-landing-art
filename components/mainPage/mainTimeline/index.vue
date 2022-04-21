@@ -286,7 +286,7 @@ export default {
     text-fill-color: transparent;
   }
 
-  &__line{
+  &__line {
     position: relative;
 
     display: flex;

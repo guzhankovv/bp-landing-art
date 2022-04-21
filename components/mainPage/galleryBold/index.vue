@@ -62,6 +62,8 @@ export default {
   background-image: url("/images/welcomBg.png");
   background-repeat: no-repeat;
   background-position-x: center;
+  max-width: 1920px;
+  margin: 0 auto;
 
   &__inner {
     padding-top: 120px;

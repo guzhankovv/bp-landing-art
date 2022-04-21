@@ -19,6 +19,8 @@
         <ArtistsModal :artist-data="$store.getters['artistsModal/ARTIST_DATA']" />
       </template>
     </CustomModal>
+
+    <!-- <CookiesAlert /> -->
   </div>
 </template>
 
@@ -30,11 +32,19 @@ import MainPage from '@/components/mainPage/index.vue'
 import CustomModal from '@/components/ui/customModal/index.vue'
 import ArtistsModal from '@/components/ui/customModal/modalBodies/artistsModal/index.vue'
 import AppFooter from '~/components/appFooter/index.vue'
+// import CookiesAlert from '@/components/mainPage/cookiesAlert/index.vue'
 
 export default {
   name: 'IndexPage',
   components: {
-    AppBanner, AppHeader, MainPage, CustomModal, ArtistsModal, AppFooter, AppLoader
+    AppBanner,
+    AppHeader,
+    MainPage,
+    CustomModal,
+    ArtistsModal,
+    AppFooter,
+    AppLoader
+    // CookiesAlert
   },
 
   data () {
@@ -51,10 +61,7 @@ export default {
     }
     window.addEventListener('load', () => {
       // alert('some')
-      console.log(
-
-        document.body.style.overflow
-      )
+      console.log(document.body.style.overflow)
       setTimeout(() => {
         this.loaded = true
         document.body.style.overflow = 'auto'

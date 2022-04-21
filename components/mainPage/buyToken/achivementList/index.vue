@@ -42,15 +42,15 @@ export default {
         {
           link: 'https://www.yay.games/',
           logo: '/images/token/yay.png',
-          title: 'The leading GameFi Ecosystem on Avalanche and BSC.',
-          text: 'leading GameFi marketplace, whose token launched with over 10x performance'
+          title: 'Partnership with YAY Games',
+          text: 'The leading GameFi Ecosystem on Avalanche and BSC.'
         },
 
         {
           link: 'https://indacoin.io/',
           logo: '/images/token/indacoin.png',
-          title: '7 years of expertise within crypto industry leading fiat-on-ramp niche. The simplest way to buy dozens of cryptocurrencies with bank card in less than 60 minutes.',
-          text: '7+years of expertise in the crypto industry, bridging the gap with traditional finance market'
+          title: 'Partnership with Indacoin',
+          text: '7 years of expertise within crypto industry leading fiat-on-ramp niche. The simplest way to buy dozens of cryptocurrencies with bank card in less than 60 minutes.'
         },
 
         {

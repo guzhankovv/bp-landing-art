@@ -21,25 +21,29 @@
           </div>
 
           <div class="collab__descrBox collab__descrBox__bdrLilac">
-            <h2 class="collab__descrSubtitle txLilac">
-              39 art works
-            </h2>
+            <div class="collab__decrtInner">
+              <h2 class="collab__descrSubtitle txLilac">
+                39 art works
+              </h2>
 
-            <p class="collab__descrText text_inter_16">
-              39 works of art with different <br>
-              circulation
-            </p>
+              <p class="collab__descrText text_inter_16">
+                39 works of art with different <br>
+                circulation
+              </p>
+            </div>
           </div>
 
           <div class="collab__descrBox">
-            <h2 class="collab__descrSubtitle txGold">
-              every 3 days
-            </h2>
+            <div class="collab__decrtInner">
+              <h2 class="collab__descrSubtitle txGold">
+                every 3 days
+              </h2>
 
-            <p class="collab__descrText text_inter_16">
-              An artist will be presented once <br>
-              every 3 days
-            </p>
+              <p class="collab__descrText text_inter_16">
+                An artist will be presented once <br>
+                every 3 days
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +92,10 @@
           </div>
         </div>
 
-        <a class="collab__link btn" href="https://opensea.io/collection/boldpoint">
+        <a
+          class="collab__link btn"
+          href="https://opensea.io/collection/boldpoint"
+        >
           <img
             class="collab__btnIcon btn__icon btn__icon--left"
             src="/icons/ornament.png"
@@ -167,10 +174,11 @@ export default {
 
     width: 100%;
     height: 100%;
+      border: 4px solid $gold;
 
-    border: 4px solid $gold;
+    border-image-source: linear-gradient(360deg, url('/images/bg.jpg') 1.15%, rgba(255, 201, 119, 0) 88.83%);
 
-    border-radius: 12px;
+        border-radius: 12px;
 
     &__bdrLilac {
       border: 4px solid $lilac;
@@ -311,8 +319,7 @@ export default {
   padding-bottom: 20px;
 
   @media (max-width: $media_xl) {
-      padding-bottom: 10px;
-    }
+    padding-bottom: 10px;
+  }
 }
-
 </style>
