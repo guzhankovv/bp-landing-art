@@ -230,7 +230,7 @@ export default {
     padding-bottom: 88px;
 
     @media (max-width: $media_xl) {
-      padding-top: 50px;
+      padding-top: 70px;
       padding-bottom: 40px;
     }
   }

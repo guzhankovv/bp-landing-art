@@ -66,7 +66,7 @@ export default {
   &__artistTeam {
     margin: 0 auto 80px;
 
-    max-width: 2000px;
+    max-width: 1920px;
 
     box-shadow: inset 0px 0px 20px 11px var(--bg_main);
 

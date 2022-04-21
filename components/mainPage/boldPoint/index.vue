@@ -71,28 +71,23 @@ export default {
       slideList: [
         {
           title: 'The Plot and Setting',
-          text: 'Bold Point — is an alternative reality, stuck in between dimensions, a mosaic of our world’s different pieces torn out of order and crashed by an ancient civilization.',
+          text: 'Bold Point — is an alternative reality, stuck in between dimensions, a mosaic of our world’s different pieces torn out of order and crashed by an ancient civilization',
           img: '/images/mainAbout/slides/img_1.jpg'
         },
         {
           title: 'DAO and DeFi mechanics',
-          text: 'The community has the power to decide on the use of different characters, tactics, and other objects in a completely transparent and decentralized manner.',
+          text: 'The community has power to decide on the changing the exact characteristics of certain character types, skills, item sets and other in-game assets in a completely transparent and decentralized manner.',
           img: '/images/mainAbout/slides/img_2.jpg'
         },
         {
           title: 'Play to Earn',
-          text: 'In Bold Point, your gaming skills have real value and can bring you uncountable rewards. With few steps you can extract game resources, craft new items and sell them to players on the market or NPC shops.',
+          text: 'In Bold Point, your gaming skills have real value and can bring you uncountable rewards. With few steps you can extract game resources, craft new items and sell them to players on the market or NPC shops',
           img: '/images/mainAbout/slides/img_3.jpg'
         },
         {
           title: 'BP Arena',
-          text: 'The Bold Point champions team will battle against other contenders. The winner will be the last player standing.',
+          text: 'The Bold Point Champions Team will battle against other contenders. The winner will be the last player standing',
           img: '/images/mainAbout/slides/img_4.jpg'
-        },
-        {
-          title: 'Gold PvP',
-          text: 'Battles against other characters in which the winner receives a prize pool determined by the participants',
-          img: '/images/mainAbout/slides/img_5.jpg'
         }
       ]
     }

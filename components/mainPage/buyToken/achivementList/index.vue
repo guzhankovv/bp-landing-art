@@ -42,14 +42,14 @@ export default {
         {
           link: 'https://www.yay.games/',
           logo: '/images/token/yay.png',
-          title: 'Partnership with YAY Games',
+          title: 'The leading GameFi Ecosystem on Avalanche and BSC.',
           text: 'leading GameFi marketplace, whose token launched with over 10x performance'
         },
 
         {
           link: 'https://indacoin.io/',
           logo: '/images/token/indacoin.png',
-          title: 'Partnership with Indacoin',
+          title: '7 years of expertise within crypto industry leading fiat-on-ramp niche. The simplest way to buy dozens of cryptocurrencies with bank card in less than 60 minutes.',
           text: '7+years of expertise in the crypto industry, bridging the gap with traditional finance market'
         },
 
@@ -57,7 +57,7 @@ export default {
           link: 'https://www.avax.network/',
           logo: '/images/token/avalanche.png',
           title: 'Partnership with Avalanche',
-          text: 'leading crypto ecosystem and fastest smart contracts platform in the blockchain industry'
+          text: 'The fastest smart contracts platform in the blockchain industry, as measured by time-to-finality. Avalanche is blazingly fast, low cost, and eco-friendly.'
         }
       ]
     }
@@ -78,6 +78,10 @@ export default {
       padding: 0 8px 92px 8px;
 
       border-right: 1px solid rgba(88, 88, 88, 0.5);
+
+      @media (max-width: $media_xl) {
+        padding-bottom: 12px;
+      }
     }
 
     &__logoInner {
