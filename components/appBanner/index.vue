@@ -36,14 +36,11 @@
           id="main"
           class="banner__centerTitle title_1 txGold border border--line"
         >
-          Bold Point — Art Project
+          Bold Point — Art Station
         </h1>
 
         <p class="banner__centerText">
-          11 digital artists were inspired by Bold Point and are showcasing
-          their vision of the game’s universe. Join us as a collector or artist
-          and participate in the competition. Breathe new life into the Bold
-          Point metaverse!
+          Our game opened a new reality not only for gamers, but for artists as well. <br> 11 digital creators were inspired by Bold Point and want to showcase their vision. Explore NFT collection of 33 artworks, enrich your collection and earn bold rewards
         </p>
 
         <a class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
@@ -54,7 +51,7 @@
           >
 
           <p class="banner__centerBtnText btn__text txWhite">
-            Buy art
+            Get inspired
           </p>
 
           <img
@@ -176,7 +173,7 @@ export default {
 
     text-transform: uppercase;
 
-    margin-top: 33px;
+    margin: 33px 0 100px 0;
   }
 
   &__link {
@@ -214,18 +211,17 @@ export default {
     position: relative;
     z-index: 2;
 
-    margin-top: 200px;
-
-    max-width: 932px;
+    margin: 0 auto;
   }
 
   &__centerTitle {
-    margin-bottom: 20px;
-
-    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto 46px;
 
     text-align: center;
     color: $gold;
+
+    white-space: nowrap;
   }
 
   &__centerText {
@@ -240,7 +236,13 @@ export default {
 
     text-align: center;
 
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+
+    max-width: 958px;
+  }
+
+  &__centerLink {
+    max-width: 335px;
   }
 
   &__scroll {

@@ -3,7 +3,7 @@
     <div class="collab__inner">
       <div class="collab__top">
         <h1 class="collab__title border border--line">
-          mechanics of collaboration
+          Bold Expectations
         </h1>
 
         <div class="collab__topDescr">
@@ -14,21 +14,19 @@
               </h2>
 
               <p class="collab__descrText text_inter_16">
-                11 artists with different views united <br>
-                in one project
+                Talented creators with unique views united in one campaign
               </p>
             </div>
           </div>
 
-          <div class="collab__descrBox collab__descrBox__bdrLilac">
+          <div class="collab__descrBox collab__descrBox--bdrLilac">
             <div class="collab__decrtInner">
               <h2 class="collab__descrSubtitle txLilac">
                 39 art works
               </h2>
 
               <p class="collab__descrText text_inter_16">
-                39 works of art with different <br>
-                circulation
+                VR gallery with artworks inspired by alternate reality
               </p>
             </div>
           </div>
@@ -40,8 +38,7 @@
               </h2>
 
               <p class="collab__descrText text_inter_16">
-                An artist will be presented once <br>
-                every 3 days
+                Artists will be unveiled one by one every 3 days
               </p>
             </div>
           </div>
@@ -51,23 +48,18 @@
       <div class="collab__bottom">
         <div class="collab__main">
           <h2 class="collab__bottomTitle subtitle_cin_56">
-            Collect digital art and earn <br>
-            additional prizes
+            Bold Earnings
           </h2>
 
           <p class="collab__text text_inter_20">
-            We invite you to take part in our cooperation as an art collector.
+            In this campaign you can enrich your digital art collection and earn additional prizes.
             <br>
-            Anyone who acquires a piece of art crafted by an artist before the
-            publication of the works of the next artist will receive <br>
-            $BPT tokens as a gift and the opportunity to participate in the
-            draws of additional prizes from Bold Point.
+            To be eligable for getting special rewards you need to buy NFT before next artist and his part of the collection unlocks.
           </p>
 
           <div class="collab__step">
             <p class="collab__stepText mb13">
-              Buy NFTs and favorite <br>
-              artworks
+              Buy favorite NFT
             </p>
 
             <img
@@ -77,7 +69,22 @@
             >
 
             <p class="collab__stepText mb13 mt13">
-              Wait BP TGE
+              Follow Bold Point on
+              <a
+                class="collab__stepText collab__socialLink"
+                href="https://twitter.com/bold_point"
+                target="_blank"
+              >
+                Twitter
+              </a>
+              and
+              <a
+                class="collab__stepText collab__socialLink"
+                href="https://t.me/bold_point"
+                target="_blank"
+              >
+                Telegram
+              </a>
             </p>
 
             <img
@@ -87,7 +94,7 @@
             >
 
             <p class="collab__stepText mt13">
-              Get rewarded in BPT
+              Participate in a special lottery
             </p>
           </div>
         </div>
@@ -174,14 +181,24 @@ export default {
 
     width: 100%;
     height: 100%;
-      border: 4px solid $gold;
+    border: 4px solid;
 
-    border-image-source: linear-gradient(360deg, url('/images/bg.jpg') 1.15%, rgba(255, 201, 119, 0) 88.83%);
+    border-image: linear-gradient(
+      180deg,
+      #000000 17.86%,
+      rgb(255, 201, 119) 99.67%
+    );
+    border-image-slice: 1;
 
-        border-radius: 12px;
+    border-radius: 12px;
 
-    &__bdrLilac {
-      border: 4px solid $lilac;
+    &--bdrLilac {
+      border-image: linear-gradient(
+        180deg,
+        #000000 17.86%,
+        rgb(201, 128, 254) 99.67%
+      );
+      border-image-slice: 1;
     }
 
     @media (max-width: $media_xl) {
@@ -227,19 +244,16 @@ export default {
       url("/images/bgMechanics.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-
-    margin-bottom: 70px;
   }
 
   &__main {
-    margin-bottom: 60px;
+    margin-bottom: 150px;
 
-    padding-top: 100px;
-    padding-bottom: 88px;
+    padding-top: 120px;
 
     @media (max-width: $media_xl) {
+      margin-bottom: 200px;
       padding-top: 70px;
-      padding-bottom: 40px;
     }
   }
 
@@ -280,6 +294,15 @@ export default {
     }
   }
 
+  &__socialLink {
+    color: rgb(191, 191, 191);
+    transition: 0.2s;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
   &__bottomOrnament {
     display: block;
     margin: 0 auto;
@@ -291,6 +314,8 @@ export default {
 
   &__link {
     position: relative;
+
+    max-width: 277px;
   }
 
   &__Line {

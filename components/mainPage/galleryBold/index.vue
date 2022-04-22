@@ -2,7 +2,7 @@
   <div class="gallery">
     <div class="gallery__inner">
       <h1 class="gallery__title title_1 txLilac">
-        Welcome to the Bold Point Gallery!
+        Bold VR Gallery
       </h1>
 
       <div class="gallery__textRow">
@@ -13,8 +13,7 @@
         >
 
         <p class="gallery__text text_inter_20">
-          You can visit our exhibition in virtual reality at any time <br>
-          Join our exposition and buy paintings
+          Our exhibition in virtual reality is open for visits 24/7
         </p>
 
         <img
@@ -25,7 +24,7 @@
       </div>
 
       <p class="gallery__textGold text_cin_24 txGold">
-        Now it's your turn to enter a new virtual<br> environment and find your
+        Immerse into alternate universe on 360° to enter a new virtual<br> environment and find your
         destiny!
       </p>
 
@@ -125,6 +124,6 @@ export default {
 }
 
 .btn {
-  min-width: 340px;
+  max-width: 370px;
 }
 </style>

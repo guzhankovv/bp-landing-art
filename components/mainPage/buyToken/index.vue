@@ -130,6 +130,8 @@ export default {
     }
 
     &__link {
+max-width: 311px;
+
       position: relative;
       top: 30px;
 

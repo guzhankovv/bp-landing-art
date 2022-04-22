@@ -1,18 +1,18 @@
 <template>
   <div class="artist">
     <h1 class="artist__title title_1 border border--line">
-      Artist’s
+      Bold Artists
     </h1>
 
     <div class="artist__textRow">
-      <p class="artist__text text_inter_24">
-        Art and its creators have always been an integral part of our lives, and the artist Point universe is no exception Artists have always expressed relevant and modern ideas that have consistently forced our world to change
+      <p class="artist__text text_inter_20">
+        Artists are integral part of any great society, and Bold Point community is no exception.We’re thrilled to inspire talented creators and hope that art will remain a key element of the reality we are building.
       </p>
     </div>
 
     <div class="artist__inner">
       <h2 class="artist__innerText">
-        More information about each individual artist <br> can be found by clicking on their avatar
+        Click on artist’s avatar to check his profile and exclusive interview
       </h2>
 
       <div class="artist__list">
@@ -56,7 +56,7 @@ export default {
     margin: 0 auto 80px;
     padding: 0 44px;
 
-    max-width: 1400px;
+    max-width: 1336px;
 
     &::before,
     &::after {
@@ -84,8 +84,6 @@ export default {
   }
 
   &__text {
-    max-width: 1366px;
-
     text-align: center;
   }
 
@@ -102,7 +100,6 @@ export default {
 
     text-align: center;
     letter-spacing: 0.04em;
-
   }
 }
 </style>
