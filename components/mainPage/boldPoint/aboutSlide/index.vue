@@ -1,24 +1,12 @@
 <template>
   <div class="aboutSlide">
-    <div class="aboutSlide__left">
-      <h2 class="aboutSlide__title subtitle_cin_42">
-        {{ slideData.title }}
-      </h2>
-
-      <p class="aboutSlide__text text_inter_18">
-        {{ slideData.text }}
-      </p>
-    </div>
-
-    <div class="aboutSlide__right">
-      <div class="aboutSlide__imgWrap">
-        <div class="aboutSlide__wrapInner">
-          <img
-            class="aboutSlide__img"
-            :src="slideData.img"
-            :alt="slideData.title"
-          >
-        </div>
+    <div class="aboutSlide__imgWrap">
+      <div class="aboutSlide__wrapInner">
+        <img
+          class="aboutSlide__img"
+          :src="slideData.img"
+          :alt="slideData.title"
+        >
       </div>
     </div>
   </div>
@@ -39,35 +27,6 @@ export default {
 
 <style lang="scss" scoped>
 .aboutSlide {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-
-  max-width: 1360px;
-  width: 100%;
-
-  &__left {
-    flex-shrink: 0;
-
-    padding-top: 56px;
-
-    width: 300px;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-
-    @media (max-width: $media_xl) {
-      margin-bottom: 10px;
-    }
-  }
-
-  &__right {
-    flex-shrink: 0;
-
-    width: 50vw;
-  }
-
   &__imgWrap {
     position: relative;
     padding: 3px;
@@ -93,6 +52,8 @@ export default {
 
   &__wrapInner {
     position: relative;
+
+    overflow: hidden;
 
     &::before,
     &::after {
@@ -125,6 +86,12 @@ export default {
     height: 100%;
 
     border-radius: 12px;
+
+    transition: 2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 </style>

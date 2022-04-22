@@ -12,24 +12,61 @@
       </div>
     </div>
 
-    <div class="bold__aboutSlider aboutSlider">
-      <Swiper
-        :options="swiperOptions"
-        class="aboutSlider__swiper"
-      >
-        <SwiperSlide
-          v-for="(item, index) in slideList"
-          :key="index"
-          class="aboutSlider__slide"
+    <div class="bold__main main">
+      <div class="main__leftText">
+        <Swiper
+          ref="textSwiper"
+          :options="textSwiperOptions"
         >
-          <AboutSlide :slide-data="item" />
-        </SwiperSlide>
+          <SwiperSlide
+            v-for="(item, index) in slideList"
+            :key="index"
+            class="aboutSlider__slide"
+          >
+            <h2 class="main__title subtitle_cin_42">
+              {{ slideList[index].title }}
+            </h2>
 
-        <div
-          slot="pagination"
-          class="aboutSlider__pagination"
-        />
-      </Swiper>
+            <p class="main__text text_inter_18">
+              {{ slideList[index].text }}
+            </p>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+      <div class="main__aboutSlider aboutSlider">
+        <Swiper
+          ref="aboutSwiper"
+          class="aboutSlider__swiper"
+          :options="swiperOptions"
+          @slideChange="onSlideChange"
+        >
+          <SwiperSlide
+            v-for="(item, index) in slideList"
+            :key="index"
+            class="aboutSlider__slide"
+          >
+            <AboutSlide :slide-data="item" />
+          </SwiperSlide>
+
+          <div
+            slot="pagination"
+            class="aboutSlider__pagination"
+          />
+        </Swiper>
+
+        <div class="aboutSlider__controls">
+          <button
+            slot="button-prev"
+            class="aboutSlider__btn aboutSlider__prev"
+          />
+
+          <button
+            slot="button-next"
+            class="aboutSlider__btn aboutSlider__next"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -49,11 +86,13 @@ export default {
   data () {
     return {
       swiperOptions: {
-        autoplay: {
-          delay: 3000
-        },
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false
+        // },
         speed: 700,
         loop: true,
+        effect: 'flipEffect',
         slidesPerView: 1,
         spaceBetween: 20,
         pagination: {
@@ -65,7 +104,24 @@ export default {
           renderBullet (index, className) {
             return `<button class="${className} swiper-pagination-bullet-custom"></button>`
           }
+        },
+        navigation: {
+          nextEl: '.aboutSlider__next',
+          prevEl: '.aboutSlider__prev'
+        },
+        breakpoints: {
+          1300: {
+            slidesPerView: 'auto',
+            spaceBetween: 20
+          }
         }
+      },
+      textSwiperOptions: {
+        speed: 700,
+        effect: 'flipEffect',
+        slidesPerView: 1,
+        spaceBetween: 20,
+        allowTouchMove: false
       },
 
       slideList: [
@@ -91,6 +147,11 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    onSlideChange () {
+      this.$refs.textSwiper.$swiper.slideTo(this.$refs.aboutSwiper.$swiper.realIndex)
+    }
   }
 }
 </script>
@@ -100,7 +161,7 @@ export default {
   margin: 0 auto;
   padding: 80px 16px 100px;
 
-  max-width: 1920px;
+  max-width: 1826px;
 
   overflow: hidden;
 
@@ -128,7 +189,7 @@ export default {
     display: flex;
     justify-content: center;
 
-    margin: 0 auto 85px;
+    margin: 0 auto 16px;
 
     width: fit-content;
 
@@ -182,19 +243,89 @@ export default {
   &__text {
     text-align: center;
   }
+
+  &__main {
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 270px minmax(auto, 1340px);
+  gap: 120px;
+  justify-content: space-between;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: auto;
+    gap: 0;
+
+    margin: 0 auto;
+
+    width: 852px;
+  }
+
+  &__leftText {
+    padding-top: 106px;
+
+    @media (max-width: 1300px) {
+      padding-top: 16px;
+
+      width: 852px;
+
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media (max-width: $media_xl) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__aboutSlider {
+  }
 }
 </style>
 
 <style lang="scss">
 .aboutSlider {
   &__swiper {
-    overflow: visible !important;
+    margin: 0 !important;
+
+    @media (max-width: 1300px) {
+      margin: 0 auto !important;
+    }
+  }
+
+  & .swiper-wrapper {
+    padding: 70px 0 80px;
+
+    width: 1252px;
+
+    @media (max-width: 1300px) {
+      padding: 20px 0 50px;
+
+      width: 852px;
+    }
+  }
+
+  &__slide {
+    width: 852px;
+  }
+
+  & .swiper-slide-active {
+    transform: translate3d(0, 0, 0) !important;
   }
 
   &__pagination {
     position: absolute;
     z-index: 2;
-    bottom: -100px !important;
+    bottom: 0 !important;
+    left: 426px !important;
 
     display: flex;
     align-items: center;
@@ -202,8 +333,50 @@ export default {
     flex-wrap: wrap;
     gap: 24px;
 
+    max-width: 852px;
     width: 100% !important;
     height: 22px;
+  }
+
+  &__controls {
+    position: relative;
+    z-index: 1;
+    top: -350px;
+    left: -120px;
+
+    width: 1100px;
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+
+    width: 90px;
+    height: 64px;
+
+    background: url('/icons/slider-arrow.png');
+    background-size: contain;
+
+    filter: grayscale(1);
+
+    transition: 0.3s;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+
+  &__prev {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  &__next {
+    right: 0;
   }
 
   &__bullet {

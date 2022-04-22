@@ -80,7 +80,8 @@ export default {
     return {
       swiperOptions: {
         autoplay: {
-          delay: 3000
+          delay: 3000,
+          disableOnInteraction: false
         },
         loop: true,
         speed: 700,
