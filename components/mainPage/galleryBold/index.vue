@@ -63,6 +63,8 @@ export default {
   max-width: 1920px;
   margin: 0 auto;
 
+  margin-bottom: 97px;
+
   &__inner {
     padding-top: 120px;
     padding-bottom: 230px;
