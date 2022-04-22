@@ -110,7 +110,7 @@
           >
 
           <p class="collab__btnText btn__text txWhite">
-            Buy art
+            Buy NFT
           </p>
 
           <img
@@ -315,7 +315,7 @@ export default {
   &__link {
     position: relative;
 
-    max-width: 277px;
+    max-width: 278px;
   }
 
   &__Line {

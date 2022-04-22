@@ -24,8 +24,7 @@
       </div>
 
       <p class="gallery__textGold text_cin_24 txGold">
-        Immerse into alternate universe on 360° to enter a new virtual<br> environment and find your
-        destiny!
+        Immerse into alternate universe on 360°
       </p>
 
       <a class="gallery__link btn" href="https://spatial.io/">
