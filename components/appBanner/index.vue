@@ -111,7 +111,7 @@ export default {
   margin: 0 auto;
 
   max-width: 1920px;
-  height: 1050px;
+  height: 881px;
 
   background-image: url("/images/mainBanner/plot.jpg");
   background-repeat: no-repeat;

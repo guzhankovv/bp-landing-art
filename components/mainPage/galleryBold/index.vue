@@ -124,6 +124,6 @@ export default {
 }
 
 .btn {
-  max-width: 370px;
+  max-width: 377px;
 }
 </style>
