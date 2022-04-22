@@ -69,18 +69,6 @@
 }
 
 // text
-.text_inter_24 {
-  font-family: "Inter";
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.04em;
-  color: var(--tx_secondary);
-
-  @media (max-width: $media_xl) {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
 
 .text_inter_20 {
   font-family: "Inter";
