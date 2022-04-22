@@ -1,8 +1,6 @@
 <template>
   <div class="mainPage">
-    <transition name="fade">
-      <AppLoader v-show="!loaded" />
-    </transition>
+    <AppLoader v-show="!loaded" />
 
     <AppHeader />
 

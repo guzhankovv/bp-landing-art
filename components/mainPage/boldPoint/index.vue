@@ -165,7 +165,7 @@ export default {
 
   overflow: hidden;
 
-  background: url("/images/mainAbout/bgAbout.jpg") no-repeat 50% 50%/cover;
+  background: url("/images/mainAbout/bgAbout.jpg") no-repeat 50% 50%/contain;
 
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 

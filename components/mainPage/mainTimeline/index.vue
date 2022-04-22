@@ -224,6 +224,10 @@ export default {
 }
 
 .timeline {
+  @media (max-width: 1280px) {
+    max-width: fit-content;
+  }
+
   &__inner {
     display: grid;
     gap: 80px;
@@ -233,18 +237,22 @@ export default {
     margin-bottom: 220px;
 
     &::before {
-    content: "";
-    position: absolute;
-    top: 59%;
-    left: calc(50% - 2px);
+      content: "";
+      position: absolute;
+      top: 59%;
+      left: calc(50% - 2px);
 
-    width: 2px;
-    height: 105%;
+      width: 2px;
+      height: 105%;
 
-    background: radial-gradient(circle, rgba(255,255,255,1) 73%, rgba(143,176,210,0) 100%);
+      background: radial-gradient(circle, rgba(255,255,255,1) 73%, rgba(143,176,210,0) 100%);
 
-    transform: translateY(-50%);
-  }
+      transform: translateY(-50%);
+
+      @media (max-width: 1280px) {
+            left: calc(40% - 30px);
+      }
+    }
   }
 
   &__row {
@@ -253,6 +261,10 @@ export default {
 
     &:nth-child(odd) {
       flex-direction: row-reverse;
+
+      @media (max-width: 1280px) {
+        flex-direction: row;
+      }
 
       & .timeline__artist {
         justify-content: flex-start;
@@ -309,20 +321,6 @@ export default {
     flex-shrink: 0;
 
     width: 190px;
-
-    // &::before{
-    //   content: "";
-    //   position: absolute;
-    //   top: 50%;
-    //   left: calc(50% - 2px);
-
-    //   width: 2px;
-    //   height: 80%;
-
-    //   background: radial-gradient(circle, rgba(255,255,255,1) 73%, rgba(143,176,210,0) 100%);
-
-    //   transform: translateY(-50%);
-    // }
   }
 
   &__dot{

@@ -1,5 +1,10 @@
 <template>
-  <div class="cookies">
+  <div
+    class="cookies"
+    :class="{
+      'cookies_hiden' : hideCookies
+    }"
+  >
     <div class="cookies__inner">
       <img
         class="cookies__icon"
@@ -17,13 +22,19 @@
       </div>
 
       <div class="cookies__btnRow">
-        <button class="cookies__btn cookies__btn--gray">
+        <button
+          class="cookies__btn cookies__btn--gray"
+          @click="setCookiesAlert"
+        >
           <p class="cookies__textBtn">
             Decline
           </p>
         </button>
 
-        <button class="cookies__btn cookies__btn--lilac">
+        <button
+          class="cookies__btn cookies__btn--lilac"
+          @click="setCookiesAlert"
+        >
           <p class="cookies__textBtn">
             Allow
           </p>
@@ -35,15 +46,46 @@
 
 <script>
 export default {
-  name: 'CookiesAlert'
+  name: 'CookiesAlert',
+
+  data () {
+    return {
+      hideCookies: false
+    }
+  },
+  mounted () {
+    this.setAlertState()
+  },
+  methods: {
+    setAlertState () {
+      function getCookie (name) {
+        const matches = document.cookie.match(new RegExp(
+          '(?:^|; )' + name.replace(/([.$?*|{}()[\]\\/+^])/g, '\\$1') + '=([^;]*)'
+        ))
+        return matches ? decodeURIComponent(matches[1]) : undefined
+      }
+
+      if (getCookie('cookieAlert')) {
+        this.hideCookies = true
+      } else if (!getCookie('cookieAlert')) {
+        this.hideCookies = false
+      }
+    },
+
+    setCookiesAlert () {
+      document.cookie = 'cookieAlert=hide'
+
+      this.setAlertState()
+    }
+
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .cookies {
-// display: none;
-
   position: fixed;
+  z-index: 3;
   right: 0;
   left: 0;
   bottom: 60px;
@@ -53,7 +95,13 @@ export default {
   margin: 0 auto;
   padding: 0 15px;
 
-  z-index: 3;
+  transition: 0.3s;
+
+  &_hiden {
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+  }
 
   &__inner {
     display: flex;
