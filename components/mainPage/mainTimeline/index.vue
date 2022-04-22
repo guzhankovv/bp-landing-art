@@ -228,7 +228,23 @@ export default {
     display: grid;
     gap: 80px;
 
+    position: relative;
+
     margin-bottom: 220px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 59%;
+    left: calc(50% - 2px);
+
+    width: 2px;
+    height: 105%;
+
+    background: radial-gradient(circle, rgba(255,255,255,1) 73%, rgba(143,176,210,0) 100%);
+
+    transform: translateY(-50%);
+  }
   }
 
   &__row {
@@ -294,19 +310,19 @@ export default {
 
     width: 190px;
 
-    &::before{
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: calc(50% - 2px);
+    // &::before{
+    //   content: "";
+    //   position: absolute;
+    //   top: 50%;
+    //   left: calc(50% - 2px);
 
-      width: 2px;
-      height: 80%;
+    //   width: 2px;
+    //   height: 80%;
 
-      background: radial-gradient(circle, rgba(255,255,255,1) 73%, rgba(143,176,210,0) 100%);
+    //   background: radial-gradient(circle, rgba(255,255,255,1) 73%, rgba(143,176,210,0) 100%);
 
-      transform: translateY(-50%);
-    }
+    //   transform: translateY(-50%);
+    // }
   }
 
   &__dot{

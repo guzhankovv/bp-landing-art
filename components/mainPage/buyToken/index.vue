@@ -115,18 +115,18 @@ export default {
         max-width: 282px;
       }
 
-        @media (max-width: 1280px) {
-          grid-row: 2;
-          grid-column: 1/2;
+      @media (max-width: 1280px) {
+        grid-row: 2;
+        grid-column: 1/2;
 
-          margin-bottom: 80px;
-          margin-left: 0;
+        margin-bottom: 80px;
+        margin-left: 0;
 
-          max-width: 100%;
-          width: 100%;
+        max-width: 100%;
+        width: 100%;
 
-          text-align: center;
-        }
+        text-align: center;
+      }
     }
 
     &__link {
