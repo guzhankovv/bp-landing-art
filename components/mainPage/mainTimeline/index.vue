@@ -2,20 +2,23 @@
   <div class="mainTimeline">
     <div class="mainTimeline__top">
       <h1 class="mainTimeline__title title_1 border border--line">
-        Timeline
+        Bold Roadmap
       </h1>
 
-      <div class="mainTimeline__topTx text_inter_24">
+      <div class="mainTimeline__topTx text_inter_20">
         <p class="mainTimeline__tx">
-          Each artist makes from 2 to 5 works in different editions
+          Each creator makes from 2 to 5 artworks that’ll be presented along with artist’s profile.
         </p>
 
         <p class="mainTimeline__tx">
-          The works are then released on a certain date
-        </p>
-
-        <p class="mainTimeline__tx">
-          Follow our news and announcements to learn more
+          <a
+            class="mainTimeline__tx mainTimeline__socialLink text_inter_20"
+            href="https://twitter.com/bold_point"
+            target="_blank"
+          >
+            Follow us
+          </a>
+          not to miss a new drop
         </p>
       </div>
     </div>
@@ -101,7 +104,7 @@ export default {
       timelineList: [
         {
           artist: 'hoshi',
-          date: '18.04.2022',
+          date: '25.04.2022',
           avatar: '/images/avatars/hoshi.png',
           nftList: [
             {
@@ -132,7 +135,7 @@ export default {
         },
         {
           artist: 'nico',
-          date: '21.04.2022',
+          date: '28.04.2022',
           avatar: '/images/avatars/niko.png',
           nftList: [
             {
@@ -165,7 +168,7 @@ export default {
 .mainTimeline {
   padding: 60px 0 150px;
 
-  background: url('/images/mainTimeline/bgGame.jpg') no-repeat;
+  background: url("/images/mainTimeline/bgGame.jpg") no-repeat;
   background-position: bottom;
 
   box-shadow: inset 0px 0px 20px 11px var(--bg_main);
@@ -196,7 +199,8 @@ export default {
       width: 35px;
       height: 35px;
 
-      background: url('/icons/ornamentSmall.png') no-repeat center center/contain;
+      background: url("/icons/ornamentSmall.png") no-repeat center
+        center/contain;
     }
 
     &::after {
@@ -214,6 +218,14 @@ export default {
 
   &__tx {
     text-align: center;
+  }
+
+  &__socialLink {
+    color: $white;
+    transition: 0.2s;
+    &:hover {
+      color: rgb(191, 191, 191);
+    }
   }
 
   &__timeline {
@@ -245,12 +257,16 @@ export default {
       width: 2px;
       height: 105%;
 
-      background: radial-gradient(circle, rgba(255,255,255,1) 73%, rgba(143,176,210,0) 100%);
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 1) 73%,
+        rgba(143, 176, 210, 0) 100%
+      );
 
       transform: translateY(-50%);
 
       @media (max-width: 1280px) {
-            left: calc(40% - 30px);
+        left: calc(40% - 30px);
       }
     }
   }
@@ -299,7 +315,7 @@ export default {
   &__date {
     margin-bottom: 32px;
 
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
     font-weight: 700;
     font-size: 32px;
     line-height: 32px;
@@ -307,7 +323,7 @@ export default {
     text-align: center;
     letter-spacing: 0.04em;
 
-    background: linear-gradient(221.97deg, #D2D2D2 23.68%, #6C15AA 76.32%);
+    background: linear-gradient(221.97deg, #d2d2d2 23.68%, #6c15aa 76.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -323,7 +339,7 @@ export default {
     width: 190px;
   }
 
-  &__dot{
+  &__dot {
     position: relative;
 
     margin: 0 auto;
@@ -333,7 +349,7 @@ export default {
     object-fit: contain;
   }
 
-  &__slider{
+  &__slider {
     position: relative;
 
     flex-shrink: 0;
@@ -361,7 +377,7 @@ export default {
   &__inner {
     position: relative;
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       z-index: 1;
@@ -370,7 +386,7 @@ export default {
       bottom: 0;
       left: 0;
 
-      background: url('/images/hexagonBase.png');
+      background: url("/images/hexagonBase.png");
     }
   }
 
@@ -382,7 +398,7 @@ export default {
   }
 
   &__name {
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
     font-size: 24px;
     line-height: 28px;
     text-align: center;

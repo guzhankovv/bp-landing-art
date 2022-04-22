@@ -43,7 +43,7 @@
           class="avatar__infoLocked"
         >
           <p class="avatar__txLock">
-            Unlocked
+            Locked until
           </p>
 
           <p class="avatar__txLock">
@@ -96,7 +96,7 @@
           class="avatar__infoLocked"
         >
           <p class="avatar__txLock">
-            Unlocked
+            Locked until
           </p>
 
           <p class="avatar__txLock">
@@ -149,7 +149,7 @@
           class="avatar__infoLocked"
         >
           <p class="avatar__txLock">
-            Unlocked
+            Locked until
           </p>
 
           <p class="avatar__txLock">
