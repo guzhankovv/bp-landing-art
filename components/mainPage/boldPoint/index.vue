@@ -86,10 +86,10 @@ export default {
   data () {
     return {
       swiperOptions: {
-        // autoplay: {
-        //   delay: 3000,
-        //   disableOnInteraction: false
-        // },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
         speed: 700,
         loop: true,
         effect: 'flipEffect',
