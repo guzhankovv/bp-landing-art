@@ -22,7 +22,6 @@ deploy_app_prod:
   stage: deploy
   script:
     - cd /var/www/bp-landing-art-prod
-    - sudo git reset --hard HEAD~1
     - sudo git pull
     - sudo npm i && sudo npm run build
     - sudo pm2 restart ecosystem.config.js
