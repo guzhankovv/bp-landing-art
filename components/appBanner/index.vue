@@ -40,7 +40,7 @@
         </h1>
 
         <p class="banner__centerText">
-          Our game opened a new reality not only for gamers, but for artists as well. <br> 11 digital creators were inspired by Bold Point and want to showcase their vision. Explore NFT collection of 33 artworks, enrich your collection and earn bold rewards
+          Our game opened a new reality not only for gamers, but for artists as well. <br> 11 digital creators were inspired by Bold Point and want to showcase their vision. Explore NFT collection of 39 artworks, enrich your collection and earn bold rewards
         </p>
 
         <a class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
