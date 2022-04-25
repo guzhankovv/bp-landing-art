@@ -295,7 +295,7 @@ export default {
   }
 
   &__socialLink {
-    color: rgb(191, 191, 191);
+    color: $lilac;
     transition: 0.2s;
 
     &:hover {
