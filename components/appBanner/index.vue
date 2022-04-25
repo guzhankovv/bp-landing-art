@@ -1,6 +1,9 @@
 <template>
   <div class="banner">
     <div class="banner__inner">
+      <div class="banner__version">
+        <DeskopVersion />
+      </div>
       <div class="banner__top txGreyMed">
         <a
           class="banner__link"
@@ -88,8 +91,14 @@
 </template>
 
 <script>
+import DeskopVersion from '@/components/mainPage/deskopVersion/index.vue'
+
 export default {
   name: 'AppBanner',
+
+  components: {
+    DeskopVersion
+  },
 
   methods: {
     scrollTo (indent, elem) {
@@ -163,6 +172,13 @@ top: -70px;
 
       background: url("/images/bgBorder.png");
     }
+  }
+
+  &__version {
+    position: fixed;
+    z-index: 11;
+    top: 100px;
+    right: 10px;
   }
 
   &__top {

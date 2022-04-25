@@ -77,7 +77,6 @@ export default {
 
       this.setAlertState()
     }
-
   }
 }
 </script>
