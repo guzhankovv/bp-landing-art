@@ -114,7 +114,7 @@ top: -70px;
   margin: 0 auto;
 
   max-width: 1920px;
-  height: 1020px;
+  height: 820px;
 
   background-image: url("/images/mainBanner/plot.jpg");
   background-repeat: no-repeat;
