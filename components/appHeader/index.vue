@@ -76,7 +76,7 @@
         </div>
         <a
           class="header__btn"
-          href="https://spatial.io/"
+          href="https://spatial.io/s/Discover-a-new-dimension-Bold-Point-Gallery-6253f98e153bbf000171a699?share=2082928520569155812"
         >
           <p class="header__btnText txWhite">
             Join Vr-Gallery
