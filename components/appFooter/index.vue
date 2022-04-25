@@ -151,6 +151,8 @@ export default {
     &__socialImg {
       position: relative;
       top: 10px;
+
+      background: rgb(0, 0, 0);
     }
 
     &__info {

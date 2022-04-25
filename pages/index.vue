@@ -68,7 +68,7 @@ export default {
   background: var(--bg_main);
 
   &__banner {
-    margin-bottom: 160px;
+    margin-bottom: 126px;
   }
 
   &__main {

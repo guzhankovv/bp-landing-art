@@ -55,7 +55,7 @@
           </a>
 
           <a
-            class="header__link"
+            class="header__link timeLine"
             href="#timeline"
             @click.prevent="scrollTo(200, $event)"
           >
@@ -213,6 +213,7 @@ export default {
 
     &::before {
       content: url("/icons/arrow-gold.svg");
+      // content: url("/icons/arrowGoldGalf.svg");
 
       position: absolute;
       left: 0px;
@@ -255,7 +256,6 @@ export default {
         rgba(255, 255, 255, 0.24) 100%
       );
       backdrop-filter: blur(18px);
-
       opacity: 0;
     }
   }
@@ -288,5 +288,9 @@ export default {
   &__fake {
     height: 60px;
   }
+}
+
+.timeLine {
+  display: none;
 }
 </style>

@@ -1,8 +1,8 @@
 export default {
   teamArr: [
     {
-      locked: false,
-      date: '25.04.2022',
+      locked: true,
+      date: '26.04.2022',
       avatar: '/images/avatars/hoshi.png',
       name: 'Hoshi',
       preview: 'My name is Egor. My nickname on social networks is Hoshi. I came up with it in my school years. In Japanese, it means a star. I\'m not a star yet, but I still have it all to face. I am 20 years old, and I have been drawing for 4 years.',
@@ -164,8 +164,8 @@ export default {
       ]
     },
     {
-      locked: false,
-      date: '28.04.2022',
+      locked: true,
+      date: '29.04.2022',
       avatar: '/images/avatars/niko.png',
       name: 'Niko',
       preview: 'Former art curator at a five-storey art gallery in Denmark. Creator of WOM_NFT together with Disney Veteran Gregg Azzopardi.',
@@ -326,7 +326,7 @@ export default {
     },
     {
       locked: true,
-      date: '01.05.2022',
+      date: '02.05.2022',
       avatar: '/images/avatars/imbttg.png',
       name: 'IM BTTG',
       preview: 'International Artist. Conceptual artist and designer. In his work, he uses various formats, ranging from visual arts, such as canvases, to monumental graphics and font compositions. The artistic language of his works is a dialogue between calligraphy and figurative image. It organically combines elements and principles of modern graphics, antique images and abstract art.',
@@ -488,7 +488,7 @@ export default {
     },
     {
       locked: true,
-      date: '04.05.2022',
+      date: '05.05.2022',
       avatar: '/images/avatars/ermkv.png',
       name: 'ERMKV',
       preview: 'Graphic Designer. Digital artist. Experimenter.',
@@ -649,7 +649,7 @@ export default {
     },
     {
       locked: true,
-      date: '07.05.2022',
+      date: '08.05.2022',
       avatar: '/images/avatars/chell.png',
       name: 'Chell',
       preview: [
@@ -819,7 +819,7 @@ export default {
     },
     {
       locked: true,
-      date: '10.05.2022',
+      date: '11.05.2022',
       avatar: '/images/avatars/dima.png',
       name: 'Dimitry M',
       preview: [
@@ -986,7 +986,7 @@ export default {
     },
     {
       locked: true,
-      date: '13.05.2022',
+      date: '14.05.2022',
       avatar: '/images/avatars/nikvsio.png',
       name: 'NIKVSIO',
       preview: 'My name is Nika Kutelia. I am a digital artist, illustrator, and designer with 8 years of experience.',
@@ -1153,19 +1153,637 @@ export default {
     },
     {
       locked: true,
-      date: '16.05.2022'
+      date: '17.05.2022',
+      avatar: '/images/avatars/timYar.png',
+      name: 'Tim Yarzhombek',
+      preview: 'I have been drawing pictures and illustrations for almost 20 years. On average, I create one illustration per day. Magazines, newspapers, books, and countless modern illustration formats. I\'m the curator at the HSE School of Design, a member of the bang-bang agency, and a full-time illustrator at Yandex Practicum.',
+      links: {
+        instagram: 'https://www.instagram.com/timbek/',
+        behance: 'https://www.behance.net/yarzhombek'
+      },
+      messagesList: [
+        {
+          type: 'sent',
+          text: [
+            'What were your first steps in digital art? How did you find this art direction?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'The moment when I started drawing, I switched to digital pretty immediately. Many of my peers worked with live material, then scanned it. In general, I respect this approach much, but it is very impractical when working on illustrations. It is necessary to make a lot of edits, and it is unthinkable to redraw each time.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Are there any fundamental differences between digital art and traditional art for you? Are they equal?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'For me, this difference is purely practical. Paper and canvases take up space and get dusty. I just start taking timid steps, and already the whole room is covered in canvases. Also, the flexibility and capabilities of digital materials are very important.',
+            'Traditional art is sometimes often based on the opinion of a narrow circle of experts. What is happening on the Internet is a more democratic process, with its drawbacks. For example, Masyan\'s cartoon is aesthetically unacceptable to me, but millions of people adore it.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What inspires you to create, what is a muse for you?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I am inspired by anything that makes me wonder. Lately, I\'ve been more impressed by things that have been done before. We are sitting here, inventing a bicycle, and it was invented 40 years ago, in an alternative reality of the pre-digital era. For some reason, it surprises me more than the wonders of technology.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Whose opinion about your creativity is important to you?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'The opinion of my fellow designers and artists is important to me. I want to continue their endeavor and be part of the movement that they launched. One day, a respected designer called me "Maestro" at a meeting. Since then, I realized that I have no right to call myself undervalued.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What do you do besides design?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I am lucky that illustration and teaching illustration are my earnings (no idea what will be after recent events, though). Besides that — I work and raise children. I don\'t have time for anything else.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'We invite you to answer blitz questions from our team.',
+            'What would you do if digital art didn\'t exist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I would have taken up other kind of art'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'We invite you to answer blitz questions from our team.',
+            'What would you do if digital art didn\'t exist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I would have taken up other kind of art'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Three criteria for a successful artist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'It\'s hard to say. In general, I prefer to be called an illustrator, not an artist. It is important to establish yourself in the working community as a quick and executive person who understands what they can do and what they can\'t.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe the style of your work?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I try to be a diverse creator because it\'s easier to sell art this way'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe yourself in three words?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'More of an inventor than a performer'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'The artist\'s place in this world? Briefly (What is their mission?)'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'in the hearts of the audience'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What would you like to say or wish to your audience?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Every viewer is very vulnerable inside, imperfect, and ridiculous sometimes.  I would like them to feel, looking at the works, that they are not alone'
+          ]
+        }
+      ]
     },
     {
       locked: true,
-      date: '19.05.2022'
+      date: '20.05.2022',
+      avatar: '/images/avatars/vladimir.png',
+      name: 'Vladimir Ayuev',
+      preview: 'I am a graphic designer and art director, and teacher of Visual Communications at the HSE School of Design and BBE. Also, I am an expert in brand design.',
+      links: {
+        instagram: 'https://www.instagram.com/auev/',
+        behance: ' https://www.behance.net/ayuev',
+        facebook: 'https://www.facebook.com/vlad.ayuev'
+      },
+      messagesList: [
+        {
+          type: 'sent',
+          text: [
+            'Tell us about your creative path. What were your first steps in digital art? How did you find this art direction?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'My touch on digital art was rather timid. I have an inner need to do some kind of design that could find its material embodiment, for example, in interior items. But I was afraid to grab real materials right away, and I decided to start designing in 3D in order to feel the shape at least in a pseudo-volume',
+            'I started with the chairs. The chair is the most understandable object in the utilitarian plan, having a distinct archetype of form. The base is a seat raised to a certain level above the ground, the rest (backrest/armrests) is optional.',
+            'As a graphic designer, I am faced with designing letters — and there is some connection here. Any letter can look very different in different fonts. But even in the most intricate accidental fonts, the basis of a letter is its recognizability and readability. Because people have some archetypal image of any letter in their head. And you can experiment with this image within some limits.',
+            'Since I don\'t know how to design chairs as a real subject designer, I decided that I would design them as a graphic designer. Just like with letters — through working with the form within the archetype.',
+            'Such a situation occurred: on the one hand — an understandable archetype of a piece of furniture, on the other — a specific graphic language. The output turned out to be something third, delicate, rather aggressive thrones that could stand somewhere in the throne rooms of fictional worlds with their non—existent architectural style.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Are there any fundamental differences between digital art and traditional art for you? Are they equal?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I would replace the word “traditional“ with ”contemporary art". Modern art, of course, is still more interesting, because over the past 100 years it has managed to move from working with formal signs to any kind of forms and even formlessness; to working with meanings, contexts, and statements about itself — art about art itself. Against this background, the overall cross-section of NFT works still looks playful and naive. I want statements and experiments to appear instead of stamping "collectible cards". Although Andy Warhol would definitely appreciate it.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What inspires you to create?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Visionaries. They can be architects, musicians, and fashion designers. Of the bright inspirers, I would mention Virgil Abloh and Kanye, of course. I really love music and have been immersed in the topic of hip-hop for a long time. Back in high school, I wrote beats (rap instrumentals). Some of them were even sold, I recorded .wav to disk and sent by cash on delivery.',
+            'There is a link that I understand between any kind of creativity: working with samples. You take some essence that was not originally invented by you (a piece of someone else\'s song/font/piece of furniture), cut off the excess, modify it, and then combine it with other samples, add your own, embed it into some common system, into a single drawing. An important part of all this is working with the “flavors” and meanings of certain references, putting them in an unexpected context. Kanye and Virgil — each in their own field — have taken sampling to a new level.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'How do you see the development of the NFT market? Are these new opportunities for all authors or a temporary hype?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Both.',
+            'It is interesting to follow the development of NFT — what will happen next, how its synthesis will take place with other spheres, especially with commercial ones.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'We invite you to answer blitz questions from our team.',
+            'What would you do if digital art didn\'t exist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'The same thing'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Three criteria for a successful artist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            '— your voice',
+            '— the ability to sell',
+            '— luck'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe the style of your work?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'So far it looks like some kind of Neobarocco.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe yourself in three words?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Subject-graphic sampling'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'The artist\'s place in this world? Briefly (What is their mission?)'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Everyone is an artist in some way'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What would you like to say or wish to your audience?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Peace'
+          ]
+        }
+      ]
     },
     {
       locked: true,
-      date: '22.05.2022'
+      date: '23.05.2022',
+      avatar: '/images/avatars/thisWorldOut.png',
+      name: 'thisworldout',
+      preview: 'I am a digital/multimedia artist and designer, working on the borderline of analog and digital technology. Currently, I am working as an independent designer, artist, and curator on self-initiated and commissioned projects. Those projects take roots from my position as an international designer and a frequent traveler, allowing me to study and experience often diverse perspectives. My interests span over a wide range of topics. They include various critical social-political issues that are often given form through high-tech experiments and multimedia platforms questioning on and offline realities.',
+      links: {
+        instagram: 'https://www.instagram.com/thisworldout',
+        site: 'www.thisworldout.nl',
+        rarible: 'https://rarible.com/thisworldout'
+      },
+      messagesList: [
+        {
+          type: 'sent',
+          text: [
+            'Tell us about the most important works for you as an artist (successful ones)?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'How to avoid getting the bends is a virtual exhibition work based on a text by New York-based poet and curator Vanessa Kowalski. We live in a time of major technological change affecting most aspects of our lives. I frequently think that technology is being implemented incredibly quickly. Under the current conditions, there is not much time left for reflection, discussions about ethics, and reflection on the current events. Reflections on the directions of technological development and the ways of their application force me to consider dystopian futures in my projects. In her text, Vanessa critically describes technological prejudice and represents the end of humanity and humanism. ',
+            'Inspired by the analysis of the Accelerationists, I create a visual image of a post-human space where I make it possible to imagine a future without homo sapiens.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What creative tools do you use?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I mainly use 3D modeling programs, Unity, UE4 as well as Adobe Suite. For each project, the process of interaction between these programs is very different but their interchange is very well established, which greatly simplifies the process of working, allowing me to concentrate on the creative aspects.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Are there any fundamental differences between digital art and traditional art for you? Are they equal?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I think that the experience of art, originally designed to exist in virtual or digital form, is incomplete in physical space without adding 3D layers to it in the physical space. The nature of such projects can be largely realized in augmented and virtual reality, which, in my opinion, creates a more substantial result. Perception and interaction in these environments still have disadvantages, such as high content optimization, technical limitations of devices, as well as the bulkiness of devices, and so on.',
+            'An important factor is that these technical limitations, as we have seen over the years, are only temporary. To be able to see the bigger picture of the future, we must remember that these restrictions will gradually disappear.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What plans and releases are you planning in the near future?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I am working on a project connecting digital and physical art and design. I cannot announce the details yet but I will launch a physical and virtual exhibition in the Netherlands later this year.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'On which NFT sites do you publish your work? At what sites do you plan to publish? Share your profiles so that more people will know about your work.'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'So far I’ve been doubtful about publishing my personal NFTs, mostly working on other projects and collaborations with brands. However, I decided to start my profile on Raible, and I am planning to publish more projects there this year. My main profile at the moment is',
+            'https://rarible.com/thisworldout'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'How do you see the development of the NFT market? Are these new opportunities for all authors or a temporary hype?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I think the NFTs are here to stay. The pandemic convinced me that digital art and design are gradually taking a stable position in the art environment and modern society. I think that the popularization of virtual art in everyday life during the pandemic has accelerated the development of platforms and technologies that can be used to create and display it. New realities have undoubtedly pushed me to create more experimental formats for my projects. Since the beginning of the pandemic uncertainty, I was more driven to adapt my practice to digital reality. It was interesting for me to watch how formed and conservative projects and platforms made non-trivial decisions. This is very inspiring, despite all the difficulties, art and society continue to develop and introduce innovative approaches. This year we see that digital art has claimed a secure position for itself in the upcoming metaverse and web 3.0.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'We invite you to answer blitz questions from our team.',
+            'What would you do if digital art didn\'t exist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Perhaps I would be working with physical work and more applied graphic design.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Three criteria for a successful artist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Persistence, Efficiency, and luck.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe the style of your work?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Contemporary, yet nostalgic, minimal,  mood-enhancing, magic, mysterious.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe yourself in three words?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Hi-Tech, Indie, Dreamy.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'The artist\'s place in this world? Briefly (What is their mission?)'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I believe that the place of the artist is never specifically defined. Undoubtedly, historically artists played a big role in documenting, reflecting, and influencing the world. This is even more true with the technology and tools that we have access to – I can only dream about what the great artists of the past would do, had they access even a fraction of the possibilities available to us. Ultimately, the artist and the context in which they exist will define their role. The possibilities are extensive.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What would you like to say or wish to your audience?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Check out Bold Point'
+          ]
+        }
+      ]
     },
     {
       locked: true,
-      date: '25.05.2022'
+      date: '26.05.2022',
+      avatar: '/images/avatars/bxb.png',
+      name: 'BXB.STD',
+      preview: 'My name is Anastasia, I am 24 years old. At the moment, my focus is on NFT, Digital art, and 3D Modeling. I am actively developing my studio and dream that my works will be on the billboards of Times Square in New York.',
+      links: {
+        instagram: 'https://www.instagram.com/bxb.std',
+        twitter: 'https://twitter.com/BxBstd',
+        site: 'https://bxbstd.com/',
+        foundation: 'https://foundation.app/@bxbstd',
+        rarible: 'https://rarible.com/bxbstd',
+        babylons: 'https://app.babylons.io/bxbstd',
+        knowOrigin: 'https://knownorigin.io/bxb-std'
+      },
+      messagesList: [
+        {
+          type: 'sent',
+          text: [
+            'Tell us about your creative path. What were your first steps in digital art? How did you find this art direction?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Since childhood, I have been engaged in creativity, painted a lot, and dreamed of becoming a designer. I graduated from university with a degree in Software Engineering and decided to devote myself entirely to design. I was inspired by Western artists and their works. I started from scratch, was self-taught and at first, I faced a lot of difficulties. However, after a short amount of time, my efforts were rewarded. My works began to be noticed by NFT magazines, the first sales appeared on various marketplaces, and I made several collaborations with famous Western artists. Later, the dream came true, because I opened my own studio.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Tell us about the most important works for you as an artist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'For example, the very first sold work that is called Iron Shark. I think it\'s cool. This image adorns the entrance to the virtual gallery of a famous collector named Pinko.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What creative tools do you use?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I use different programs like Cinema 4D + Octane render for stronger character and environment detail. Sometimes I use Blender if I need to model something.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Are there any fundamental differences between digital art and traditional art for you? Are they equal?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'There is no difference between digital and traditional art. At that time and in our time, people put a lot of time and effort into creating a certain work of art. It\'s a lot of work, to find an idea, to put your soul into your work, to find your own style that will not be like others, and also to find tools that can help you do it. For us, these are computers and programs. For traditional artists, these were paints, canvases, and brushes.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What inspires you to create, what is a muse for you?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I try to draw inspiration from everywhere, whether it\'s the plot of a book I like, the work of famous artists, or just my good mood. I discovered the muse in myself, and every time I manage to come up with something new.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'On which NFT sites do you publish your work? At what sites do you plan to publish? Share your profiles so that more people will know about your work.'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I publish on different platforms for example as:',
+            '- KnowOrigin (it was the very first platform that considered me as a crypto artist and I sold my very first and favorite work on it) (https://knownorigin.io/bxb-std)',
+            '- Foundation (https://foundation.app/@bxbstd)',
+            '- Rarible (https://rarible.com/bxbstd)',
+            '- Babylons (https://app.babylons.io/bxbstd)'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'We invite you to answer blitz questions from our team.',
+            'What would you do if digital art didn\'t exist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'I am a creative person to the depths of my soul, so if there were no digital art, I would gladly pick up canvas and paints.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Three criteria for a successful artist?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            '*Dream',
+            '*Aspiration',
+            '*Faith in yourself and in your success'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe the style of your work?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'My works are created in surrealism with elements of eroticism'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'Describe yourself in three words?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'Bright, Bold, Purposeful'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'The artist\'s place in this world? Briefly (What is their mission?)'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'In my opinion, this world would be too pretentious without artists. The artist helps to reveal the beauty and imprint it in the form of art.'
+          ]
+        },
+        {
+          type: 'sent',
+          text: [
+            'What would you like to say or wish to your audience?'
+          ]
+        },
+        {
+          type: 'received',
+          text: [
+            'First of all, I am really grateful to each and every one of my viewers. I try to surprise my audience with new works all the time, I am improving my skill more and more every day. For a long time, I have not released any new art, so I want to wish my audience a little patience. I reach a new level, and very soon I will astonish you with my art.'
+          ]
+        }
+      ]
     }
   ]
 }

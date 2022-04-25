@@ -132,32 +132,63 @@ export default {
               link: 'https://www.dropbox.com/s/uff07yccoekd7ax/4%20%28Hoshi%29.jpg?dl=0'
             }
           ]
-        },
-        {
-          artist: 'nico',
-          date: '28.04.2022',
-          avatar: '/images/avatars/niko.png',
-          nftList: [
-            {
-              name: 'Ancient Runes',
-              prcie: '0.15 ETH 1/1',
-              img: 'ancientRunes.jpg',
-              link: 'https://www.dropbox.com/s/ixol63drugqi2x5/Nico%20-%20BP%20NFT%20-%20Ancient%20Runes.gif?dl=0'
-            },
-            {
-              name: 'Portal Gate',
-              prcie: '0.09 ETH 1/3',
-              img: 'portalGate.jpg',
-              link: 'https://www.dropbox.com/s/0sa8p9mef5ej6v7/Nico%20-%20BP%20NFT%20-%20Portal%20Gate.gif?dl=0'
-            },
-            {
-              name: 'Silver',
-              prcie: '0.07 ETH 1/5',
-              img: 'silver.jpg',
-              link: 'https://www.dropbox.com/s/61kfjftfc8dbs3m/Nico%20-%20BP%20NFT%20-%20Silver.gif?dl=0'
-            }
-          ]
         }
+        // {
+        //   artist: 'nico',
+        //   date: '28.04.2022',
+        //   avatar: '/images/avatars/niko.png',
+        //   nftList: [
+        //     {
+        //       name: 'Ancient Runes',
+        //       prcie: '0.15 ETH 1/1',
+        //       img: 'ancientRunes.jpg',
+        //       link: 'https://www.dropbox.com/s/ixol63drugqi2x5/Nico%20-%20BP%20NFT%20-%20Ancient%20Runes.gif?dl=0'
+        //     },
+        //     {
+        //       name: 'Portal Gate',
+        //       prcie: '0.09 ETH 1/3',
+        //       img: 'portalGate.jpg',
+        //       link: 'https://www.dropbox.com/s/0sa8p9mef5ej6v7/Nico%20-%20BP%20NFT%20-%20Portal%20Gate.gif?dl=0'
+        //     },
+        //     {
+        //       name: 'Silver',
+        //       prcie: '0.07 ETH 1/5',
+        //       img: 'silver.jpg',
+        //       link: 'https://www.dropbox.com/s/61kfjftfc8dbs3m/Nico%20-%20BP%20NFT%20-%20Silver.gif?dl=0'
+        //     }
+        //   ]
+        // },
+        // {
+        //   artist: 'IM BTTG',
+        //   date: '01.05.2022',
+        //   avatar: '/images/avatars/imbttg.png',
+        //   nftList: [
+        //     {
+        //       name: 'Heaven gates. Styx',
+        //       prcie: '0.15 ETH 1/1',
+        //       img: 'heavenGates.png',
+        //       link: 'https://www.dropbox.com/s/tz9ki6ttf8zlab5/STYX%20by%20IM%20BTTG.png?dl=0'
+        //     },
+        //     {
+        //       name: 'Untouchable beauty',
+        //       prcie: '0.07 ETH 1/5',
+        //       img: 'suntouchableBeauty.png',
+        //       link: 'https://www.dropbox.com/s/vdfmdtb68sdifkx/YAY%203.png?dl=0'
+        //     },
+        //     {
+        //       name: 'Rebirth',
+        //       prcie: '0.09 ETH 1/3',
+        //       img: 'rebirth.jpg',
+        //       link: 'https://www.dropbox.com/s/j3gtcwhmmlt3yq1/YAY%202.png?dl=0'
+        //     },
+        //     {
+        //       name: 'November clarity of mind',
+        //       prcie: '0.05 ETH 1/7',
+        //       img: 'portalGate.jpg',
+        //       link: 'https://www.dropbox.com/s/s7m8fmqecgp16tc/YAY%201%20%20.png?dl=0'
+        //     },
+        //   ]
+        // },
       ]
     }
   }
@@ -166,6 +197,7 @@ export default {
 
 <style lang="scss" scoped>
 .mainTimeline {
+  display: none;
   padding: 60px 0 150px;
 
   background: url("/images/mainTimeline/bgGame.jpg") no-repeat;

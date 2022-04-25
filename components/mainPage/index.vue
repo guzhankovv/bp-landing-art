@@ -75,6 +75,45 @@ export default {
 
   &__about {
     margin-bottom: 100px;
+
+    position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 403px;
+    left: -254px;
+    bottom: 0;
+    right: 0;
+
+    width: 283px;
+    height: 181px;
+
+    border-radius: 50%;
+
+    filter: blur(275px);
+    background: #A63DFF;
+  }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 577px;
+      right: -72px;
+      bottom: 0;
+      // right: 0;
+
+      width: 93px;
+      height: 164px;
+
+      border-radius: 50%;
+
+      filter: blur(218px);
+      background: #A63DFF;
+    }
   }
 
   &__colab {

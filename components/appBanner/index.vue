@@ -40,7 +40,7 @@
         </h1>
 
         <p class="banner__centerText">
-          Our game opened a new reality not only for gamers, but for artists as well. <br> 11 digital creators were inspired by Bold Point and want to showcase their vision. Explore NFT collection of 33 artworks, enrich your collection and earn bold rewards
+          Our game opened a new reality not only for gamers, but for artists as well. <br> 11 digital creators were inspired by Bold Point and want to showcase their vision. Explore NFT collection of 39 artworks, enrich your collection and earn bold rewards
         </p>
 
         <a class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
@@ -108,10 +108,13 @@ export default {
 
 <style lang="scss" scoped>
 .banner {
+position: relative;
+top: -70px;
+
   margin: 0 auto;
 
   max-width: 1920px;
-  height: 881px;
+  height: 1020px;
 
   background-image: url("/images/mainBanner/plot.jpg");
   background-repeat: no-repeat;
@@ -142,9 +145,7 @@ export default {
           #000000 17.86%,
           rgba(0, 0, 0, 0.58) 52.83%,
           rgba(30, 30, 30, 0.26) 99.67%
-        );
-
-      box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
+        );;
     }
 
     &::after {
@@ -152,7 +153,7 @@ export default {
       position: absolute;
       z-index: 1;
       right: 0;
-      bottom: 0;
+      bottom: -45px;
       left: 0;
 
       display: block;
@@ -173,7 +174,7 @@ export default {
 
     text-transform: uppercase;
 
-    margin: 33px 0 100px 0;
+    margin: 115px 0 100px 0;
   }
 
   &__link {
@@ -248,7 +249,7 @@ export default {
   &__scroll {
     position: relative;
     z-index: 1;
-    top: -129px;
+    top: -88px;
 
     display: grid;
     justify-items: center;
