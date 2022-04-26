@@ -300,7 +300,6 @@ top: -70px;
   }
 
   &__txTop {
-    max-width: 288px;
   }
 
   &__centerLink {
