@@ -27,7 +27,7 @@
         Immerse into alternate universe on 360°
       </p>
 
-      <a class="gallery__link btn" href="https://spatial.io/">
+      <a class="gallery__link btn" href="https://spatial.io/s/Discover-a-new-dimension-Bold-Point-Gallery-6253f98e153bbf000171a699?share=2082928520569155812">
         <img
           class="gallery__btnIcon btn__icon btn__icon--left"
           src="/icons/ornament.png"

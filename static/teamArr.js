@@ -2,7 +2,7 @@ export default {
   teamArr: [
     {
       locked: true,
-      date: '26.04.2022',
+      date: '27.04.2022',
       avatar: '/images/avatars/hoshi.png',
       name: 'Hoshi',
       preview: 'My name is Egor. My nickname on social networks is Hoshi. I came up with it in my school years. In Japanese, it means a star. I\'m not a star yet, but I still have it all to face. I am 20 years old, and I have been drawing for 4 years.',
@@ -165,7 +165,7 @@ export default {
     },
     {
       locked: true,
-      date: '29.04.2022',
+      date: '30.04.2022',
       avatar: '/images/avatars/niko.png',
       name: 'Niko',
       preview: 'Former art curator at a five-storey art gallery in Denmark. Creator of WOM_NFT together with Disney Veteran Gregg Azzopardi.',
@@ -326,7 +326,7 @@ export default {
     },
     {
       locked: true,
-      date: '02.05.2022',
+      date: '03.05.2022',
       avatar: '/images/avatars/imbttg.png',
       name: 'IM BTTG',
       preview: 'International Artist. Conceptual artist and designer. In his work, he uses various formats, ranging from visual arts, such as canvases, to monumental graphics and font compositions. The artistic language of his works is a dialogue between calligraphy and figurative image. It organically combines elements and principles of modern graphics, antique images and abstract art.',
@@ -488,7 +488,7 @@ export default {
     },
     {
       locked: true,
-      date: '05.05.2022',
+      date: '06.05.2022',
       avatar: '/images/avatars/ermkv.png',
       name: 'ERMKV',
       preview: 'Graphic Designer. Digital artist. Experimenter.',
@@ -649,7 +649,7 @@ export default {
     },
     {
       locked: true,
-      date: '08.05.2022',
+      date: '09.05.2022',
       avatar: '/images/avatars/chell.png',
       name: 'Chell',
       preview: [
@@ -819,7 +819,7 @@ export default {
     },
     {
       locked: true,
-      date: '11.05.2022',
+      date: '12.05.2022',
       avatar: '/images/avatars/dima.png',
       name: 'Dimitry M',
       preview: [
@@ -986,7 +986,7 @@ export default {
     },
     {
       locked: true,
-      date: '14.05.2022',
+      date: '15.05.2022',
       avatar: '/images/avatars/nikvsio.png',
       name: 'NIKVSIO',
       preview: 'My name is Nika Kutelia. I am a digital artist, illustrator, and designer with 8 years of experience.',
@@ -1153,7 +1153,7 @@ export default {
     },
     {
       locked: true,
-      date: '17.05.2022',
+      date: '18.05.2022',
       avatar: '/images/avatars/timYar.png',
       name: 'Tim Yarzhombek',
       preview: 'I have been drawing pictures and illustrations for almost 20 years. On average, I create one illustration per day. Magazines, newspapers, books, and countless modern illustration formats. I\'m the curator at the HSE School of Design, a member of the bang-bang agency, and a full-time illustrator at Yandex Practicum.',
@@ -1313,7 +1313,7 @@ export default {
     },
     {
       locked: true,
-      date: '20.05.2022',
+      date: '21.05.2022',
       avatar: '/images/avatars/vladimir.png',
       name: 'Vladimir Ayuev',
       preview: 'I am a graphic designer and art director, and teacher of Visual Communications at the HSE School of Design and BBE. Also, I am an expert in brand design.',
@@ -1456,7 +1456,7 @@ export default {
     },
     {
       locked: true,
-      date: '23.05.2022',
+      date: '24.05.2022',
       avatar: '/images/avatars/thisWorldOut.png',
       name: 'thisworldout',
       preview: 'I am a digital/multimedia artist and designer, working on the borderline of analog and digital technology. Currently, I am working as an independent designer, artist, and curator on self-initiated and commissioned projects. Those projects take roots from my position as an international designer and a frequent traveler, allowing me to study and experience often diverse perspectives. My interests span over a wide range of topics. They include various critical social-political issues that are often given form through high-tech experiments and multimedia platforms questioning on and offline realities.',
@@ -1618,7 +1618,7 @@ export default {
     },
     {
       locked: true,
-      date: '26.05.2022',
+      date: '27.05.2022',
       avatar: '/images/avatars/bxb.png',
       name: 'BXB.STD',
       preview: 'My name is Anastasia, I am 24 years old. At the moment, my focus is on NFT, Digital art, and 3D Modeling. I am actively developing my studio and dream that my works will be on the billboards of Times Square in New York.',
