@@ -42,9 +42,15 @@
           Bold Point — Art Station
         </h1>
 
-        <p class="banner__centerText">
-          Our game opened a new reality not only for gamers, but for artists as well. <br> 11 digital creators were inspired by Bold Point and want to showcase their vision. Explore NFT collection of 39 artworks, enrich your collection and earn bold rewards
-        </p>
+        <div class="banner__centerText">
+          <p class="banner__txTop mb20">
+            Our game opened a new reality not only for gamers, but for artists as well.
+          </p>
+
+          <p class="banner__tx">
+            11 digital creators were inspired by Bold Point and want to showcase their vision. Explore NFT collection of 39 artworks, enrich your collection and earn bold rewards
+          </p>
+        </div>
 
         <a class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
           <img
@@ -129,6 +135,10 @@ top: -70px;
   background-repeat: no-repeat;
   background-position-x: right;
 
+    @media (max-width: $media_md) {
+      height: 567px;
+    }
+
   &__inner {
     position: relative;
 
@@ -171,6 +181,14 @@ top: -70px;
       height: 60px;
 
       background: url("/images/bgBorder.png");
+
+      @media (max-width: $media_md) {
+        left: 45px;
+        bottom: -9px;
+
+        height: 30px;
+        background: url("/images/bgBorderMob.png");
+      }
     }
   }
 
@@ -191,6 +209,10 @@ top: -70px;
     text-transform: uppercase;
 
     margin: 115px 0 100px 0;
+
+    @media (max-width: $media_sm) {
+      display: none;
+    }
   }
 
   &__link {
@@ -229,6 +251,10 @@ top: -70px;
     z-index: 2;
 
     margin: 0 auto;
+
+    @media (max-width: $media_sm) {
+      margin-top: 112px;
+    }
   }
 
   &__centerTitle {
@@ -239,6 +265,10 @@ top: -70px;
     color: $gold;
 
     white-space: nowrap;
+
+    @media (max-width: $media_md) {
+      margin-bottom: 30px;
+    }
   }
 
   &__centerText {
@@ -256,10 +286,29 @@ top: -70px;
     margin: 0 auto 40px;
 
     max-width: 958px;
+
+    @media (max-width: $media_sm) {
+      font-size: 11px;
+      line-height: 18px;
+
+      opacity: 0.9;
+
+      padding: 0 15px 0 15px;
+
+      margin-bottom: 107px;
+    }
+  }
+
+  &__txTop {
+    max-width: 288px;
   }
 
   &__centerLink {
-    max-width: 335px;
+    max-width: 365px;
+
+    @media (max-width: $media_sm) {
+      width: 182px;
+    }
   }
 
   &__scroll {
@@ -276,10 +325,20 @@ top: -70px;
     width: 80px;
 
     animation: moving-y 3s linear infinite;
+
+    @media (max-width: $media_md) {
+      top: -87px;
+      gap: 4px;
+    }
   }
 
   &__iconScroll {
     height: 156px;
+
+    @media (max-width: $media_md) {
+      width: 13px;
+      height: 112px;
+    }
   }
 
   &__scrollText {
@@ -290,6 +349,11 @@ top: -70px;
     color: rgb(217, 217, 217);
 
     text-align: center;
+
+    @media (max-width: $media_md) {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 }
 

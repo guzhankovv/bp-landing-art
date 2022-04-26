@@ -167,6 +167,10 @@ export default {
 
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
+  @media (max-width: $media_md) {
+    padding: 0px 16px 100px;
+  }
+
   &__title {
     margin: 0 auto 32px;
     padding: 0 100px 20px;
