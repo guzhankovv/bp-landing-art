@@ -69,6 +69,10 @@ export default {
 
   &__banner {
     margin-bottom: 126px;
+
+    @media (max-width: $media_md) {
+      margin-bottom: 90px;
+    }
   }
 
   &__main {

@@ -11,6 +11,12 @@
             src="/icons/logo.svg"
             alt="logo"
           >
+
+          <img
+            class="header__logoMob"
+            src="/icons/logoMob.png"
+            alt="logo"
+          >
         </nuxt-link>
 
         <div class="header__center">
@@ -74,6 +80,7 @@
             </p>
           </a>
         </div>
+
         <a
           class="header__btn"
           href="https://spatial.io/s/Discover-a-new-dimension-Bold-Point-Gallery-6253f98e153bbf000171a699?share=2082928520569155812"
@@ -82,6 +89,14 @@
             Join Vr-Gallery
           </p>
         </a>
+
+        <button class="header__menuBtn">
+          <img
+            class="header__menu"
+            src="/icons/menu.png"
+            alt="menu"
+          >
+        </button>
       </div>
     </div>
 
@@ -133,6 +148,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: $media_md) {
+      padding: 12px 20px;
+    }
   }
 
   &__center {
@@ -142,6 +161,10 @@ export default {
 
     max-width: 980px;
     width: 100%;
+
+    @media (max-width: $media_md) {
+      display: none;
+    }
   }
 
   &__logoLink {
@@ -152,10 +175,14 @@ export default {
     width: 194px;
     height: 23px;
 
-    @media (max-width: $media_xl) {
-      width: 150px;
-      height: 18px;
+    @media (max-width: $media_md) {
+      width: 32px;
     }
+
+    // @media (max-width: $media_xl) {
+    //   width: 150px;
+    //   height: 18px;
+    // }
   }
 
   &__link {
@@ -237,6 +264,19 @@ export default {
   &__logo {
     object-fit: contain;
     width: 100%;
+
+    @media (max-width: $media_md) {
+      display: none;
+    }
+  }
+
+  &__logoMob {
+    width: 32px;
+    height: 18px;
+
+    @media (min-width: $media_md) {
+      display: none;
+    }
   }
 
   &__linkText {
@@ -278,12 +318,34 @@ export default {
 
     text-transform: uppercase;
 
+    white-space: nowrap;
+
     transition: 0.3s;
 
     &:hover {
       box-shadow: 2px 6px 20px 0px rgb(255 255 255 / 83%);
     }
+
+    @media (max-width: $media_md) {
+      padding: 2px 8px;
+
+      width: 40%;
+      height: 30%;
+
+      font-size: 10px;
+    }
   }
+
+    &__menuBtn {
+      @media (min-width: $media_md) {
+        display: none;
+      }
+    }
+
+    &__menu {
+      width: 27px;
+      height: 16px;
+    }
 
   &__fake {
     height: 60px;
