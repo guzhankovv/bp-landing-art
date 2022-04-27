@@ -297,6 +297,11 @@ top: -70px;
 
       margin-bottom: 107px;
     }
+
+  @media (max-width: $media_lg) {
+      font-size: 20px;
+      line-height: 34px;
+    }
   }
 
   &__txTop {

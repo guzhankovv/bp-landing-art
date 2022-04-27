@@ -72,9 +72,9 @@
             </p>
           </a>
 
-          <!-- <a
+          <a
             class="header__link"
-                        :class="{
+            :class="{
               'header__link_active' : activeLink === 'timeline'
             }"
             href="#timeline"
@@ -83,7 +83,7 @@
             <p class="header__linkText">
               Timeline
             </p>
-          </a> -->
+          </a>
 
           <a
             class="header__link"
@@ -204,7 +204,7 @@ export default {
     align-items: center;
     gap: 10px;
 
-    @media (max-width: $media_md) {
+    @media (max-width: $media_lg) {
       padding: 12px 20px;
     }
   }
@@ -217,7 +217,7 @@ export default {
     max-width: 980px;
     width: 100%;
 
-    @media (max-width: $media_md) {
+    @media (max-width: $media_lg) {
       display: none;
     }
   }
@@ -230,7 +230,7 @@ export default {
     width: 194px;
     height: 23px;
 
-    @media (max-width: $media_md) {
+    @media (max-width: $media_lg) {
       width: 32px;
     }
 
@@ -343,7 +343,7 @@ export default {
     object-fit: contain;
     width: 100%;
 
-    @media (max-width: $media_md) {
+    @media (max-width: $media_lg) {
       display: none;
     }
   }
@@ -352,7 +352,7 @@ export default {
     width: 32px;
     height: 18px;
 
-    @media (min-width: $media_md) {
+    @media (min-width: $media_lg) {
       display: none;
     }
   }
@@ -383,7 +383,7 @@ export default {
       box-shadow: 2px 6px 20px 0px rgb(255 255 255 / 83%);
     }
 
-    @media (max-width: $media_md) {
+    @media (max-width: $media_lg) {
       padding: 2px 8px;
 
       width: 40%;
@@ -394,7 +394,7 @@ export default {
   }
 
   &__menuBtn {
-    @media (min-width: $media_md) {
+    @media (min-width: $media_lg) {
       display: none;
     }
   }
