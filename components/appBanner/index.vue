@@ -1,5 +1,8 @@
 <template>
-  <div class="banner">
+  <div
+    id="main"
+    class="banner"
+  >
     <div class="banner__inner">
       <div class="banner__version">
         <DeskopVersion />
@@ -35,10 +38,7 @@
       </div>
 
       <div class="banner__center">
-        <h1
-          id="main"
-          class="banner__centerTitle title_1 txGold border border--line"
-        >
+        <h1 class="banner__centerTitle title_1 txGold border border--line">
           Bold Point — Art Station
         </h1>
 
