@@ -93,8 +93,10 @@ export default {
   }
 
   &__ornament {
+    position: relative;
     width: 24px;
     height: 35px;
+    top: -3px;
 
     object-fit: contain;
 
