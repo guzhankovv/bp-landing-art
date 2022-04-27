@@ -118,6 +118,10 @@ export default {
 
   &__colab {
     margin-bottom: 160px;
+
+  @media (max-width: $media_md) {
+      margin-bottom: 88px;
+    }
   }
 }
 </style>

@@ -168,7 +168,7 @@ export default {
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
   @media (max-width: $media_md) {
-    padding: 0px 16px 100px;
+    padding: 0px 41px 100px;
   }
 
   &__title {
@@ -179,9 +179,9 @@ export default {
 
     text-align: center;
 
-    @media (max-width: $media_xl) {
+    @media (max-width: $media_md) {
       margin: 0 auto 16px;
-      padding: 0 50px 10px;
+      padding: 0 30px 10px;
     }
   }
 
@@ -209,12 +209,17 @@ export default {
 
       background: url('/icons/ornamentSmall.png') no-repeat center center/contain;
 
-      @media (max-width: $media_xl) {
-      width: 26px;
-      height: 26px;
+      @media (max-width: $media_sm) {
+        width: 20px;
+        height: 20px;
+      }
 
-      top: -4px;
-    }
+      // @media (max-width: $media_xl) {
+      //   width: 26px;
+      //   height: 26px;
+
+      //   top: -4px;
+      // }
     }
 
     &::after {

@@ -61,7 +61,7 @@
           </a>
 
           <a
-            class="header__link timeLine"
+            class="header__link"
             href="#timeline"
             @click.prevent="scrollTo(200, $event)"
           >
@@ -350,9 +350,5 @@ export default {
   &__fake {
     height: 60px;
   }
-}
-
-.timeLine {
-  display: none;
 }
 </style>

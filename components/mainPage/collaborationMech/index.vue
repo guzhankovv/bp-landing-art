@@ -2,7 +2,7 @@
   <div class="collab">
     <div class="collab__inner">
       <div class="collab__top">
-        <h1 class="collab__title border border--line">
+        <h1 class="collab__title title_1 border border--line">
           Bold Expectations
         </h1>
 
@@ -68,7 +68,7 @@
               alt="ornament"
             >
 
-            <p class="collab__stepText mb13 mt13">
+            <p class="collab__stepText mb13 mt13 p77">
               Follow Bold Point on
               <a
                 class="collab__stepText collab__socialLink"
@@ -144,24 +144,15 @@ export default {
     margin: 0 auto;
 
     max-width: 1260px;
-
-    font-family: "Cinzel";
-    font-size: 72px;
-    line-height: 64px;
     color: $lilac;
 
     text-align: center;
     letter-spacing: 0.04em;
-
-    @media (max-width: $media_xl) {
-      font-size: 50px;
-      line-height: 58px;
-    }
   }
 
   &__topDescr {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 78px;
 
     margin: 88px auto 0;
@@ -169,10 +160,10 @@ export default {
 
     max-width: 1620px;
 
-    @media (max-width: $media_xl) {
-      gap: 25px;
-
-      margin-top: 55px;
+    @media (max-width: $media_md) {
+      grid-template-columns: 332px;
+      margin-top: 30px;
+      gap: 10px;
     }
   }
 
@@ -201,7 +192,7 @@ export default {
     }
 
     @media (max-width: $media_xl) {
-      padding: 15px 4px;
+      padding: 13px 7px;
     }
   }
 
@@ -221,15 +212,21 @@ export default {
 
     white-space: nowrap;
 
-    @media (max-width: $media_xl) {
-      font-size: 24px;
+    @media (max-width: $media_sm) {
+      font-size: 18px;
+      line-height: 28px;
 
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
   }
 
   &__descrText {
     text-align: center;
+
+    @media (max-width: $media_sm) {
+      font-size: 9px;
+      line-height: 18px;
+    }
   }
 
   &__bottom {
@@ -242,18 +239,29 @@ export default {
       ),
       url("/images/bgMechanics.jpg");
     background-repeat: no-repeat;
+
     background-position-x: center;
+    background-position-y: -120px;
+
+    @media (max-width: $media_sm) {
+      background-position-y: -259px;
+    }
   }
 
   &__main {
-    margin-bottom: 150px;
+    margin-bottom: 147px;
 
     padding-top: 120px;
 
-    @media (max-width: $media_xl) {
-      margin-bottom: 200px;
-      padding-top: 70px;
+    @media (max-width: $media_sm) {
+      margin-bottom: 16px;
+      padding: 46px 15px 0 15px;
     }
+
+    // @media (max-width: $media_xl) {
+    //   margin-bottom: 200px;
+    //   padding-top: 70px;
+    // }
   }
 
   &__bottomTitle {
@@ -264,7 +272,7 @@ export default {
     margin-bottom: 44px;
 
     @media (max-width: $media_xl) {
-      margin-bottom: 17px;
+      margin-bottom: 0;
     }
   }
 
@@ -273,9 +281,13 @@ export default {
 
     margin-bottom: 40px;
 
-    @media (max-width: $media_xl) {
-      margin-bottom: 25px;
+    @media (max-width: $media_sm) {
+      padding: 0 15px;
     }
+
+    // @media (max-width: $media_xl) {
+    //   margin-bottom: 25px;
+    // }
   }
 
   &__stepText {
@@ -290,6 +302,10 @@ export default {
 
     @media (max-width: $media_xl) {
       font-size: 18px;
+    }
+
+    @media (max-width: $media_sm) {
+      font-size: 14px;
     }
   }
 
@@ -309,12 +325,23 @@ export default {
     height: 31px;
 
     object-fit: none;
+
+    @media (max-width: $media_sm) {
+      width: 20px;
+      height: 18px;
+
+      object-fit: contain;
+    }
   }
 
   &__link {
     position: relative;
 
     max-width: 278px;
+
+    @media (max-width: $media_sm) {
+      max-width: 140px;
+    }
   }
 
   &__Line {
@@ -345,5 +372,9 @@ export default {
   @media (max-width: $media_xl) {
     padding-bottom: 10px;
   }
+}
+
+.p77 {
+  padding: 0 77px;
 }
 </style>

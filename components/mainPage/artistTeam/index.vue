@@ -45,6 +45,11 @@ export default {
     width: fit-content;
 
     text-align: center;
+
+    @media (max-width: $media_md) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
   }
 
   &__textRow {
@@ -57,6 +62,10 @@ export default {
     padding: 0 44px;
 
     max-width: 1336px;
+
+    @media (max-width: $media_md) {
+      padding: 0 30px;
+    }
 
     &::before,
     &::after {
@@ -73,6 +82,13 @@ export default {
       background: url('/icons/ornamentSmall.png') no-repeat center;
 
       transform: rotate(-90deg);
+
+      // @media (max-width: $media_md) {
+      //   width: 15px;
+      //   height: 11px;
+
+      //   object-fit: contain;
+      // }
     }
 
     &::after {
@@ -100,6 +116,11 @@ export default {
 
     text-align: center;
     letter-spacing: 0.04em;
+
+    @media (max-width: $media_md) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 </style>

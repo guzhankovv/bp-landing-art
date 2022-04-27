@@ -43,7 +43,7 @@
         </h1>
 
         <div class="banner__centerText">
-          <p class="banner__txTop mb20">
+          <p class="banner__txTop">
             Our game opened a new reality not only for gamers, but for artists as well.
           </p>
 
@@ -300,6 +300,11 @@ top: -70px;
   }
 
   &__txTop {
+    @media (max-width: $media_sm) {
+      max-width: 288px;
+    }
+
+    margin: 0 auto 20px;
   }
 
   &__centerLink {

@@ -1,7 +1,7 @@
 export default {
   teamArr: [
     {
-      locked: true,
+      locked: false,
       date: '27.04.2022',
       avatar: '/images/avatars/hoshi.png',
       name: 'Hoshi',
