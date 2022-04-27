@@ -22,6 +22,9 @@
         <div class="header__center">
           <a
             class="header__link"
+            :class="{
+              'header__link_active' : activeLink === 'main'
+            }"
             href="#main"
             @click.prevent="scrollTo(200, $event)"
           >
@@ -32,6 +35,9 @@
 
           <a
             class="header__link"
+            :class="{
+              'header__link_active' : activeLink === 'about'
+            }"
             href="#about"
             @click.prevent="scrollTo(200, $event)"
           >
@@ -42,6 +48,9 @@
 
           <a
             class="header__link"
+            :class="{
+              'header__link_active' : activeLink === 'mechanics'
+            }"
             href="#mechanics"
             @click.prevent="scrollTo(200, $event)"
           >
@@ -52,6 +61,9 @@
 
           <a
             class="header__link"
+            :class="{
+              'header__link_active' : activeLink === 'artists'
+            }"
             href="#artists"
             @click.prevent="scrollTo(200, $event)"
           >
@@ -60,18 +72,24 @@
             </p>
           </a>
 
-          <a
+          <!-- <a
             class="header__link"
+                        :class="{
+              'header__link_active' : activeLink === 'timeline'
+            }"
             href="#timeline"
             @click.prevent="scrollTo(200, $event)"
           >
             <p class="header__linkText">
               Timeline
             </p>
-          </a>
+          </a> -->
 
           <a
             class="header__link"
+            :class="{
+              'header__link_active' : activeLink === 'faq'
+            }"
             href="#faq"
             @click.prevent="scrollTo(200, $event)"
           >
@@ -111,6 +129,20 @@
 export default {
   name: 'AppHeader',
 
+  data () {
+    return {
+      activeLink: 'main'
+    }
+  },
+
+  mounted () {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        this.setIntersection()
+      }, 1000)
+    })
+  },
+
   methods: {
     scrollTo (indent, elem) {
       const targetElem = document.getElementById(elem.currentTarget.hash.replace('#', ''))
@@ -120,6 +152,29 @@ export default {
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
+      })
+    },
+
+    setIntersection () {
+      const callback = (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.activeLink = entry.target.id
+          }
+        })
+      }
+      const observer = new IntersectionObserver(callback, {
+        threshold: 0.6
+      })
+      const sectionsList = []
+
+      this.$el.querySelectorAll('.header__link').forEach((element) => {
+        sectionsList.push(element.hash)
+      })
+
+      sectionsList.forEach((element) => {
+        const target = document.querySelector(`${element}`)
+        observer.observe(target)
       })
     }
   }
@@ -135,8 +190,8 @@ export default {
     left: 0;
     z-index: 10;
 
+    background: rgba(48,48,48,.15);
     backdrop-filter: blur(48px);
-    box-shadow: 1px 1px 1px rgb(48, 48, 48);
 
     @supports not (backdrop-filter: blur(48px)) {
       background: rgba(37, 37, 37, 0.76);
@@ -191,73 +246,96 @@ export default {
 
     align-items: center;
 
-    padding: 28px 8px 28px 8px;
-
     text-transform: uppercase;
     transition: 0.6s;
 
     white-space: nowrap;
 
-    &:hover {
-      color: $gold;
-
-      &::after,
-      &::before {
-        opacity: 1;
-      }
-
+    &:hover,
+    &_active {
       & .header__linkText {
+        color: var(--bd_secondary);
+
         &::after {
           opacity: 1;
         }
       }
     }
 
+    &::before,
     &::after {
       content: "";
 
       position: absolute;
+      z-index: -2;
+      left: 50%;
 
-      left: 0px;
-      top: 78px;
+      display: block;
+
+      width: 120px;
+      height: 100%;
+
+      transform: translateX(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+    }
+
+    &::before{
+      background: url("/icons/arrowGold.png") no-repeat 50% 50%/contain;
+
+      filter: blur(4px);
+    }
+
+    &::after{
+      bottom: -60px;
+
+      background: url("/icons/arrowGoldBottom.png") no-repeat 50% 50%/contain;
+    }
+
+    &_active {
+      &::after,
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      & .header__linkText {
+        background: linear-gradient(180deg,rgba(255,255,255,0) 0,rgba(255,255,255,.24) 100%);
+        backdrop-filter: blur(8px);
+      }
+    }
+  }
+
+  &__linkText {
+    padding: 28px 16px;
+
+    font-weight: 700;
+    color: #848B8C;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--bd_secondary);
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+
+      display: block;
 
       width: 100%;
       height: 3px;
 
-      background: linear-gradient(
-        270deg,
-        rgba(255, 201, 119, 0) 0%,
-        #ffc977 18.75%,
-        #ffc977 53.13%,
-        #ffc977 80.21%,
-        rgba(255, 201, 119, 0) 100%
-      );
+      background: linear-gradient(270deg,rgba(255,201,119,0) 0,#ffc977 18.75%,#ffc977 53.13%,#ffc977 80.21%,rgba(255,201,119,0) 100%);
 
       opacity: 0;
       transition: 0.3s;
-
-    }
-
-    &::before {
-      content: url("/icons/arrow-gold.svg");
-      // content: url("/icons/arrowGoldGalf.svg");
-
-      position: absolute;
-      left: 0px;
-      top: 34px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      z-index: -1;
-
-      width: 100%;
-      height: 80px;
-
-      transition: 0.3s;
-
-      opacity: 0;
     }
   }
 
@@ -276,27 +354,6 @@ export default {
 
     @media (min-width: $media_md) {
       display: none;
-    }
-  }
-
-  &__linkText {
-    opacity: 0.4;
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.24) 100%
-      );
-      backdrop-filter: blur(18px);
-      opacity: 0;
     }
   }
 
@@ -336,16 +393,16 @@ export default {
     }
   }
 
-    &__menuBtn {
-      @media (min-width: $media_md) {
-        display: none;
-      }
+  &__menuBtn {
+    @media (min-width: $media_md) {
+      display: none;
     }
+  }
 
-    &__menu {
-      width: 27px;
-      height: 16px;
-    }
+  &__menu {
+    width: 27px;
+    height: 16px;
+  }
 
   &__fake {
     height: 60px;
