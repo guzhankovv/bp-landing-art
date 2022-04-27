@@ -301,10 +301,12 @@ top: -70px;
 
   &__txTop {
     @media (max-width: $media_sm) {
+    margin: 0 auto 20px;
+
       max-width: 288px;
     }
 
-    margin: 0 auto 20px;
+    margin: 0 auto;
   }
 
   &__centerLink {
