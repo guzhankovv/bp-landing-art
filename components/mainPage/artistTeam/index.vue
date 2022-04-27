@@ -71,7 +71,7 @@ export default {
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -3px;
       left: 0;
 
       display: block;

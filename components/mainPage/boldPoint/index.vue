@@ -201,6 +201,7 @@ export default {
 
       position: absolute;
       top: 0;
+      top: -3px;
 
       display: block;
 
@@ -234,7 +235,6 @@ export default {
 
     &::before {
       left: -55px;
-
       transform: rotate(-90deg);
 
       @media (max-width: $media_xl) {
