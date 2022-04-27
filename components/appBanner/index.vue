@@ -1,5 +1,8 @@
 <template>
-  <div class="banner">
+  <div
+    id="main"
+    class="banner"
+  >
     <div class="banner__inner">
       <div class="banner__version">
         <DeskopVersion />
@@ -35,15 +38,12 @@
       </div>
 
       <div class="banner__center">
-        <h1
-          id="main"
-          class="banner__centerTitle title_1 txGold border border--line"
-        >
+        <h1 class="banner__centerTitle title_1 txGold border border--line">
           Bold Point — Art Station
         </h1>
 
         <div class="banner__centerText">
-          <p class="banner__txTop mb20">
+          <p class="banner__txTop">
             Our game opened a new reality not only for gamers, but for artists as well.
           </p>
 
@@ -297,9 +297,21 @@ top: -70px;
 
       margin-bottom: 107px;
     }
+
+  @media (max-width: $media_lg) {
+      font-size: 20px;
+      line-height: 34px;
+    }
   }
 
   &__txTop {
+    @media (max-width: $media_sm) {
+    margin: 0 auto 20px;
+
+      max-width: 288px;
+    }
+
+    margin: 0 auto;
   }
 
   &__centerLink {
