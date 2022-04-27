@@ -109,25 +109,25 @@ export default {
           nftList: [
             {
               name: 'Forest Artifact',
-              prcie: '0.09 ETH 1/1',
+              prcie: '0,15 ETH 1/1',
               img: 'forestArtifact.jpg',
               link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052167267023323137'
             },
             {
               name: 'Mountain artifact',
-              prcie: '0.07 ETH 1/3',
+              prcie: '0,09 ETH 1/3',
               img: 'mountainArtifact.jpg',
               link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052168366534950913'
             },
             {
               name: 'Desert Artifact',
-              prcie: '0.05 ETH 1/5',
+              prcie: '0,07 ETH 1/5',
               img: 'desertArtifact.jpg',
               link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052171665069834241'
             },
             {
               name: 'Steppe Artifact',
-              prcie: '0.03 ETH 1/7',
+              prcie: '0,05 ETH 1/7',
               img: 'steppeArtifact.jpg',
               link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052177162627973121'
             }
