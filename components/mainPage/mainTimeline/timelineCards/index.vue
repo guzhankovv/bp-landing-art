@@ -31,7 +31,7 @@
           >
             <img
               class="btn__icon btn__icon--left"
-              src="/icons/ornament.png"
+              src="/icons/ornament.svg"
               alt="ornament"
             >
 
@@ -41,7 +41,7 @@
 
             <img
               class="btn__icon btn__icon--right"
-              src="/icons/ornament.png"
+              src="/icons/ornament.svg"
               alt="ornament"
             >
           </a>
@@ -198,7 +198,7 @@ export default {
     width: 14px;
     height: 14px;
 
-    background: url('~/static/icons/circle.png');
+    background: url('~/static/icons/circle.svg');
     background-size: contain;
     background-repeat: no-repeat;
 

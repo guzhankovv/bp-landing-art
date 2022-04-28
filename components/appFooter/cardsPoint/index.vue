@@ -55,7 +55,7 @@ export default {
           bg: '/images/cardPoint/token.jpg',
           title: 'Bold Point — Token Utilization, Gaming Mechanics, and GameCore Protocol',
           text: 'Ancient lands filled with magic and dangerous creatures are...',
-          time: '3 day ago'
+          time: '3 days ago'
         },
 
         {
@@ -63,7 +63,7 @@ export default {
           bg: '/images/cardPoint/trader.jpg',
           title: 'Bold Point & Trader Joe: Strategic Partnership for the $BPT Listing',
           text: 'With the current announcement of Bold Points IDO on Avalaunch scheduled for April 11th, and with the fast-paced growth...',
-          time: '6 day ago'
+          time: '6 days ago'
         }
       ]
     }
@@ -79,7 +79,7 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
-    padding: 0 15px 0 15px;
+    // padding: 0 15px 0 15px;
   }
 
   &__listItem {

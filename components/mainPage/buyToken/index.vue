@@ -16,12 +16,13 @@
       </div>
 
       <a
+        onClick="ym(88590499,'reachGoal','buy-nft-footer'); return true;"
         class="token__link btn"
         href="https://traderjoexyz.com/trade?outputCurrency=0x1111111111182587795ef1098ac7da81a108c97a#/"
       >
         <img
           class="token__btnIcon btn__icon btn__icon--left"
-          src="/icons/ornament.png"
+          src="/icons/ornament.svg"
           alt="ornament"
         >
 
@@ -31,7 +32,7 @@
 
         <img
           class="token__btnIcon btn__icon btn__icon--right"
-          src="/icons/ornament.png"
+          src="/icons/ornament.svg"
           alt="ornament"
         >
       </a>

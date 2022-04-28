@@ -100,12 +100,13 @@
         </div>
 
         <a
+          onClick="ym(88590499,'reachGoal','buy-nft'); return true;"
           class="collab__link btn"
           href="https://opensea.io/collection/boldpoint"
         >
           <img
             class="collab__btnIcon btn__icon btn__icon--left"
-            src="/icons/ornament.png"
+            src="/icons/ornament.svg"
             alt="ornament"
           >
 
@@ -115,7 +116,7 @@
 
           <img
             class="collab__btnIcon btn__icon btn__icon--right"
-            src="/icons/ornament.png"
+            src="/icons/ornament.svg"
             alt="ornament"
           >
         </a>
@@ -151,6 +152,8 @@ export default {
   }
 
   &__topDescr {
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 78px;
@@ -169,30 +172,76 @@ export default {
 
   &__descrBox {
     padding: 28px 4px;
-
+    background: #000;
+    position: relative;
     width: 100%;
-    border: 4px solid;
+    border-radius: 12px;
 
-    border-image: linear-gradient(
+    // width: 100%;
+    // border: 4px solid;
+
+    // border-image: linear-gradient(
+    //   180deg,
+    //   #000000 17.86%,
+    //   rgb(255, 201, 119) 99.67%
+    // );
+    // border-image-slice: 1;
+
+    // border-radius: 12px;
+
+    // &--bdrLilac {
+    //   border-image: linear-gradient(
+    //     180deg,
+    //     #000000 17.86%,
+    //     rgb(201, 128, 254) 99.67%
+    //   );
+    //   border-image-slice: 1;
+    // }
+
+    // @media (max-width: $media_xl) {
+    //   padding: 13px 7px;
+    // }
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background: linear-gradient(
       180deg,
       #000000 17.86%,
       rgb(255, 201, 119) 99.67%
     );
-    border-image-slice: 1;
-
+    z-index: -2;
     border-radius: 12px;
-
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: 12px;
+    left: -1px;
+    background: url('/images/bg-border.png');
+    z-index: -1;
+    border-radius: 12px;
+    background-size: 150%;
+  }
     &--bdrLilac {
-      border-image: linear-gradient(
-        180deg,
-        #000000 17.86%,
-        rgb(201, 128, 254) 99.67%
-      );
-      border-image-slice: 1;
-    }
-
-    @media (max-width: $media_xl) {
-      padding: 13px 7px;
+      &:before{
+        background: linear-gradient(
+          180deg,
+          #000000 17.86%,
+          rgb(201, 128, 254) 99.67%
+        );
+      }
+      &::after {
+        top:-2px;
+      }
     }
   }
 

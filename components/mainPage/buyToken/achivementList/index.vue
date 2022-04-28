@@ -67,20 +67,22 @@ export default {
 
 <style lang="scss" scoped>
 .achivement {
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-
-    @media (max-width: $media_md) {
-      grid-template-columns: auto;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // gap: 20px;
     }
   }
 
   &__listItem {
     padding: 0 8px 92px 8px;
 
-    border-right: 1px solid rgba(88, 88, 88, 0.5);
+    &__listItem {
+      // max-width: 350px;
+      padding: 0 8px 92px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
     // @media (max-width: $media_xl) {
     //   padding-bottom: 12px;
@@ -121,8 +123,10 @@ export default {
     @media (max-width: $media_md) {
       padding: 37px;
 
-      width: 162px;
-      min-height: 116px;
+    &__title {
+      margin-bottom: 8px;
+      align-items: start;
+      max-width: 260px;
     }
   }
 
