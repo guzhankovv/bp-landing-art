@@ -52,10 +52,10 @@
           </p>
         </div>
 
-        <a class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
+        <a onClick="ym(88590499,'reachGoal','get-inspired'); return true;" class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
           <img
             class="banner__cenerBtnIcon btn__icon btn__icon--left"
-            src="/icons/ornament.png"
+            src="/icons/ornament.svg"
             alt="ornament"
           >
 
@@ -65,7 +65,7 @@
 
           <img
             class="banner__cenerBtnIcon btn__icon btn__icon--right"
-            src="/icons/ornament.png"
+            src="/icons/ornament.svg"
             alt="ornament"
           >
         </a>

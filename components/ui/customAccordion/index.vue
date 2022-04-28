@@ -106,12 +106,12 @@ export default {
 
         opacity: 0;
 
-        transition: opacity 0.5s, max-height 0.5s ease-in;
+        transition: opacity 0.5s ease-out, max-height .3s  cubic-bezier(0, 1, 0, 1);
 
         &_open {
             max-height: 5000px;
 
-            overflow: visible;
+            transition: max-height 1s ease-in;
 
             opacity: 1;
         }

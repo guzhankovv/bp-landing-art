@@ -72,7 +72,7 @@
       <!-- <button class="timeline__btn btn">
         <img
           class="btn__icon btn__icon--left"
-          src="/icons/ornament.png"
+          src="/icons/ornament.svg"
           alt="ornament"
         >
 
@@ -82,7 +82,7 @@
 
         <img
           class="btn__icon btn__icon--right"
-          src="/icons/ornament.png"
+          src="/icons/ornament.svg"
           alt="ornament"
         >
       </button> -->

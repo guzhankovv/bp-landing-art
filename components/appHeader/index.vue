@@ -100,6 +100,7 @@
         </div>
 
         <a
+          onClick="ym(88590499,'reachGoal','joinvrgallery'); return true;"
           class="header__btn"
           href="https://spatial.io/s/Discover-a-new-dimension-Bold-Point-Gallery-6253f98e153bbf000171a699?share=2082928520569155812"
         >
@@ -212,9 +213,9 @@ export default {
   &__center {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    // grid-auto-columns: 1fr;
 
-    max-width: 980px;
+    max-width: fit-content;
     width: 100%;
 
     @media (max-width: $media_lg) {
@@ -308,7 +309,7 @@ export default {
   }
 
   &__linkText {
-    padding: 28px 16px;
+    padding: 28px 35px;
 
     font-weight: 700;
     color: #848B8C;

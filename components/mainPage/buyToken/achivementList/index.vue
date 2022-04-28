@@ -70,12 +70,15 @@ export default {
     &__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      // gap: 20px;
     }
 
     &__listItem {
-      max-width: 350px;
+      // max-width: 350px;
       padding: 0 8px 92px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       border-right: 1px solid rgba(88, 88, 88, 0.5);
 
@@ -118,6 +121,7 @@ export default {
     &__title {
       margin-bottom: 8px;
       align-items: start;
+      max-width: 260px;
     }
 
     &__text {
