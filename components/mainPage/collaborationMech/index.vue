@@ -335,48 +335,10 @@ export default {
   }
 
   &__link {
-    position: relative;
-
     max-width: 278px;
 
     @media (max-width: $media_sm) {
       max-width: 140px;
-    }
-
-    // &::after {
-    //   content: "";
-
-    //   position: absolute;
-    //   top: 150px;
-    //   left: 150px;
-    //   right: 0;
-    //   bottom: 0;
-
-    //   width: 100%;
-    //   height: 2px;
-    //   background: linear-gradient(266.51deg, #555555 0.15%, rgba(103, 103, 103, 0.7) 75.15%, rgba(75, 75, 75, 0) 100.15%);
-
-    //   transform: rotate(180deg);
-    // }
-  }
-
-  &__Line {
-    position: absolute;
-
-    margin-bottom: 150px;
-    width: 530px;
-    height: 20px;
-
-    &--left {
-      top: 10px;
-      left: 10px;
-
-      transform: rotate(180deg);
-    }
-
-    &--right {
-      top: 10px;
-      left: 10px;
     }
   }
 }

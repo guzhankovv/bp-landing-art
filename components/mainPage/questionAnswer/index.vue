@@ -90,122 +90,144 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/scss/styles/variables.scss";
 .question {
-    background-image: url("/images/lilacDotBg.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
+  background-image: url("/images/lilacDotBg.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
 
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
+
+  padding: 0 20px;
 
 // TODO
-    box-shadow: inset 0px -20px 20px 20px var(--bg_main);
+  box-shadow: inset 0px -20px 20px 20px var(--bg_main);
 
-    &::before {
-      content: "";
+  &::before {
+    content: "";
 
-      position: absolute;
-      bottom: 414px;
-      right: -212px;
+    position: absolute;
+    bottom: 414px;
+    right: -212px;
 
-      width: 370px;
-      height: 224px;
-      border-radius: 50%;
-      filter: blur(335px);
+    width: 370px;
+    height: 224px;
+    border-radius: 50%;
+    filter: blur(335px);
 
-      background: rgba(193, 255, 61, 0.48);
-      transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: rgba(193, 255, 61, 0.48);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    @media (max-width: $media_md) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 50px;
+    left: -154px;
+
+    width: 278px;
+    height: 258px;
+    border-radius: 50%;
+    filter: blur(335px);
+
+    background: rgb(166, 61, 255);
+
+    @media (max-width: $media_md) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding-bottom: 220px;
+
+    @media (max-width: $media_xl) {
+      padding-bottom: 110px;
     }
 
-    &::after {
-      content: "";
-
-      position: absolute;
-      bottom: 50px;
-      left: -154px;
-
-      width: 278px;
-      height: 258px;
-      border-radius: 50%;
-      filter: blur(335px);
-
-      background: rgb(166, 61, 255);
+    @media (max-width: $media_md) {
+      padding-bottom: 76px;
     }
+  }
 
-    &__inner {
-        padding-bottom: 220px;
+  &__title {
+    text-align: center;
 
-        @media (max-width: $media_xl) {
-          padding-bottom: 110px;
-        }
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: grid;
+    gap: 20px;
+
+    margin-top: 90px;
+
+    @media (max-width: $media_md) {
+      gap: 12px;
+
+      margin-top: 45px;
     }
+  }
 
-    &__title {
-      text-align: center;
-
+  &__accordion {
+      max-width: 828px;
       margin: 0 auto;
+  }
+
+  &__accordionHeadRow {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__accordionCross {
+      width: 47px;
+      height: 47px;
+
+      @media (max-width: $media_md) {
+        width: 30px;
+        height: 30px;
+      }
+  }
+
+  &__accordionHead {
+    font-family: "Cinzel";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+
+    color: $gold;
+
+    @media (max-width: $media_md) {
+      font-size: 15px;
+      line-height: 20px;
     }
+  }
 
-    &__list {
-        display: grid;
-        gap: 20px;
+  &__accordionBody {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
 
-        margin-top: 90px;
+    opacity: 0.7;
 
-        @media (max-width: $media_xl) {
-          margin-top: 45px;
-        }
+    padding-right: 68px;
+
+    @media (max-width: $media_md) {
+      font-size: 12px;
+      line-height: 18px;
     }
-
-    &__accordion {
-        max-width: 828px;
-        margin: 0 auto;
-    }
-
-    &__accordionHeadRow {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__accordionCross {
-        width: 47px;
-        height: 47px;
-
-        @media (max-width: $media_xl) {
-          width: 23px;
-          height: 23px;
-        }
-    }
-
-    &__accordionHead {
-        font-family: "Cinzel";
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 35px;
-
-        color: $gold;
-
-        @media (max-width: $media_xl) {
-          font-size: 20px;
-        }
-    }
-
-    &__accordionBody {
-        font-family: "Inter";
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 22px;
-
-        opacity: 0.7;
-
-        padding-right: 68px;
-
-        @media (max-width: $media_xl) {
-          font-size: 14px;
-        }
-    }
+  }
 }
 
 .border {
   width: 308px;
+
+  @media (max-width: $media_xl) {
+    width: 182px;
+  }
 }
 </style>
