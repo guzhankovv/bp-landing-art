@@ -312,7 +312,7 @@ export default {
     padding: 28px 35px;
 
     font-weight: 700;
-    color: #848B8C;
+    color: rgba(255, 255, 255, 0.4);
 
     transition: 0.3s;
 

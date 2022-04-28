@@ -6,19 +6,21 @@
         :key="index"
         class="achivement__listItem"
       >
-        <a
-          class="achivement__link"
-          :href="item.link"
-          target="_blank"
-        >
-          <img
-            class="achivement__logo"
-            :src="item.logo"
-            :alt="item.title"
+        <div class="achivement__listItem-inner">
+          <a
+            class="achivement__link"
+            :href="item.link"
+            target="_blank"
           >
-        </a>
+            <div class="achivement__logoInner">
+              <img
+                class="achivement__logo"
+                :src="item.logo"
+                :alt="item.title"
+              >
+            </div>
+          </a>
 
-        <div class="achivement__text">
           <h1 class="achivement__title text_cin_24">
             {{ item.title }}
           </h1>
@@ -73,72 +75,64 @@ export default {
       // gap: 20px;
     }
 
-  &__listItem {
-    padding: 0 8px 92px 8px;
-
     &__listItem {
-      // max-width: 350px;
       padding: 0 8px 92px 8px;
+      width: 100%;
+      max-width: 350px;
+
+      border-right: 1px solid rgba(88, 88, 88, 0.5);
+
+        &-inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 260px;
+          margin: 0 auto;
+        }
+        @media (max-width: $media_xl) {
+          padding-bottom: 12px;
+        }
+    }
+
+    &__logoInner {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
 
-    // @media (max-width: $media_xl) {
-    //   padding-bottom: 12px;
-    // }
+      margin-bottom: 24px;
 
-    @media (max-width: $media_md) {
-      border-bottom: 1px solid rgba(88, 88, 88, 0.5);
-      border-right: none;
-      padding-bottom: 21px;
+      width: 260px;
+      height: 173px;
 
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 17px;
-    }
-  }
+      border: 2px solid $gold;
+      border-radius: 12px;
 
-  &__logo {
-    object-fit: contain;
+      box-shadow: -24px 24px 64px rgba(191, 102, 255, 0.28);
 
-    min-height: 173px;
-    max-width: 260px;
+      @media (max-width: $media_xl) {
+        width: 222px;
+        height: 128px;
+      }
 
-    padding: 52px 50px;
+      transition: 0.3s;
 
-    margin-bottom: 24px;
-
-    border: 2px solid $gold;
-    border-radius: 12px;
-
-    box-shadow: -24px 24px 64px rgba(191, 102, 255, 0.28);
-
-    transition: 0.3s;
-
-    &:hover {
-      box-shadow: 20px -19px 64px rgb(191 102 255 / 28%);
+      &:hover {
+        box-shadow: 20px -19px 64px rgb(191 102 255 / 28%);
+      }
     }
 
-    @media (max-width: $media_md) {
-      padding: 37px;
+    &__logo {
+      margin: 50px auto;
+    }
 
     &__title {
+      display: inline-block;
       margin-bottom: 8px;
       align-items: start;
+    }
+
+    &__text {
       max-width: 260px;
     }
-  }
-
-  &__title {
-    margin-bottom: 8px;
-    align-items: start;
-  }
-
-  &__text {
-    max-width: 260px;
-  }
 }
-}
-}
-
 </style>
