@@ -4,9 +4,8 @@
     class="banner"
   >
     <div class="banner__inner">
-      <div class="banner__version">
-        <DeskopVersion />
-      </div>
+      <DeskopVersion class="banner__version" />
+
       <div class="banner__top txGreyMed">
         <a
           class="banner__link"

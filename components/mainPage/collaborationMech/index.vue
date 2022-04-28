@@ -64,7 +64,7 @@
 
             <img
               class="collab__bottomOrnament"
-              src="/icons/ornamentSmall.svg"
+              src="/icons/ornamentSmall.png"
               alt="ornament"
             >
 
@@ -89,7 +89,7 @@
 
             <img
               class="collab__bottomOrnament"
-              src="/icons/ornamentSmall.svg"
+              src="/icons/ornamentSmall.png"
               alt="ornament"
             >
 

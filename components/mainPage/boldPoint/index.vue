@@ -216,7 +216,7 @@ export default {
       width: 35px;
       height: 35px;
 
-      background: url('/icons/ornamentSmall.svg') no-repeat center center/contain;
+      background: url('/icons/ornamentSmall.png') no-repeat center center/contain;
 
       @media (max-width: $media_md) {
         top: 4px;

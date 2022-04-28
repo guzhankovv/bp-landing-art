@@ -23,7 +23,7 @@
           <template slot="headIcon">
             <img
               class="question__accordionCross"
-              src="/icons/crossPlus.svg"
+              src="/icons/cross.png"
               alt="cross"
             >
           </template>

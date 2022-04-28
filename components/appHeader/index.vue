@@ -109,11 +109,17 @@
           </p>
         </a>
 
-        <button class="header__menuBtn">
+        <button
+          class="header__menuBtn"
+          :class="{
+            'header__menuBtn_active' : burgerState
+          }"
+          @click="setBurgerState"
+        >
           <img
-            class="header__menu"
-            src="/icons/menu.png"
-            alt="menu"
+            class="header__menuIcon"
+            :src="burgerState ? '/icons/cross.png' : '/icons/menu.png'"
+            alt="cross"
           >
         </button>
       </div>
@@ -123,16 +129,28 @@
       class="header__fake"
       aria-hidden="true"
     />
+
+    <BurgerMenu
+      :is-visible="burgerState"
+      :active-link="activeLink"
+      @setBurgerState="setBurgerState"
+    />
   </header>
 </template>
 
 <script>
+import BurgerMenu from '@/components/burgerMenu/index.vue'
+
 export default {
   name: 'AppHeader',
+  components: {
+    BurgerMenu
+  },
 
   data () {
     return {
-      activeLink: 'main'
+      activeLink: 'main',
+      burgerState: false
     }
   },
 
@@ -165,7 +183,7 @@ export default {
         })
       }
       const observer = new IntersectionObserver(callback, {
-        threshold: 0.6
+        threshold: [0.6, 0.2]
       })
       const sectionsList = []
 
@@ -177,6 +195,16 @@ export default {
         const target = document.querySelector(`${element}`)
         observer.observe(target)
       })
+    },
+
+    setBurgerState () {
+      this.burgerState = !this.burgerState
+
+      if (this.burgerState) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = 'auto'
+      }
     }
   }
 }
@@ -205,7 +233,7 @@ export default {
     align-items: center;
     gap: 10px;
 
-    @media (max-width: $media_lg) {
+    @media (max-width: $media_xl) {
       padding: 12px 20px;
     }
   }
@@ -213,25 +241,22 @@ export default {
   &__center {
     display: grid;
     grid-auto-flow: column;
-    // grid-auto-columns: 1fr;
 
     max-width: fit-content;
     width: 100%;
 
-    @media (max-width: $media_lg) {
+    @media (max-width: $media_xl) {
       display: none;
     }
   }
 
   &__logoLink {
-    flex-shrink: 0;
-
     display: block;
 
     width: 194px;
     height: 23px;
 
-    @media (max-width: $media_lg) {
+    @media (max-width: $media_xl) {
       width: 32px;
     }
 
@@ -316,6 +341,12 @@ export default {
 
     transition: 0.3s;
 
+    @media (max-width: 1300px) {
+      padding: 26px 30px;
+
+      font-size: 12px;
+    }
+
     &:hover {
       color: var(--bd_secondary);
     }
@@ -344,7 +375,7 @@ export default {
     object-fit: contain;
     width: 100%;
 
-    @media (max-width: $media_lg) {
+    @media (max-width: $media_xl) {
       display: none;
     }
   }
@@ -353,7 +384,7 @@ export default {
     width: 32px;
     height: 18px;
 
-    @media (min-width: $media_lg) {
+    @media (min-width: $media_xl) {
       display: none;
     }
   }
@@ -384,7 +415,7 @@ export default {
       box-shadow: 2px 6px 20px 0px rgb(255 255 255 / 83%);
     }
 
-    @media (max-width: $media_lg) {
+    @media (max-width: $media_xl) {
       padding: 2px 8px;
 
       width: 40%;
@@ -395,14 +426,22 @@ export default {
   }
 
   &__menuBtn {
-    @media (min-width: $media_lg) {
+    transition: 0.3s;
+
+    @media (min-width: $media_xl) {
       display: none;
+    }
+
+    &_active {
+      transform: rotate(90deg);
     }
   }
 
-  &__menu {
+  &__menuIcon {
     width: 27px;
-    height: 16px;
+    height: 27px;
+
+    object-fit: contain;
   }
 
   &__fake {
