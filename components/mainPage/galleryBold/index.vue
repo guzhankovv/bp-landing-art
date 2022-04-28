@@ -8,7 +8,7 @@
       <div class="gallery__textRow">
         <img
           class="gallery__ornament gallery__ornament--left"
-          src="/icons/ornamentSmall.png"
+          src="/icons/ornamentSmall.svg"
           alt="ornament"
         >
 
@@ -18,7 +18,7 @@
 
         <img
           class="gallery__ornament gallery__ornament--right"
-          src="/icons/ornamentSmall.png"
+          src="/icons/ornamentSmall.svg"
           alt="ornament"
         >
       </div>
@@ -134,8 +134,10 @@ export default {
   }
 
   &__ornament {
+    position: relative;
     width: 24px;
     height: 35px;
+    top: -3px;
 
     object-fit: contain;
 

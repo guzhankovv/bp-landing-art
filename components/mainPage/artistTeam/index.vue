@@ -71,7 +71,7 @@ export default {
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -3px;
       left: 0;
 
       display: block;
@@ -79,7 +79,7 @@ export default {
       width: 35px;
       height: 35px;
 
-      background: url('/icons/ornamentSmall.png') no-repeat center;
+      background: url('/icons/ornamentSmall.svg') no-repeat center;
 
       transform: rotate(-90deg);
 
