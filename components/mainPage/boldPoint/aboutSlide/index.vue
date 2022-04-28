@@ -35,6 +35,10 @@ export default {
 
     border-radius: 12px;
 
+    @media (max-width: 1300px) {
+      width: calc(100vw - 40px);
+    }
+
     &::before{
       content: "";
       position: absolute;

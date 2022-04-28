@@ -168,7 +168,7 @@ export default {
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
   @media (max-width: $media_md) {
-    padding: 0px 41px 100px;
+    padding: 0px 16px 100px;
   }
 
   &__title {
@@ -181,7 +181,10 @@ export default {
 
     @media (max-width: $media_md) {
       margin: 0 auto 16px;
-      padding: 0 30px 10px;
+      padding: 0 30px;
+
+      font-size: 24px;
+      line-height: 32px;
     }
   }
 
@@ -192,15 +195,20 @@ export default {
     justify-content: center;
 
     margin: 0 auto 16px;
+    padding: 0 60px;
 
     width: fit-content;
+
+    @media (max-width: $media_xl) {
+      margin-bottom: 10px;
+      padding: 0 19px;
+    }
 
     &::before,
     &::after {
       content: "";
 
       position: absolute;
-      top: 0;
       top: -3px;
 
       display: block;
@@ -210,40 +218,22 @@ export default {
 
       background: url('/icons/ornamentSmall.svg') no-repeat center center/contain;
 
-      @media (max-width: $media_sm) {
-        width: 20px;
-        height: 20px;
+      @media (max-width: $media_md) {
+        top: 4px;
+
+        width: 15px;
+        height: 11px;
       }
-
-      // @media (max-width: $media_xl) {
-      //   width: 26px;
-      //   height: 26px;
-
-      //   top: -4px;
-      // }
     }
 
     &::after {
-      right: -55px;
-
+      right: 0;
       transform: rotate(90deg);
-
-      @media (max-width: $media_xl) {
-      right: -38px;
-    }
     }
 
     &::before {
-      left: -55px;
+      left: 0;
       transform: rotate(-90deg);
-
-      @media (max-width: $media_xl) {
-      left: -38px;
-    }
-    }
-
-    @media (max-width: $media_xl) {
-      margin-bottom: 45px;
     }
   }
 
@@ -267,7 +257,7 @@ export default {
 
     margin: 0 auto;
 
-    width: 852px;
+    max-width: 852px;
   }
 
   &__leftText {
@@ -276,7 +266,7 @@ export default {
     @media (max-width: 1300px) {
       padding-top: 16px;
 
-      width: 852px;
+      max-width: 852px;
 
       text-align: center;
     }
@@ -288,12 +278,24 @@ export default {
     @media (max-width: $media_xl) {
       margin-bottom: 10px;
     }
+
+    @media (max-width: $media_md) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &__text {
+    @media (max-width: $media_md) {
+      font-size: 10px;
+      line-height: 18px;
+    }
   }
 
   &__aboutSlider {
+    @media (max-width: 1300px) {
+      grid-row: 1;
+    }
   }
 }
 </style>
@@ -316,12 +318,16 @@ export default {
     @media (max-width: 1300px) {
       padding: 20px 0 50px;
 
-      width: 852px;
+      width: calc(100vw - 40px);
     }
   }
 
   &__slide {
     width: 852px;
+
+    @media (max-width: 1300px) {
+      width: calc(100vw - 40px);
+    }
   }
 
   & .swiper-slide-active {
@@ -343,6 +349,18 @@ export default {
     max-width: 852px;
     width: 100% !important;
     height: 22px;
+
+    @media (max-width: 1300px) {
+      left: 0 !important;
+
+      width: calc(100vw - 40px) !important;
+
+      transform: translateX(0) !important;
+    }
+
+    @media (max-width: $media_md) {
+      bottom: 13px !important;
+    }
   }
 
   &__controls {
@@ -399,6 +417,11 @@ export default {
     filter: grayscale(1);
 
     transition: 0.3s;
+
+    @media (max-width: $media_md) {
+      width: 7px;
+      height: 7px;
+    }
 
     &--active {
       filter: grayscale(0);
