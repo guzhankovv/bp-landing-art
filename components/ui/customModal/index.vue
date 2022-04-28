@@ -7,25 +7,24 @@
       class="customModal__container"
       :class="{ customModal__container_active: modalState }"
     >
+      <button
+        class="customModal__close"
+        @click="closeModal"
+      >
+        Close
+
+        <img
+          class="customModal__closeIcon"
+          src="/icons/closeIcon.png"
+          alt="cross"
+        >
+      </button>
       <div class="customModal__inner">
         <div class="customModal__content">
           <slot name="modalBody" />
         </div>
       </div>
     </div>
-
-    <button
-      class="customModal__close"
-      @click="closeModal"
-    >
-      Close
-
-      <img
-        class="customModal__closeIcon"
-        src="/icons/closeIcon.png"
-        alt="cross"
-      >
-    </button>
 
     <div
       class="customModal__backdrop"
@@ -114,7 +113,7 @@ export default {
 
     &__inner {
         margin: 0 20px;
-        padding: 50px 0;
+        padding: 65px 0;
     }
 
     &__content {
@@ -129,9 +128,9 @@ export default {
     }
 
     &__close {
-        position: fixed;
-        top: 10px;
-        right: 10px;
+        position: absolute;
+        top: 0px;
+        right: -160px;
 
         display: flex;
         align-items: center;
