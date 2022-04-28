@@ -60,10 +60,21 @@ export default {
   background-image: url("/images/welcomBg.png");
   background-repeat: no-repeat;
   background-position-x: center;
+
   max-width: 1920px;
   margin: 0 auto;
 
   margin-bottom: 97px;
+
+  padding: 0 20px;
+
+  @media (max-width: $media_md) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $media_sm) {
+    margin-bottom: 70px;
+  }
 
   &__inner {
     padding-top: 120px;
@@ -72,6 +83,16 @@ export default {
     @media (max-width: $media_xl) {
       padding-bottom: 223px;
     }
+
+    @media (max-width: $media_md) {
+      padding-top: 100px;
+      padding-bottom: 103px;
+    }
+
+    @media (max-width: $media_sm) {
+      padding-top: 76px;
+      padding-bottom: 72px;
+    }
   }
 
   &__title {
@@ -79,8 +100,20 @@ export default {
 
     margin-bottom: 44px;
 
-    @media (max-width: $media_xl) {
-      margin-bottom: 25px;
+    @media (max-width: $media_sm) {
+      margin-bottom: 13px;
+
+      border-bottom-style: solid;
+      border-width: 2px;
+      border-image-slice: 1;
+
+      border-image-source: radial-gradient(
+        circle,
+        rgba(201, 128, 254, 0.6) 30%,
+        rgba(201, 128, 254, 0) 100%
+      );
+
+      padding-bottom: 8px;
     }
   }
 
@@ -90,6 +123,14 @@ export default {
     gap: 20px;
 
     margin-bottom: 40px;
+
+    align-items: center;
+
+    @media (max-width: $media_sm) {
+      gap: 10px;
+
+      margin-bottom: 33px;
+    }
   }
 
   &__ornament {
@@ -107,26 +148,39 @@ export default {
     &--right {
       transform: rotate(90deg);
     }
+
+    @media (max-width: $media_sm) {
+      width: 15px;
+      height: 11px;
+    }
   }
 
   &__text {
     text-align: center;
 
     color: $white;
+
+    @media (max-width: $media_sm) {
+      opacity: 0.7;
+    }
   }
 
   &__textGold {
     text-align: center;
 
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
 
-    @media (max-width: $media_xl) {
-      margin-bottom: 28px;
+    @media (max-width: $media_sm) {
+      max-width: 272px;
     }
   }
 }
 
 .btn {
   max-width: 377px;
+
+  @media (max-width: $media_sm) {
+    max-width: 183px;
+  }
 }
 </style>

@@ -79,8 +79,8 @@ export default {
         rgba(201, 128, 254, 0) 100%
     );
 
-    @media (max-width: $media_xl) {
-        padding-bottom: 12px;
+    @media (max-width: $media_md) {
+        padding-bottom: 17px;
     }
 
     &__head {
