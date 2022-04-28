@@ -287,6 +287,11 @@ top: -70px;
 
     max-width: 958px;
 
+    @media (max-width: $media_lg) {
+      font-size: 20px;
+      line-height: 34px;
+    }
+
     @media (max-width: $media_sm) {
       font-size: 11px;
       line-height: 18px;
@@ -298,10 +303,6 @@ top: -70px;
       margin-bottom: 107px;
     }
 
-  @media (max-width: $media_lg) {
-      font-size: 20px;
-      line-height: 34px;
-    }
   }
 
   &__txTop {

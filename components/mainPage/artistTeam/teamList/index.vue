@@ -186,8 +186,20 @@ export default {
 .team {
   max-width: 1703px;
 
+  @media (max-width: $media_lg) {
+    display: flex;
+
+    padding: 20px 0;
+
+    overflow: auto;
+  }
+
   &__list {
     display: flex;
+
+    @media (max-width: $media_lg) {
+      gap: 30px;
+    }
 
     &_big {
       justify-content: space-between;
