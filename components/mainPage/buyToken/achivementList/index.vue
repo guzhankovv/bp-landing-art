@@ -72,7 +72,6 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       // gap: 20px;
     }
-  }
 
   &__listItem {
     padding: 0 8px 92px 8px;
@@ -139,4 +138,7 @@ export default {
     max-width: 260px;
   }
 }
+}
+}
+
 </style>
