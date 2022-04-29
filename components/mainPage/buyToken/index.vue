@@ -66,6 +66,10 @@ export default {
     rgba(201, 128, 254, 0) 0%
   );
 
+  @media (max-width: $media_md) {
+    padding: 0;
+  }
+
   &__title {
     max-width: 600px;
 
@@ -104,8 +108,12 @@ export default {
     grid-template-columns: auto auto;
     gap: 20px;
 
-    @media (max-width: $media_xl) {
+    @media (max-width: $media_md) {
       gap: 10px;
+    }
+
+    @media (max-width: $media_sm) {
+      gap: 0;
     }
   }
 
@@ -140,11 +148,14 @@ export default {
     @media (max-width: $media_md) {
       font-size: 26px;
       line-height: 32px;
+      padding: 0 20px 0 20px;
     }
 
     @media (max-width: $media_sm) {
       font-size: 16px;
       line-height: 22px;
+
+      margin: 45px 0 139px 0;
     }
   }
 
@@ -155,6 +166,12 @@ export default {
     top: 30px;
 
     margin-top: -56px;
+
+    @media (max-width: $media_sm) {
+      top: -49px;
+
+      max-width: 220px;
+    }
   }
 }
 </style>

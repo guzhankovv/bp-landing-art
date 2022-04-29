@@ -82,17 +82,17 @@ export default {
 
     border-right: 1px solid rgba(88, 88, 88, 0.5);
 
-    // @media (max-width: $media_xl) {
-    //   padding-bottom: 12px;
-    // }
+    @media (max-width: $media_lg) {
+      padding-bottom: 12px;
+    }
 
     @media (max-width: $media_md) {
       border-bottom: 1px solid rgba(88, 88, 88, 0.5);
       border-right: none;
-      padding-bottom: 21px;
+      padding: 0 9px 21px 20px;
 
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 162px auto;
       gap: 17px;
     }
   }
@@ -123,16 +123,30 @@ export default {
 
       width: 162px;
       min-height: 116px;
+
+      margin-bottom: 0;
     }
   }
 
   &__title {
     margin-bottom: 8px;
     align-items: start;
+
+    @media (max-width: $media_sm) {
+      max-width: 166px;
+    }
   }
 
   &__text {
     max-width: 260px;
+
+    @media (max-width: $media_md) {
+      max-width: 425px;
+    }
+
+    @media (max-width: $media_sm) {
+      max-width: 211px;
+    }
   }
 }
 </style>

@@ -183,7 +183,6 @@ top: -70px;
       background: url("/images/bgBorder.png");
 
       @media (max-width: $media_md) {
-        left: 45px;
         bottom: -9px;
 
         height: 30px;
@@ -306,17 +305,22 @@ top: -70px;
   }
 
   &__txTop {
+    margin: 0 auto;
+
     @media (max-width: $media_sm) {
-    margin: 0 auto 20px;
+      margin: 0 auto 20px;
 
       max-width: 288px;
     }
 
-    margin: 0 auto;
   }
 
   &__centerLink {
     max-width: 365px;
+
+  // @media (max-width: $media_lg) {
+    //   width: 182px;
+    // }
 
     @media (max-width: $media_sm) {
       width: 182px;

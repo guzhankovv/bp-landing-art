@@ -113,9 +113,14 @@
   line-height: 24px;
   color: var(--tx_tertiary);
 
-  @media (max-width: $media_xl) {
+  @media (max-width: $media_lg) {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  @media (max-width: $media_sm) {
+    font-size: 10px;
+    line-height: 18px;
   }
 }
 
