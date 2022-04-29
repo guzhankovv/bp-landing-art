@@ -72,7 +72,7 @@
       <!-- <button class="timeline__btn btn">
         <img
           class="btn__icon btn__icon--left"
-          src="/icons/ornament.svg"
+          src="/icons/ornament.png"
           alt="ornament"
         >
 
@@ -82,7 +82,7 @@
 
         <img
           class="btn__icon btn__icon--right"
-          src="/icons/ornament.svg"
+          src="/icons/ornament.png"
           alt="ornament"
         >
       </button> -->
@@ -197,7 +197,6 @@ export default {
 
 <style lang="scss" scoped>
 .mainTimeline {
-//   display: none;
   padding: 60px 0 150px;
 
   background: url("/images/mainTimeline/bgGame.jpg") no-repeat;
@@ -205,19 +204,33 @@ export default {
 
   box-shadow: inset 0px 0px 20px 11px var(--bg_main);
 
+  @media (max-width: $media_md) {
+    overflow: hidden;
+  }
+
   &__title {
     margin: 0 auto 48px;
     padding: 0 100px 20px;
 
     width: fit-content;
+
+    @media (max-width: $media_md) {
+      margin-bottom: 16px;
+      padding: 0 0 10px;
+    }
   }
 
   &__topTx {
     position: relative;
 
     margin: 0 auto 85px;
+    padding: 0 35px;
 
     width: fit-content;
+
+    @media (max-width: $media_md) {
+      margin-bottom: 60px;
+    }
 
     &::before,
     &::after {
@@ -232,18 +245,23 @@ export default {
       width: 35px;
       height: 35px;
 
-      background: url("/icons/ornamentSmall.png") no-repeat center
-        center/contain;
+      background: url("/icons/ornamentSmall.png") no-repeat center center/contain;
+
+      @media (max-width: $media_md) {
+        top: -1px;
+
+        height: 23px
+      }
     }
 
     &::after {
-      right: -55px;
+      right: 0;
 
       transform: rotate(90deg);
     }
 
     &::before {
-      left: -55px;
+      left: 0;
 
       transform: rotate(-90deg);
     }
@@ -279,10 +297,14 @@ export default {
 
     position: relative;
 
-    margin-bottom: 220px;
+    /* TODO */
+    /* margin-bottom: 220px; */
 
     &::before {
       content: "";
+      /* TODO */
+      display: none;
+
       position: absolute;
       top: 59%;
       left: calc(50% - 2px);
@@ -312,6 +334,8 @@ export default {
   }
 
   &__row {
+    z-index: 1;
+
     display: flex;
     justify-content: center;
 
@@ -358,6 +382,10 @@ export default {
     @media (max-width: 1280px) {
       width: auto;
     }
+
+    @media (max-width: $media_md) {
+      margin-top: 0;
+    }
   }
 
   &__wrap {
@@ -386,6 +414,10 @@ export default {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @media (max-width: $media_md) {
+      font-size: 20px;
+    }
   }
 
   &__line {
@@ -471,6 +503,10 @@ export default {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--title_secondary);
+
+    @media (max-width: $media_md) {
+      font-size: 20px;
+    }
   }
 }
 

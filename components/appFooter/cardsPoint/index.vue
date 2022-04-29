@@ -79,7 +79,7 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
-    // padding: 0 15px 0 15px;
+    overflow: auto;
   }
 
   &__listItem {

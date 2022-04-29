@@ -100,8 +100,9 @@ export default {
   &__logo {
     object-fit: contain;
 
-    min-height: 173px;
     max-width: 260px;
+    width: 100%;
+    min-height: 173px;
 
     padding: 52px 50px;
 

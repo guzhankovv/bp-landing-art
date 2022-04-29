@@ -106,7 +106,7 @@
         >
           <img
             class="collab__btnIcon btn__icon btn__icon--left"
-            src="/icons/ornament.svg"
+            src="/icons/ornament.png"
             alt="ornament"
           >
 
@@ -116,7 +116,7 @@
 
           <img
             class="collab__btnIcon btn__icon btn__icon--right"
-            src="/icons/ornament.svg"
+            src="/icons/ornament.png"
             alt="ornament"
           >
         </a>

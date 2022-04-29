@@ -31,7 +31,7 @@
           >
             <img
               class="btn__icon btn__icon--left"
-              src="/icons/ornament.svg"
+              src="/icons/ornament.png"
               alt="ornament"
             >
 
@@ -41,7 +41,7 @@
 
             <img
               class="btn__icon btn__icon--right"
-              src="/icons/ornament.svg"
+              src="/icons/ornament.png"
               alt="ornament"
             >
           </a>
@@ -107,6 +107,10 @@ export default {
 .timelineCards {
   width: 405px;
 
+  @media (max-width: $media_md) {
+    width: 280px;
+  }
+
   &__slide {
     padding: 3px;
 
@@ -118,6 +122,10 @@ export default {
     border-radius: 12px;
 
     background: url('/images/mainTimeline/bg.jpg') no-repeat 50% 50%/cover;
+
+    @media (max-width: $media_md) {
+      height: 425px;
+    }
   }
 
   &__img {
@@ -125,6 +133,10 @@ export default {
     height: 403px;
 
     border-radius: 12px;
+
+    @media (max-width: $media_md) {
+      height: 300px;
+    }
   }
 
   &__info{

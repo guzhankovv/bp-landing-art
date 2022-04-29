@@ -64,7 +64,8 @@ export default {
     max-width: 1336px;
 
     @media (max-width: $media_md) {
-      padding: 0 30px;
+      margin-bottom: 36px;
+      padding: 0 37px;
     }
 
     &::before,
@@ -79,9 +80,15 @@ export default {
       width: 35px;
       height: 35px;
 
-      background: url('/icons/ornamentSmall.png') no-repeat center;
+      background: url('/icons/ornamentSmall.png') no-repeat center center/contain;
 
       transform: rotate(-90deg);
+
+      @media (max-width: $media_md) {
+        top: -1px;
+
+        height: 23px
+      }
     }
 
     &::after {
