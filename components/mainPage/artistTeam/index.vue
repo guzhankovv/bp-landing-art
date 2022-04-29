@@ -82,13 +82,6 @@ export default {
       background: url('/icons/ornamentSmall.png') no-repeat center;
 
       transform: rotate(-90deg);
-
-      // @media (max-width: $media_md) {
-      //   width: 15px;
-      //   height: 11px;
-
-      //   object-fit: contain;
-      // }
     }
 
     &::after {
@@ -118,6 +111,8 @@ export default {
     letter-spacing: 0.04em;
 
     @media (max-width: $media_md) {
+      margin-bottom: 40px;
+
       font-size: 14px;
       line-height: 22px;
     }

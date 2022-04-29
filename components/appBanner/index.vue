@@ -122,8 +122,8 @@ export default {
 
 <style lang="scss" scoped>
 .banner {
-position: relative;
-top: -70px;
+  position: relative;
+  top: -70px;
 
   margin: 0 auto;
 
@@ -134,9 +134,15 @@ top: -70px;
   background-repeat: no-repeat;
   background-position-x: right;
 
-    @media (max-width: $media_md) {
-      height: 567px;
-    }
+  @media (max-width: $media_md) {
+    height: 567px;
+
+    background-size: 150vw;
+  }
+
+  @media (max-width: $media_sm) {
+    background-size: auto 576px;
+  }
 
   &__inner {
     position: relative;
@@ -163,7 +169,11 @@ top: -70px;
           #000000 17.86%,
           rgba(0, 0, 0, 0.58) 52.83%,
           rgba(30, 30, 30, 0.26) 99.67%
-        );;
+      );
+
+      @media (max-width: $media_md) {
+        background: rgba(0, 0, 0, 0.55);
+      }
     }
 
     &::after {
@@ -182,7 +192,6 @@ top: -70px;
       background: url("/images/bgBorder.png");
 
       @media (max-width: $media_md) {
-        left: 45px;
         bottom: -9px;
 
         height: 30px;
@@ -209,7 +218,7 @@ top: -70px;
 
     margin: 115px 0 100px 0;
 
-    @media (max-width: $media_sm) {
+    @media (max-width: $media_md) {
       display: none;
     }
   }
@@ -251,7 +260,7 @@ top: -70px;
 
     margin: 0 auto;
 
-    @media (max-width: $media_sm) {
+    @media (max-width: $media_md) {
       margin-top: 112px;
     }
   }
@@ -267,6 +276,8 @@ top: -70px;
 
     @media (max-width: $media_md) {
       margin-bottom: 30px;
+
+      width: fit-content;
     }
   }
 
@@ -305,13 +316,13 @@ top: -70px;
   }
 
   &__txTop {
+    margin: 0 auto;
+
     @media (max-width: $media_sm) {
-    margin: 0 auto 20px;
+      margin: 0 auto 20px;
 
       max-width: 288px;
     }
-
-    margin: 0 auto;
   }
 
   &__centerLink {
@@ -387,6 +398,12 @@ top: -70px;
     background: url('/images/mainBanner/clouds.png') no-repeat 50% bottom/cover;
 
     animation: clouds-move 30s linear infinite;
+
+    @media (max-width: $media_md) {
+      background: url('/images/mainBanner/clouds.png') no-repeat 65% bottom/cover;
+
+      animation: clouds-move-mob 30s linear infinite;
+    }
   }
 
   &__person {
@@ -399,8 +416,22 @@ top: -70px;
     height: 100%;
 
     background: url('/images/mainBanner/character.png') no-repeat 50% bottom/contain;
+
+    @media (max-width: $media-sm) {
+      background-size: 870px;
+      background-position-x: -110px;
+    }
   }
 
+}
+
+@keyframes clouds-move-mob {
+  0%, 100% {
+    background-position-x: 65%;
+  }
+  50% {
+    background-position-x: 75%;
+  }
 }
 
 @keyframes clouds-move {

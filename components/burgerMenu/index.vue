@@ -199,8 +199,14 @@ export default {
     max-width: 100vw;
     height: 100%;
 
+    overflow: auto;
+
     box-shadow: -23px 0px 20px 0px rgb(0 0 0 / 66%);
     background: linear-gradient(0deg, rgba(0,0,0,0.8561799719887955) 0%, rgba(255,255,255,0) 34%, rgba(179,179,179,0) 64%, rgba(0,0,0,0.8253676470588236) 100%);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__list {

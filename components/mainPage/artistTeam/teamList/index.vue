@@ -186,6 +186,10 @@ export default {
 .team {
   max-width: 1703px;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   @media (max-width: $media_lg) {
     display: flex;
 

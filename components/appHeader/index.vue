@@ -446,6 +446,10 @@ export default {
 
   &__fake {
     height: 60px;
+
+    @media (max-width: $media_md) {
+        height: 50px;
+    }
   }
 }
 </style>

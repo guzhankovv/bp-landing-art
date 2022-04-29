@@ -132,10 +132,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/styles/variables.scss";
 .collab {
-  max-width: 1920px;
   margin: 0 auto;
+  max-width: 1920px;
 
   &__inner {
     margin: 0 auto;
@@ -145,134 +144,98 @@ export default {
     margin: 0 auto;
 
     max-width: 1260px;
-    color: $lilac;
 
     text-align: center;
     letter-spacing: 0.04em;
+    color: $lilac;
   }
 
   &__topDescr {
-    position: relative;
-    z-index: 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 78px;
+    grid-template-columns: repeat(3, minmax(160px, 490px));
+    justify-content: space-between;
+    gap: 16px;
 
     margin: 88px auto 0;
     padding: 0 12px;
 
     max-width: 1620px;
 
-    @media (max-width: $media_md) {
-      grid-template-columns: 332px;
-      margin-top: 30px;
+    @media (max-width: $media_lg) {
+      display: flex;
+      flex-wrap: wrap;
       gap: 10px;
     }
   }
 
   &__descrBox {
-    padding: 28px 4px;
-    background: #000;
-    position: relative;
-    width: 100%;
+    padding: 4px;
+
     border-radius: 12px;
 
-    // width: 100%;
-    // border: 4px solid;
+    background: url('/images/bg-border.png'),
+      linear-gradient(180deg,#000 17.86%,#ffc977 99.67%);
 
-    // border-image: linear-gradient(
-    //   180deg,
-    //   #000000 17.86%,
-    //   rgb(255, 201, 119) 99.67%
-    // );
-    // border-image-slice: 1;
+    @media (max-width: $media_lg) {
+      width: calc(50% - 5px);
+    }
 
-    // border-radius: 12px;
-
-    // &--bdrLilac {
-    //   border-image: linear-gradient(
-    //     180deg,
-    //     #000000 17.86%,
-    //     rgb(201, 128, 254) 99.67%
-    //   );
-    //   border-image-slice: 1;
-    // }
-
-    // @media (max-width: $media_xl) {
-    //   padding: 13px 7px;
-    // }
-
-  &::before {
-    display: block;
-    position: absolute;
-    content: '';
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-    top: -1px;
-    left: -1px;
-    background: linear-gradient(
-      180deg,
-      #000000 17.86%,
-      rgb(255, 201, 119) 99.67%
-    );
-    z-index: -2;
-    border-radius: 12px;
-  }
-  &::after {
-    display: block;
-    position: absolute;
-    content: '';
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-    top: 12px;
-    left: -1px;
-    background: url('/images/bg-border.png');
-    z-index: -1;
-    border-radius: 12px;
-    background-size: 150%;
-  }
     &--bdrLilac {
-      &:before{
-        background: linear-gradient(
-          180deg,
-          #000000 17.86%,
-          rgb(201, 128, 254) 99.67%
-        );
-      }
-      &::after {
-        top:-2px;
+      background: url('/images/bg-border.png'),
+      linear-gradient(0deg, #C980FE 0.96%, rgba(201, 128, 254, 0) 86.47%);
+
+      @media (max-width: $media_lg) {
+        order: 3;
+
+        margin: 0 auto;
+
+        min-width: 165px;
       }
     }
   }
 
   &__decrtInner {
-    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    gap: 12px;
+
+    padding: 24px 12px;
+
+    height: 100%;
+
+    border-radius: 12px;
+
+    background: var(--bg_main);
+
+    @media (max-width: $media_md) {
+      padding: 12px 8px;
+    }
   }
 
   &__descrSubtitle {
+    align-self: center;
+
     font-family: "Cinzel";
-    font-weight: 400;
     font-size: 48px;
-    line-height: 24px;
+    line-height: 48px;
 
     text-align: center;
 
-    margin-bottom: 13px;
-
-    white-space: nowrap;
-
-    @media (max-width: $media_sm) {
+    @media (max-width: $media_lg) {
       font-size: 18px;
       line-height: 28px;
-
-      margin-bottom: 10px;
     }
   }
 
   &__descrText {
+    align-self: end;
+
+    max-width: 270px;
+
     text-align: center;
 
-    @media (max-width: $media_sm) {
+    @media (max-width: $media_lg) {
       font-size: 9px;
       line-height: 18px;
     }
@@ -293,7 +256,8 @@ export default {
     background-position-y: -120px;
 
     @media (max-width: $media_sm) {
-      background-position-y: -259px;
+      background-position-y: 93%;
+      background-size: auto 250px;
     }
   }
 
@@ -306,11 +270,6 @@ export default {
       margin-bottom: 16px;
       padding: 46px 15px 0 15px;
     }
-
-    // @media (max-width: $media_xl) {
-    //   margin-bottom: 200px;
-    //   padding-top: 70px;
-    // }
   }
 
   &__bottomTitle {
@@ -321,7 +280,7 @@ export default {
     margin-bottom: 44px;
 
     @media (max-width: $media_xl) {
-      margin-bottom: 0;
+      margin-bottom: 16px;
     }
   }
 
@@ -333,10 +292,6 @@ export default {
     @media (max-width: $media_sm) {
       padding: 0 15px;
     }
-
-    // @media (max-width: $media_xl) {
-    //   margin-bottom: 25px;
-    // }
   }
 
   &__stepText {
@@ -398,6 +353,10 @@ export default {
 
   @media (max-width: $media_xl) {
     padding-bottom: 10px;
+  }
+
+  @media (max-width: $media_md) {
+    width: fit-content;
   }
 }
 
