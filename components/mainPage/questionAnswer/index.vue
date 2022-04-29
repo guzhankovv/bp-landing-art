@@ -209,6 +209,8 @@ export default {
   }
 
   &__accordionBody {
+    padding-right: 68px;
+
     font-family: "Inter";
     font-weight: 400;
     font-size: 15px;
@@ -216,9 +218,9 @@ export default {
 
     opacity: 0.7;
 
-    padding-right: 68px;
-
     @media (max-width: $media_md) {
+      padding: 0;
+
       font-size: 12px;
       line-height: 18px;
     }
