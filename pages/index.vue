@@ -72,6 +72,8 @@ export default {
 
     @media (max-width: $media_md) {
       margin-bottom: 90px;
+
+      overflow: hidden;
     }
   }
 

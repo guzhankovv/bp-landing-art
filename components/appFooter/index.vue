@@ -11,38 +11,42 @@
     <div class="footer__bottom">
       <div class="footer__social">
         <a
-          class="footer__socialLink"
+          class="footer__socialLink footer__socialImg"
           href="https://twitter.com/bold_point"
         >
-          <img
-            class="footer__socialImg"
-            src="/images/social/socialTwitter.png"
-            alt="twitter"
-          >
+          <span>
+            <img
+              src="/images/social/socialTwitter.svg"
+              alt="twitter"
+            >
+          </span>
         </a>
 
-        <a class="footer__socialLink" href="https://t.me/bold_point">
-          <img
-            class="footer__socialImg"
-            src="/images/social/socialTelegramm.png"
-            alt="telegramm"
-          >
+        <a class="footer__socialLink footer__socialImg footer__socialImg-tg " href="https://t.me/bold_point">
+          <span>
+            <img
+              src="/images/social/socialTelegramm.svg"
+              alt="telegramm"
+            >
+          </span>
         </a>
 
-        <a class="footer__socialLink" href="https://yay-games.medium.com/">
-          <img
-            class="footer__socialImg"
-            src="/images/social/socialM.png"
-            alt="medium"
-          >
+        <a class="footer__socialLink footer__socialImg" href="https://yay-games.medium.com/">
+          <span>
+            <img
+              src="/images/social/socialM.svg"
+              alt="medium"
+            >
+          </span>
         </a>
 
-        <a class="footer__socialLink" href="https://discord.com/invite/dNUdTDQr8r">
-          <img
-            class="footer__socialImg"
-            src="/images/social/socialDiscord.png"
-            alt="discord"
-          >
+        <a class="footer__socialLink footer__socialImg" href="https://discord.com/invite/dNUdTDQr8r">
+          <span>
+            <img
+              src="/images/social/socialDiscord.svg"
+              alt="discord"
+            >
+          </span>
         </a>
       </div>
 
@@ -151,8 +155,41 @@ export default {
     &__socialImg {
       position: relative;
       top: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('/images/bg-decor.png') repeat-x 50% 50%/cover;
+      border-radius: 50%;
+      z-index: 1;
 
-      background: rgb(0, 0, 0);
+      &-tg{
+        & span{
+          transform: translateX(-10%);
+        }
+      }
+      & span{
+        transition: .3s;
+        filter: grayscale(1);
+          }
+      &:hover {
+        & span{
+        filter: grayscale(0);
+        }
+      }
+      &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+          left: 1px;
+          right: 1px;
+          top: 1px;
+          bottom: 1px;
+          background: #000;
+          border-radius: inherit;
+      }
     }
 
     &__info {

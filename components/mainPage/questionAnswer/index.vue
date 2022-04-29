@@ -23,7 +23,7 @@
           <template slot="headIcon">
             <img
               class="question__accordionCross"
-              src="/icons/crossPlus.svg"
+              src="/icons/cross.png"
               alt="cross"
             >
           </template>
@@ -183,12 +183,14 @@ export default {
   }
 
   &__accordionCross {
-      width: 47px;
-      height: 47px;
+      width: 30px;
+      height: 30px;
+
+      transform: rotate(45deg);
 
       @media (max-width: $media_md) {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
       }
   }
 

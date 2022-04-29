@@ -6,19 +6,21 @@
         :key="index"
         class="achivement__listItem"
       >
-        <a
-          class="achivement__link"
-          :href="item.link"
-          target="_blank"
-        >
-          <img
-            class="achivement__logo"
-            :src="item.logo"
-            :alt="item.title"
+        <div class="achivement__listItem-inner">
+          <a
+            class="achivement__link"
+            :href="item.link"
+            target="_blank"
           >
-        </a>
+            <div class="achivement__logoInner">
+              <img
+                class="achivement__logo"
+                :src="item.logo"
+                :alt="item.title"
+              >
+            </div>
+          </a>
 
-        <div class="achivement__text">
           <h1 class="achivement__title text_cin_24">
             {{ item.title }}
           </h1>
