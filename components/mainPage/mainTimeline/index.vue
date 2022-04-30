@@ -132,32 +132,32 @@ export default {
               link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052177162627973121'
             }
           ]
+        },
+        {
+          artist: 'nico',
+          date: '30.04.2022',
+          avatar: '/images/avatars/niko.png',
+          nftList: [
+            {
+              name: 'Ancient Runes',
+              prcie: '0.15 ETH 1/1',
+              img: 'ancientRunes.jpg',
+              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052184859209367553'
+            },
+            {
+              name: 'Portal Gate',
+              prcie: '0.09 ETH 1/3',
+              img: 'portalGate.jpg',
+              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052185958720995329'
+            },
+            {
+              name: 'Silver',
+              prcie: '0.07 ETH 1/5',
+              img: 'silver.jpg',
+              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052189257255878657'
+            }
+          ]
         }
-        // {
-        //   artist: 'nico',
-        //   date: '28.04.2022',
-        //   avatar: '/images/avatars/niko.png',
-        //   nftList: [
-        //     {
-        //       name: 'Ancient Runes',
-        //       prcie: '0.15 ETH 1/1',
-        //       img: 'ancientRunes.jpg',
-        //       link: 'https://www.dropbox.com/s/ixol63drugqi2x5/Nico%20-%20BP%20NFT%20-%20Ancient%20Runes.gif?dl=0'
-        //     },
-        //     {
-        //       name: 'Portal Gate',
-        //       prcie: '0.09 ETH 1/3',
-        //       img: 'portalGate.jpg',
-        //       link: 'https://www.dropbox.com/s/0sa8p9mef5ej6v7/Nico%20-%20BP%20NFT%20-%20Portal%20Gate.gif?dl=0'
-        //     },
-        //     {
-        //       name: 'Silver',
-        //       prcie: '0.07 ETH 1/5',
-        //       img: 'silver.jpg',
-        //       link: 'https://www.dropbox.com/s/61kfjftfc8dbs3m/Nico%20-%20BP%20NFT%20-%20Silver.gif?dl=0'
-        //     }
-        //   ]
-        // }
         // {
         //   artist: 'IM BTTG',
         //   date: '01.05.2022',
