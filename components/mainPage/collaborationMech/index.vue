@@ -68,7 +68,7 @@
               alt="ornament"
             >
 
-            <p class="collab__stepText mb13 mt13 p77">
+            <p class="collab__stepText collab__stepText_2 mb13 mt13">
               Follow Bold Point on
               <a
                 class="collab__stepText collab__socialLink"
@@ -106,7 +106,7 @@
         >
           <img
             class="collab__btnIcon btn__icon btn__icon--left"
-            src="/icons/ornament.svg"
+            src="/icons/ornament.png"
             alt="ornament"
           >
 
@@ -116,7 +116,7 @@
 
           <img
             class="collab__btnIcon btn__icon btn__icon--right"
-            src="/icons/ornament.svg"
+            src="/icons/ornament.png"
             alt="ornament"
           >
         </a>
@@ -165,6 +165,8 @@ export default {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+
+      margin-top: 40px;
     }
   }
 
@@ -251,9 +253,12 @@ export default {
       ),
       url("/images/bgMechanics.jpg");
     background-repeat: no-repeat;
-
     background-position-x: center;
     background-position-y: -120px;
+
+    @media (max-width: $media_md) {
+      background-size: auto 523px;
+    }
 
     @media (max-width: $media_sm) {
       background-position-y: 93%;
@@ -263,11 +268,10 @@ export default {
 
   &__main {
     margin-bottom: 147px;
-
     padding-top: 120px;
 
-    @media (max-width: $media_sm) {
-      margin-bottom: 16px;
+    @media (max-width: $media_md) {
+      margin-bottom: 40px;
       padding: 46px 15px 0 15px;
     }
   }
@@ -289,12 +293,15 @@ export default {
 
     margin-bottom: 40px;
 
-    @media (max-width: $media_sm) {
+    @media (max-width: $media_md) {
+      margin-bottom: 28px;
       padding: 0 15px;
     }
   }
 
   &__stepText {
+    margin: 0 auto;
+
     font-family: "Cinzel";
     font-weight: 400;
     font-size: 24px;
@@ -308,8 +315,14 @@ export default {
       font-size: 18px;
     }
 
-    @media (max-width: $media_sm) {
+    @media (max-width: $media_md) {
+      padding: 0;
+
       font-size: 14px;
+    }
+
+    &_2 {
+      max-width: 450px;
     }
   }
 
@@ -358,9 +371,5 @@ export default {
   @media (max-width: $media_md) {
     width: fit-content;
   }
-}
-
-.p77 {
-  padding: 0 77px;
 }
 </style>

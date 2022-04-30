@@ -30,7 +30,7 @@
       <a onClick="ym(88590499,'reachGoal','joinvrgallery'); return true;" class="gallery__link btn" href="https://spatial.io/s/Discover-a-new-dimension-Bold-Point-Gallery-6253f98e153bbf000171a699?share=2082928520569155812">
         <img
           class="gallery__btnIcon btn__icon btn__icon--left"
-          src="/icons/ornament.svg"
+          src="/icons/ornament.png"
           alt="ornament"
         >
 
@@ -40,7 +40,7 @@
 
         <img
           class="gallery__btnIcon btn__icon btn__icon--right"
-          src="/icons/ornament.svg"
+          src="/icons/ornament.png"
           alt="ornament"
         >
       </a>
@@ -141,17 +141,18 @@ export default {
 
     object-fit: contain;
 
+    @media (max-width: $media_sm) {
+      top: -1px;
+
+      height: 23px;
+    }
+
     &--left {
       transform: rotate(-90deg);
     }
 
     &--right {
       transform: rotate(90deg);
-    }
-
-    @media (max-width: $media_sm) {
-      width: 15px;
-      height: 11px;
     }
   }
 

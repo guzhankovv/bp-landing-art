@@ -54,7 +54,7 @@
         <a onClick="ym(88590499,'reachGoal','get-inspired'); return true;" class="banner__centerLink btn" href="https://opensea.io/collection/boldpoint">
           <img
             class="banner__cenerBtnIcon btn__icon btn__icon--left"
-            src="/icons/ornament.svg"
+            src="/icons/ornament.png"
             alt="ornament"
           >
 
@@ -64,7 +64,7 @@
 
           <img
             class="banner__cenerBtnIcon btn__icon btn__icon--right"
-            src="/icons/ornament.svg"
+            src="/icons/ornament.png"
             alt="ornament"
           >
         </a>
@@ -421,7 +421,7 @@ export default {
 
     background: url('/images/mainBanner/character.png') no-repeat 50% bottom/contain;
 
-    @media (max-width: $media-sm) {
+    @media (max-width: $media_sm) {
       background-size: 870px;
       background-position-x: -110px;
     }

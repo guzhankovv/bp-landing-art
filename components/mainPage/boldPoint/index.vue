@@ -16,6 +16,7 @@
       <div class="main__leftText">
         <Swiper
           ref="textSwiper"
+          class="main__textSlider"
           :options="textSwiperOptions"
         >
           <SwiperSlide
@@ -168,7 +169,10 @@ export default {
   box-shadow: inset -20px -9px 20px 20px #000000, inset -51px -49px 20px 0px rgb(0 0 0 / 54%);
 
   @media (max-width: $media_md) {
-    padding: 0px 16px 100px;
+    padding: 0px 16px 88px;
+
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(12,4,19,1) 28%, rgba(64,20,96,1) 62%, rgba(0,0,0,1) 100%);
+    box-shadow: none;
   }
 
   &__title {
@@ -199,9 +203,9 @@ export default {
 
     width: fit-content;
 
-    @media (max-width: $media_xl) {
+    @media (max-width: $media_md) {
       margin-bottom: 10px;
-      padding: 0 19px;
+      padding: 0 32px;
     }
 
     &::before,
@@ -219,10 +223,9 @@ export default {
       background: url('/icons/ornamentSmall.png') no-repeat center center/contain;
 
       @media (max-width: $media_md) {
-        top: 4px;
+        top: -1px;
 
-        width: 15px;
-        height: 11px;
+        height: 23px;
       }
     }
 
@@ -270,6 +273,10 @@ export default {
 
       text-align: center;
     }
+  }
+
+  &__textSlider {
+    width: calc(100vw - 40px);
   }
 
   &__title {

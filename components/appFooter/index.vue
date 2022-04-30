@@ -94,7 +94,7 @@ export default {
 @import "~/assets/scss/styles/variables.scss";
 .footer {
   margin: 0 auto;
-  padding-top: 127px;
+  padding: 127px 16px 0;
 
   max-width: 1728px;
 
@@ -140,80 +140,81 @@ export default {
     position: relative;
 
     padding-bottom: 70px;
+  }
+
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    align-items: center;
+
+    width: 166px;
+
+    margin: 0 auto;
+    height: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 30px;
+      left: 0px;
+
+      width: 100%;
+      height: 1px;
+      background: rgba(88, 88, 88, 0.5);
     }
+  }
 
-    &__social {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
+  &__socialImg {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/bg-decor.png') repeat-x 50% 50%/cover;
+    border-radius: 50%;
+    z-index: 1;
 
-      align-items: center;
-
-      width: 166px;
-
-      margin: 0 auto;
-      height: 0;
-
-      &::before {
-        content: "";
-
-        position: absolute;
-        top: 30px;
-        left: 0px;
-
-        width: 100%;
-        height: 1px;
-        background: rgba(88, 88, 88, 0.5);
-      }
-    }
-
-    &__socialImg {
-      position: relative;
-      top: 10px;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: url('/images/bg-decor.png') repeat-x 50% 50%/cover;
-      border-radius: 50%;
-      z-index: 1;
-
-      &-tg{
-        & span{
-          transform: translateX(-10%);
-        }
-      }
+    &-tg{
       & span{
-        transition: .3s;
-        filter: grayscale(1);
-          }
-      &:hover {
-        & span{
-        filter: grayscale(0);
+        transform: translateX(-10%);
+      }
+    }
+    & span{
+      transition: .3s;
+      filter: grayscale(1);
         }
-      }
-      &:before {
-          content: '';
-          display: block;
-          position: absolute;
-          z-index: -1;
-          left: 1px;
-          right: 1px;
-          top: 1px;
-          bottom: 1px;
-          background: #000;
-          border-radius: inherit;
+    &:hover {
+      & span{
+      filter: grayscale(0);
       }
     }
-
-    &__info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      margin-top: 81px;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 1px;
+        right: 1px;
+        top: 1px;
+        bottom: 1px;
+        background: #000;
+        border-radius: inherit;
     }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 81px;
+  }
 
   &__leftText {
     font-family: "Inter";
@@ -227,11 +228,10 @@ export default {
   }
 
   &__right {
-    display: grid;
-    grid-template-columns: 0.9fr 2fr;
-    gap: 24px;
-
+    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 
   &__links {

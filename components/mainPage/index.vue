@@ -71,31 +71,43 @@ export default {
     box-shadow: inset 0px 0px 20px 11px var(--bg_main);
 
     background: url('/images/artists/artistsBg.png');
+
+    @media (max-width: $media_md) {
+      margin-bottom: 24px;
+
+      background-position: center 60px;
+      background-size: auto 740px;
+      background-repeat: no-repeat;
+    }
   }
 
   &__about {
     margin-bottom: 100px;
 
     position: relative;
-  overflow: hidden;
+    overflow: hidden;
 
-  &::before {
-    content: "";
+    @media (max-width: $media_md) {
+      margin-bottom: 0;
+    }
 
-    position: absolute;
-    top: 403px;
-    left: -254px;
-    bottom: 0;
-    right: 0;
+    &::before {
+      content: "";
 
-    width: 283px;
-    height: 181px;
+      position: absolute;
+      top: 403px;
+      left: -254px;
+      bottom: 0;
+      right: 0;
 
-    border-radius: 50%;
+      width: 283px;
+      height: 181px;
 
-    filter: blur(275px);
-    background: #A63DFF;
-  }
+      border-radius: 50%;
+
+      filter: blur(275px);
+      background: #A63DFF;
+    }
 
     &::after {
       content: "";
@@ -104,7 +116,6 @@ export default {
       top: 577px;
       right: -72px;
       bottom: 0;
-      // right: 0;
 
       width: 93px;
       height: 164px;
@@ -119,9 +130,13 @@ export default {
   &__colab {
     margin-bottom: 160px;
 
-  @media (max-width: $media_md) {
+    @media (max-width: $media_md) {
       margin-bottom: 88px;
     }
+  }
+
+  &__timeline {
+    overflow: hidden;
   }
 }
 </style>

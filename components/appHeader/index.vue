@@ -14,7 +14,7 @@
 
           <img
             class="header__logoMob"
-            src="/icons/logoMob.png"
+            src="/icons/logoMini.svg"
             alt="logo"
           >
         </nuxt-link>
