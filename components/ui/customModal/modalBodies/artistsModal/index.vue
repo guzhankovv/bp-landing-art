@@ -92,6 +92,12 @@ export default {
   background: var(--bg_main);
   overflow: auto;
 
+  @media (max-width: $media-md) {
+    padding: 45px 14px 14px;
+
+    max-height: calc(100vh - 4px);
+  }
+
   &::before {
     content: "";
 
@@ -111,28 +117,38 @@ export default {
     pointer-events: none;
 
     opacity: 0.8;
+
+    @media (max-width: $media_md) {
+      display: none;
+    }
   }
 
   &__top {
     display: grid;
-    grid-template-columns: 147px auto;
+    grid-template-columns: auto auto;
     gap: 54px;
 
     margin-bottom: 35px;
+
+    @media (max-width: $media_md) {
+      gap: 16px;
+    }
   }
 
   &__leftImg {
-    width: 147px;
-    height: 168px;
+    width: 145px;
+
+    object-fit: contain;
+
+    @media (max-width: $media_md) {
+      width: 105px;
+    }
   }
 
   &__name {
     margin-bottom: 14px;
-    // @NOTE Продление линии подчеркивания можно сделать за счет padding справа
     padding: 0 90px 10px 0;
 
-    // @NOTE если сюда вставится имя с большей длиной, то будет отображаться некорректно
-    // width: 260px;
     width: fit-content;
 
     font-family: "Cinzel";
@@ -140,6 +156,11 @@ export default {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.04em;
+
+    @media (max-width: $media_md) {
+      font-size: 22px;
+      line-height: 32px;
+    }
   }
 
   &__preview {
@@ -151,6 +172,11 @@ export default {
     letter-spacing: 0.04em;
 
     margin-bottom: 22px;
+
+    @media (max-width: $media_md) {
+      font-size: 10px;
+      line-height: 18px;
+    }
   }
 
   &__social {
@@ -171,6 +197,10 @@ export default {
 
   &__icon {
     height: 24px;
+
+    @media (max-width: $media_md) {
+      height: 16px;
+    }
   }
 
   &__textBox {

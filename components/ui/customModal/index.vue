@@ -11,7 +11,9 @@
         class="customModal__close"
         @click="closeModal"
       >
-        Close
+        <span class="customModal__closeTx">
+          Close
+        </span>
 
         <img
           class="customModal__closeIcon"
@@ -114,6 +116,11 @@ export default {
     &__inner {
         margin: 0 20px;
         padding: 65px 0;
+
+        @media (max-width: $media_md) {
+          margin: 0;
+          padding: 0;
+        }
     }
 
     &__content {
@@ -143,19 +150,38 @@ export default {
 
         text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.9);
 
-        cursor: pointer;
+        @media (max-width: 1300px) {
+          z-index: 1;
+          top: 80px;
+          right: 40px;
+        }
+
+        @media (max-width: $media_md) {
+          top: 10px;
+          right: 20px;
+        }
 
         &:hover {
-            .customModal__closeIcon {
-                transform: rotate(90deg);
-            }
+          .customModal__closeIcon {
+              transform: rotate(90deg);
+          }
         }
     }
 
-    &__closeIcon {
-        height: 70px;
+    &__closeTx {
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
 
-        transition: 0.2s;
+    &__closeIcon {
+      height: 70px;
+
+      transition: 0.2s;
+
+      @media (max-width: 1300px) {
+        height: 40px;
+      }
     }
 
     &__backdrop {

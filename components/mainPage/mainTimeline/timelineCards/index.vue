@@ -201,7 +201,11 @@ export default {
     gap: 24px;
 
     width: 100% !important;
-    height: 22px;
+    height: 24px;
+
+    @media (max-width: $media-md) {
+      bottom: 170px !important;
+    }
   }
 
   &__bullet {
@@ -217,6 +221,11 @@ export default {
     filter: grayscale(1);
 
     transition: 0.3s;
+
+    @media (max-width: $media-md) {
+      width: 12px;
+      height: 12px;
+    }
 
     &--active {
       filter: grayscale(0);

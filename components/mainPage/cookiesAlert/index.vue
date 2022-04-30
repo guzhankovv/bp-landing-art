@@ -12,13 +12,13 @@
         alt="iconCookies"
       >
       <div class="cookies__textRow">
-        <p class="cookies__text">
+        <span class="cookies__text">
           We use cookies to improve your experience.
-        </p>
+        </span>
 
-        <p class="cookies__text cookies__text--gray">
+        <span class="cookies__text cookies__text--gray">
           By continuing, you agree to our Cookie Policy.
-        </p>
+        </span>
       </div>
 
       <div class="cookies__btnRow">
@@ -119,7 +119,7 @@ export default {
     }
 
     @media (max-width: $media_md) {
-      flex-direction: r;
+      flex-direction: column;
       gap: 5px;
 
       width: 100%;
@@ -140,17 +140,10 @@ export default {
   }
 
   &__textRow {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
     margin-right: 15px;
-    white-space: nowrap;
-
-    @media (max-width: 1200px) {
-      flex-direction: column;
-    }
 
     @media (max-width: $media_md) {
+      margin-bottom: 12px;
       margin-right: 0;
     }
   }
@@ -159,6 +152,7 @@ export default {
     color: $white;
     font-weight: 700;
     font-size: 20px;
+
     &--gray {
       color: rgb(204, 203, 207);
       font-weight: 500;
@@ -170,8 +164,7 @@ export default {
     }
 
     @media (max-width: $media_sm) {
-      font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 

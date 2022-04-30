@@ -87,6 +87,10 @@ export default {
     position: relative;
     overflow: hidden;
 
+    @media (max-width: $media_md) {
+      margin-bottom: 0;
+    }
+
     &::before {
       content: "";
 

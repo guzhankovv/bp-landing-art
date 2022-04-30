@@ -215,7 +215,7 @@ export default {
     width: fit-content;
 
     @media (max-width: $media_md) {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       padding: 0 0 10px;
     }
   }
@@ -383,18 +383,23 @@ export default {
       width: auto;
     }
 
-    @media (max-width: $media_md) {
+    @media (max-width: $media_lg) {
       margin-top: 0;
+      margin-bottom: 20px;
     }
   }
 
   &__wrap {
     @media (max-width: $media_lg) {
       display: flex;
-      flex-direction: row-reverse;
+      flex-wrap: wrap;
       justify-content: space-between;
 
       width: 100%;
+    }
+
+    @media (max-width: $media_md) {
+      max-width: 280px;
     }
   }
 
@@ -414,6 +419,13 @@ export default {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @media (max-width: $media_lg) {
+      order: 1;
+
+      margin-bottom: 0;
+      margin-left: auto;
+    }
 
     @media (max-width: $media_md) {
       font-size: 20px;
@@ -505,7 +517,9 @@ export default {
     color: var(--title_secondary);
 
     @media (max-width: $media_md) {
+      word-break: break-word;
       font-size: 20px;
+      text-align: left;
     }
   }
 }

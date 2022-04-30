@@ -141,17 +141,18 @@ export default {
 
     object-fit: contain;
 
+    @media (max-width: $media_sm) {
+      top: -1px;
+
+      height: 23px;
+    }
+
     &--left {
       transform: rotate(-90deg);
     }
 
     &--right {
       transform: rotate(90deg);
-    }
-
-    @media (max-width: $media_sm) {
-      width: 15px;
-      height: 11px;
     }
   }
 
