@@ -49,6 +49,8 @@ export default {
     @media (max-width: $media_md) {
       padding-left: 70px;
       padding-right: 70px;
+
+      margin-bottom: 13px;
     }
   }
 

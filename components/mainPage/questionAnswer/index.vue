@@ -219,7 +219,7 @@ export default {
     opacity: 0.7;
 
     @media (max-width: $media_md) {
-      padding: 0;
+      padding-right: 15px;
 
       font-size: 12px;
       line-height: 18px;

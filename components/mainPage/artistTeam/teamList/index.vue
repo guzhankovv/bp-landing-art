@@ -228,6 +228,10 @@ export default {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    @media (max-width: $media_md) {
+      font-size: 14px;
+    }
   }
 }
 

@@ -140,6 +140,10 @@ export default {
     position: relative;
 
     padding-bottom: 70px;
+
+    @media (max-width: $media_md) {
+      padding-bottom: 28px;
+    }
   }
 
   &__social {
@@ -153,6 +157,10 @@ export default {
 
     margin: 0 auto;
     height: 0;
+
+    @media (max-width: $media_md) {
+      width: 192px;
+    }
 
     &::before {
       content: "";
@@ -184,26 +192,29 @@ export default {
         transform: translateX(-10%);
       }
     }
+
     & span{
       transition: .3s;
       filter: grayscale(1);
         }
+
     &:hover {
       & span{
       filter: grayscale(0);
       }
     }
+
     &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: -1;
-        left: 1px;
-        right: 1px;
-        top: 1px;
-        bottom: 1px;
-        background: #000;
-        border-radius: inherit;
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      left: 1px;
+      right: 1px;
+      top: 1px;
+      bottom: 1px;
+      background: #000;
+      border-radius: inherit;
     }
   }
 
@@ -214,6 +225,12 @@ export default {
     flex-wrap: wrap;
 
     margin-top: 81px;
+
+    @media (max-width: $media_md) {
+      flex-direction: column-reverse;
+
+      gap: 38px;
+    }
   }
 
   &__leftText {
@@ -232,12 +249,20 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
+
+    @media (max-width: $media_md) {
+      gap: 7px;
+    }
   }
 
   &__links {
     display: grid;
     grid-template-columns: 116px 135px;
     gap: 16px;
+
+    @media (max-width: $media_md) {
+      margin: 0 auto;
+    }
   }
 
   &__text {
@@ -250,6 +275,10 @@ export default {
     text-transform: uppercase;
 
     opacity: 0.7;
+
+    @media (max-width: $media_md) {
+      margin: 0 auto;
+    }
   }
 }
 </style>

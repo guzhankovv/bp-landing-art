@@ -294,7 +294,7 @@ export default {
     margin-bottom: 40px;
 
     @media (max-width: $media_md) {
-      margin-bottom: 28px;
+      margin-bottom: 20px;
       padding: 0 15px;
     }
   }

@@ -80,6 +80,10 @@ export default {
     gap: 24px;
 
     overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__listItem {
