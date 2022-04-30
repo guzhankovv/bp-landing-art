@@ -107,6 +107,10 @@ export default {
 
       filter: blur(275px);
       background: #A63DFF;
+
+      @media (max-width: $media_md) {
+        display: none;
+      }
     }
 
     &::after {
@@ -124,6 +128,10 @@ export default {
 
       filter: blur(218px);
       background: #A63DFF;
+
+      @media (max-width: $media_md) {
+        display: none;
+      }
     }
   }
 

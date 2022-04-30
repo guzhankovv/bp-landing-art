@@ -297,7 +297,7 @@ export default {
 
     position: relative;
 
-    margin-bottom: 220px;
+    /* margin-bottom: 220px; */
 
     &::before {
       content: "";
