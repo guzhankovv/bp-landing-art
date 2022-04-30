@@ -164,7 +164,7 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '30.04.2022',
       avatar: '/images/avatars/niko.png',
       name: 'Niko',
