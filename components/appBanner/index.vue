@@ -4,7 +4,7 @@
     class="banner"
   >
     <div class="banner__inner">
-      <DeskopVersion class="banner__version" />
+      <!-- <DeskopVersion class="banner__version" /> -->
 
       <div class="banner__top txGreyMed">
         <a
@@ -96,14 +96,14 @@
 </template>
 
 <script>
-import DeskopVersion from '@/components/mainPage/deskopVersion/index.vue'
+// import DeskopVersion from '@/components/mainPage/deskopVersion/index.vue'
 
 export default {
   name: 'AppBanner',
 
-  components: {
-    DeskopVersion
-  },
+  // components: {
+  //   DeskopVersion
+  // },
 
   methods: {
     scrollTo (indent, elem) {

@@ -297,13 +297,10 @@ export default {
 
     position: relative;
 
-    /* TODO */
-    /* margin-bottom: 220px; */
+    margin-bottom: 220px;
 
     &::before {
       content: "";
-      /* TODO */
-      display: none;
 
       position: absolute;
       top: 59%;
