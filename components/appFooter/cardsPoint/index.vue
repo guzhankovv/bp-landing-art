@@ -79,11 +79,15 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
-    // padding: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
   }
 
   &__listItem {
     cursor: pointer;
+
+    @media (max-width: $media_md) {
+      min-width: 280px;
+    }
 
     &:hover {
       .card__bg::before {
@@ -132,6 +136,13 @@ export default {
     text-transform: uppercase;
 
     margin-bottom: 8px;
+
+    @media (max-width: $media_md) {
+      font-size: 14px;
+      line-height: 22px;
+
+      overflow-x: scroll
+    }
   }
 
   &__text {
@@ -143,6 +154,16 @@ export default {
     opacity: 0.7;
 
     margin-bottom: 8px;
+
+    @media (max-width: $media_md) {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    @media (max-width: $media_sm) {
+      font-size: 10px;
+      line-height: 18px;
+    }
   }
 
   &__time {
@@ -152,6 +173,15 @@ export default {
     line-height: 24px;
 
     opacity: 0.3;
+
+    @media (max-width: $media_md) {
+      font-size: 13px;
+    }
+
+    @media (max-width: $media_sm) {
+      font-size: 10px;
+      line-height: 20px;
+    }
   }
 }
 </style>

@@ -60,19 +60,6 @@
   }
 }
 
-.subtitle_cin_42 {
-  font-family: "Cinzel";
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 48px;
-  color: var(--title_tertiary);
-
-  @media (max-width: $media_md) {
-    font-size: 32px;
-    line-height: 32px;
-  }
-}
-
 // text
 
 .text_inter_20 {

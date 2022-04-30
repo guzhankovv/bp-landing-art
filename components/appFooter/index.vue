@@ -104,6 +104,14 @@ export default {
 
   box-shadow: inset 1px 20px 20px 20px #000, inset -51px -49px 20px 0 rgb(0 0 0 / 54%);
 
+    @media (max-width: $media_md) {
+      padding-top: 80px;
+    }
+
+    @media (max-width: $media_sm) {
+      padding-top: 50px;
+    }
+
   &__title {
     font-family: "Cinzel";
     font-weight: 400;
@@ -115,6 +123,13 @@ export default {
     text-transform: uppercase;
 
     margin-bottom: 42px;
+
+    @media (max-width: $media_md) {
+      font-size: 24px;
+      line-height: 24px;
+
+      margin-bottom: 51px;
+    }
   }
 
   &__cards {
