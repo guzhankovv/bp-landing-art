@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <!-- <button class="timeline__btn btn">
+      <button class="timeline__btn btn">
         <img
           class="btn__icon btn__icon--left"
           src="/icons/ornament.png"
@@ -85,13 +85,14 @@
           src="/icons/ornament.png"
           alt="ornament"
         >
-      </button> -->
+      </button>
     </div>
   </div>
 </template>
 
 <script>
 import TimelineCards from './timelineCards/index.vue'
+import timeLineArr from '@/static/timeLineArr.js'
 
 export default {
   name: 'MainTimeline',
@@ -101,95 +102,7 @@ export default {
 
   data () {
     return {
-      timelineList: [
-        {
-          artist: 'hoshi',
-          date: '27.04.2022',
-          avatar: '/images/avatars/hoshi.png',
-          nftList: [
-            {
-              name: 'Forest Artifact',
-              prcie: '0,15 ETH 1/1',
-              img: 'forestArtifact.jpg',
-              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052167267023323137'
-            },
-            {
-              name: 'Mountain artifact',
-              prcie: '0,09 ETH 1/3',
-              img: 'mountainArtifact.jpg',
-              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052168366534950913'
-            },
-            {
-              name: 'Desert Artifact',
-              prcie: '0,07 ETH 1/5',
-              img: 'desertArtifact.jpg',
-              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052171665069834241'
-            },
-            {
-              name: 'Steppe Artifact',
-              prcie: '0,05 ETH 1/7',
-              img: 'steppeArtifact.jpg',
-              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052177162627973121'
-            }
-          ]
-        },
-        {
-          artist: 'nico',
-          date: '30.04.2022',
-          avatar: '/images/avatars/niko.png',
-          nftList: [
-            {
-              name: 'Ancient Runes',
-              prcie: '0.15 ETH 1/1',
-              img: 'ancientRunes.jpg',
-              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052184859209367553'
-            },
-            {
-              name: 'Portal Gate',
-              prcie: '0.09 ETH 1/3',
-              img: 'portalGate.jpg',
-              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052185958720995329'
-            },
-            {
-              name: 'Silver',
-              prcie: '0.07 ETH 1/5',
-              img: 'silver.jpg',
-              link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052189257255878657'
-            }
-          ]
-        }
-        // {
-        //   artist: 'IM BTTG',
-        //   date: '01.05.2022',
-        //   avatar: '/images/avatars/imbttg.png',
-        //   nftList: [
-        //     {
-        //       name: 'Heaven gates. Styx',
-        //       prcie: '0.15 ETH 1/1',
-        //       img: 'heavenGates.png',
-        //       link: 'https://www.dropbox.com/s/tz9ki6ttf8zlab5/STYX%20by%20IM%20BTTG.png?dl=0'
-        //     },
-        //     {
-        //       name: 'Untouchable beauty',
-        //       prcie: '0.07 ETH 1/5',
-        //       img: 'suntouchableBeauty.png',
-        //       link: 'https://www.dropbox.com/s/vdfmdtb68sdifkx/YAY%203.png?dl=0'
-        //     },
-        //     {
-        //       name: 'Rebirth',
-        //       prcie: '0.09 ETH 1/3',
-        //       img: 'rebirth.jpg',
-        //       link: 'https://www.dropbox.com/s/j3gtcwhmmlt3yq1/YAY%202.png?dl=0'
-        //     },
-        //     {
-        //       name: 'November clarity of mind',
-        //       prcie: '0.05 ETH 1/7',
-        //       img: 'portalGate.jpg',
-        //       link: 'https://www.dropbox.com/s/s7m8fmqecgp16tc/YAY%201%20%20.png?dl=0'
-        //     },
-        //   ]
-        // },
-      ]
+      timelineList: timeLineArr.timeLineArr
     }
   }
 }
