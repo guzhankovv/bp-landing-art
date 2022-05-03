@@ -26,7 +26,7 @@
     <div class="mainTimeline__timeline timeline">
       <div class="timeline__inner">
         <div
-          v-for="(item, index) in timelineList"
+          v-for="(item, index) in getTimelineList(showAll)"
           :key="index"
           class="timeline__row"
         >
@@ -69,7 +69,10 @@
         </div>
       </div>
 
-      <!-- <button class="timeline__btn btn">
+      <button
+        class="timeline__btn btn"
+        @click="showAll = !showAll"
+      >
         <img
           class="btn__icon btn__icon--left"
           src="/icons/ornament.png"
@@ -77,7 +80,13 @@
         >
 
         <p class="btn__text txWhite">
-          Show more
+          <template v-if="!showAll">
+            Show more
+          </template>
+
+          <template v-else>
+            collapse
+          </template>
         </p>
 
         <img
@@ -85,7 +94,7 @@
           src="/icons/ornament.png"
           alt="ornament"
         >
-      </button> -->
+      </button>
     </div>
   </div>
 </template>
@@ -102,8 +111,25 @@ export default {
 
   data () {
     return {
-      timelineList: timeLineArr.timeLineArr
+      timelineList: timeLineArr.timeLineArr,
+      showAll: false
     }
+  },
+  methods: {
+    getTimelineList (isAll) {
+      const list = this.timelineList.slice().reverse()
+
+      if (isAll) {
+        return list
+      } else {
+        return list.slice(0, 2)
+      }
+    }
+
+    // TODO
+    // setShowAll(state) {
+
+    // }
   }
 }
 </script>
@@ -137,12 +163,13 @@ export default {
     position: relative;
 
     margin: 0 auto 85px;
-    padding: 0 35px;
+    padding: 0 40px;
 
     width: fit-content;
 
     @media (max-width: $media_md) {
       margin-bottom: 60px;
+      padding: 0 35px;
     }
 
     &::before,
@@ -205,22 +232,26 @@ export default {
   }
 
   &__inner {
+    position: relative;
+
     display: grid;
     gap: 80px;
 
-    position: relative;
+    margin-bottom: 200px;
 
-    /* margin-bottom: 220px; */
+    @media (max-width: $media_md) {
+      margin-bottom: 100px;
+    }
 
     &::before {
       content: "";
 
       position: absolute;
-      top: 59%;
+      top: 100px;
       left: calc(50% - 2px);
 
       width: 2px;
-      height: 105%;
+      height: calc(100% + 180px);
 
       background: radial-gradient(
         circle,
@@ -228,17 +259,19 @@ export default {
         rgba(143, 176, 210, 0) 100%
       );
 
-      transform: translateY(-50%);
-
       @media (max-width: 1280px) {
         left: calc(40% - 30px);
       }
 
       @media (max-width: $media_lg) {
-        top: 668px;
-        left: 50%;
+        top: 50px;
+        left: calc(50% - 2px);
 
-        height: 75%;
+        height: calc(100% + 210px);
+      }
+
+      @media (max-width: $media_md) {
+        height: calc(100% + 110px);
       }
     }
   }
@@ -385,6 +418,18 @@ export default {
       box-shadow: 50px -17px 90px 80px rgba(154, 161, 56, 0.28);
 
       animation: rotation 5s infinite linear reverse;
+    }
+  }
+
+  &__btn {
+    min-width: 292px;
+
+    @media (max-width: 1280px) and (min-width: $media_lg) {
+      margin-left: 140px;
+    }
+
+    @media (max-width: $media_md) {
+      min-width: 182px;
     }
   }
 }

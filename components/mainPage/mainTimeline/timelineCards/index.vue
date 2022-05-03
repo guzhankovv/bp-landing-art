@@ -204,7 +204,7 @@ export default {
     height: 24px;
 
     @media (max-width: $media-md) {
-      bottom: 170px !important;
+      bottom: 180px !important;
     }
   }
 
