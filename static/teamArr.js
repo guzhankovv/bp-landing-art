@@ -325,7 +325,7 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '03.05.2022',
       avatar: '/images/avatars/imbttg.png',
       name: 'IM BTTG',
@@ -821,7 +821,7 @@ export default {
       locked: true,
       date: '12.05.2022',
       avatar: '/images/avatars/dima.png',
-      name: 'Dimitry M',
+      name: 'Dima',
       preview: [
         'UI/UX designer for over 15 years. Digital Artist.',
         '«You never know what will turn out in the end. The ending is completely unpredictable and it is determined only by your will to say stop»',
