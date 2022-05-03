@@ -69,13 +69,13 @@ export default {
         },
         {
           name: 'Untouchable beauty',
-          prcie: '0.07 ETH 1/5',
+          prcie: '0.09 ETH 1/3',
           img: 'untouchableBeauty.png',
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052195854325645313'
         },
         {
           name: 'Rebirth',
-          prcie: '0.09 ETH 1/3',
+          prcie: '0.07 ETH 1/5',
           img: 'rebirth.jpg',
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052199152860528641'
         },
