@@ -192,6 +192,7 @@ export default {
 
   @media (max-width: $media_lg) {
     display: flex;
+    gap: 30px;
 
     padding: 20px 0;
 
@@ -250,6 +251,11 @@ export default {
   transition: 0.3s;
 
   animation: soars_left 5s infinite ease alternate-reverse;
+
+  @media (max-width: $media_md) {
+    width: 145px;
+    height: 168px;
+  }
 
   &:hover {
     box-shadow: inset 0px 0px 0px 55px var(--bd_secondary);
