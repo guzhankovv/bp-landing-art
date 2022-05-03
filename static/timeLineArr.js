@@ -65,25 +65,25 @@ export default {
           name: 'Heaven gates. Styx',
           prcie: '0.15 ETH 1/1',
           img: 'heavenGates.png',
-          link: 'https://www.dropbox.com/s/tz9ki6ttf8zlab5/STYX%20by%20IM%20BTTG.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052194754814017537'
         },
         {
           name: 'Untouchable beauty',
           prcie: '0.07 ETH 1/5',
           img: 'untouchableBeauty.png',
-          link: 'https://www.dropbox.com/s/vdfmdtb68sdifkx/YAY%203.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052195854325645313'
         },
         {
           name: 'Rebirth',
           prcie: '0.09 ETH 1/3',
           img: 'rebirth.jpg',
-          link: 'https://www.dropbox.com/s/j3gtcwhmmlt3yq1/YAY%202.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052199152860528641'
         },
         {
           name: 'November clarity of mind',
           prcie: '0.05 ETH 1/7',
           img: 'november.jpg',
-          link: 'https://www.dropbox.com/s/s7m8fmqecgp16tc/YAY%201%20%20.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052204650418667521'
         }
       ]
     }
