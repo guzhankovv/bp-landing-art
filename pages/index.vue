@@ -53,12 +53,16 @@ export default {
   mounted () {
     document.body.style.overflow = 'hidden'
 
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        this.loaded = true
-        document.body.style.overflow = 'auto'
-      }, 1000)
-    })
+    setTimeout(() => {
+      this.loaded = true
+      document.body.style.overflow = 'auto'
+    }, 1000)
+    // window.addEventListener('load', () => {
+    //   setTimeout(() => {
+    //     this.loaded = true
+    //     document.body.style.overflow = 'auto'
+    //   }, 1000)
+    // })
   }
 }
 </script>
@@ -71,7 +75,7 @@ export default {
     margin-bottom: 126px;
 
     @media (max-width: $media_md) {
-      margin-bottom: 90px;
+      margin-bottom: 40px;
 
       overflow: hidden;
     }

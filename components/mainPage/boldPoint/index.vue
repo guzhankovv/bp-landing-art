@@ -276,7 +276,7 @@ export default {
   }
 
   &__textSlider {
-    width: calc(100vw - 40px);
+    max-width: calc(100vw - 40px);
   }
 
   &__title {

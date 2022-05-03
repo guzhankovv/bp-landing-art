@@ -55,18 +55,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/styles/variables.scss";
 .gallery {
+
+  margin: 0 auto 100px;
+  padding: 0 20px;
+
+  max-width: 1920px;
+
   background-image: url("/images/welcomBg.png");
   background-repeat: no-repeat;
   background-position-x: center;
-
-  max-width: 1920px;
-  margin: 0 auto;
-
-  margin-bottom: 97px;
-
-  padding: 0 20px;
+  background-size: auto 100%;
 
   @media (max-width: $media_md) {
     margin-bottom: 80px;
