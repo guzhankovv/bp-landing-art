@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <button class="timeline__btn btn">
+      <!-- <button class="timeline__btn btn">
         <img
           class="btn__icon btn__icon--left"
           src="/icons/ornament.png"
@@ -85,7 +85,7 @@
           src="/icons/ornament.png"
           alt="ornament"
         >
-      </button>
+      </button> -->
     </div>
   </div>
 </template>
