@@ -88,7 +88,7 @@ export default {
       ]
     },
     {
-      artist: 'ERMKV',
+      artist: 'ermkv',
       date: '06.05.2022',
       avatar: '/images/avatars/ermkv.png',
       nftList: [
