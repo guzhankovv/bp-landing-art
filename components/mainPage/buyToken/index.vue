@@ -8,10 +8,6 @@
       <div class="token__bottom">
         <div class="token__bottomRow">
           <AchivementList />
-
-          <p class="token__bottomText">
-            Single top management Indacoin & YAY Games & BOLD POINT
-          </p>
         </div>
       </div>
 
@@ -103,19 +99,19 @@ export default {
     position: relative;
   }
 
-  &__bottomRow {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
+  // &__bottomRow {
+  //   display: grid;
+  //   grid-template-columns: auto auto;
+  //   gap: 20px;
 
-    @media (max-width: $media_md) {
-      gap: 10px;
-    }
+  //   @media (max-width: $media_md) {
+  //     gap: 10px;
+  //   }
 
-    @media (max-width: $media_sm) {
-      gap: 0;
-    }
-  }
+  //   @media (max-width: $media_sm) {
+  //     gap: 0;
+  //   }
+  // }
 
   &__bottomText {
     font-family: "Cinzel";

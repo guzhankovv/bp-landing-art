@@ -28,6 +28,10 @@
           </p>
         </div>
       </li>
+
+      <p class="achivement__bottomText">
+        Single top management Indacoin & YAY Games & BOLD POINT
+      </p>
     </ul>
   </div>
 </template>
@@ -68,9 +72,13 @@ export default {
 <style lang="scss" scoped>
 .achivement {
   &__list {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    // gap: 20px;
+    @media (max-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     @media (max-width: $media_md) {
       grid-template-columns: auto;
@@ -79,7 +87,10 @@ export default {
 
   &__listItem {
     padding: 0 8px 92px 8px;
-
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-right: 1px solid rgba(88, 88, 88, 0.5);
 
     @media (max-width: $media_lg) {
@@ -148,6 +159,52 @@ export default {
     // @media (max-width: $media_sm) {
     //   max-width: 211px;
     // }
+  }
+   &__bottomText {
+    font-family: "Cinzel";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: $gold;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin: 90px 0 0 30px;
+
+    max-width: 282px;
+
+    @media (max-width: 1280px) {
+      grid-row: 3;
+      grid-column: 1/4;
+
+      margin-bottom: 80px;
+      margin-left: 0;
+
+      max-width: 100%;
+      width: 100%;
+
+      text-align: center;
+    }
+
+    @media (max-width: $media_md) {
+      font-size: 26px;
+      line-height: 32px;
+      padding: 0 20px 0 20px;
+      grid-row: 4;
+      grid-column: 1;
+    }
+
+    @media (max-width: $media_sm) {
+      font-size: 16px;
+      line-height: 22px;
+
+      margin: 45px 0 139px 0;
+    }
   }
 }
 </style>
