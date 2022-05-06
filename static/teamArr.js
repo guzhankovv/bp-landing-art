@@ -487,7 +487,7 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '06.05.2022',
       avatar: '/images/avatars/ermkv.png',
       name: 'ERMKV',

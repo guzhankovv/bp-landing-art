@@ -86,32 +86,32 @@ export default {
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052204650418667521'
         }
       ]
+    },
+    {
+      artist: 'ERMKV',
+      date: '06.05.2022',
+      avatar: '/images/avatars/ermkv.png',
+      nftList: [
+        {
+          name: 'David',
+          prcie: '0.15 ETH 1/1',
+          img: 'david.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052212347000061953'
+        },
+        {
+          name: 'Castle',
+          prcie: '0.09 ETH 1/3',
+          img: 'castle.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052213446511689729'
+        },
+        {
+          name: '$YAY to the Moon',
+          prcie: '0.07 ETH 1/5',
+          img: '$YAYToTheMoon.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052216745046573057'
+        }
+      ]
     }
-    // {
-    //   artist: 'ERMKV',
-    //   date: '06.05.2022',
-    //   avatar: '/images/avatars/ermkv.png',
-    //   nftList: [
-    //     {
-    //       name: 'David',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'david.jpg',
-    //       link: 'https://www.dropbox.com/s/a8lb1q2kp6q56md/ERMKV-Yay-David.mp4?dl=0'
-    //     },
-    //     {
-    //       name: 'Castle',
-    //       prcie: '0.07 ETH 1/5',
-    //       img: 'castle.jpg',
-    //       link: 'https://www.dropbox.com/s/1ukmpbftk52pkx7/ERMKV-YAY-BP-Castle.mp4?dl=0'
-    //     },
-    //     {
-    //       name: '$YAY to the Moon',
-    //       prcie: '0.09 ETH 1/3',
-    //       img: '$YAYToTheMoon.jpg',
-    //       link: 'https://www.dropbox.com/s/qd5927u159j41w8/ERMKV-YAY-Coin.mp4?dl=0'
-    //     }
-    //   ]
-    // },
     // {
     //   artist: 'Chell',
     //   date: '09.05.2022',

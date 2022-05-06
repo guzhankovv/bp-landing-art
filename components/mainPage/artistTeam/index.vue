@@ -27,7 +27,6 @@ import TeamList from '@/components/mainPage/artistTeam/teamList/index.vue'
 
 export default {
   name: 'ArtistTeam',
-
   components: {
     TeamList
   }
@@ -35,7 +34,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/styles/variables.scss";
 .artist {
   &__title {
     margin: 0 auto 48px;
