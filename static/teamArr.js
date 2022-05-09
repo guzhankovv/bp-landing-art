@@ -648,7 +648,7 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '09.05.2022',
       avatar: '/images/avatars/chell.png',
       name: 'Chell',

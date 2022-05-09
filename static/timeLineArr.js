@@ -111,32 +111,32 @@ export default {
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052216745046573057'
         }
       ]
+    },
+    {
+      artist: 'chell',
+      date: '09.05.2022',
+      avatar: '/images/avatars/chell.png',
+      nftList: [
+        {
+          name: 'Rogue',
+          prcie: '0.15 ETH 1/1',
+          img: 'rogue.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052222242604711937'
+        },
+        {
+          name: 'Mage',
+          prcie: '0.09 ETH 1/3',
+          img: 'mage.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052223342116339713'
+        },
+        {
+          name: 'Unknown creature',
+          prcie: '0.07 ETH 1/5',
+          img: 'unknownCreature.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052226640651223041'
+        }
+      ]
     }
-    // {
-    //   artist: 'Chell',
-    //   date: '09.05.2022',
-    //   avatar: '/images/avatars/chell.png',
-    //   nftList: [
-    //     {
-    //       name: 'Rogue',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'rogue.jpg',
-    //       link: 'https://www.dropbox.com/s/g77ekiuqy1lgqre/Chell%20%28OH%20My%20GOOD%29%202.jpg?dl=0'
-    //     },
-    //     {
-    //       name: 'Mage',
-    //       prcie: '0.07 ETH 1/5',
-    //       img: 'mage.jpg',
-    //       link: 'https://www.dropbox.com/s/7c1icchrefm2ie2/Chell%20%28OH%20My%20GOOD%29%203.jpg?dl=0'
-    //     },
-    //     {
-    //       name: 'Unknown creature',
-    //       prcie: '0.09 ETH 1/3',
-    //       img: 'unknownCreature.jpg',
-    //       link: 'https://www.dropbox.com/s/n09fxnriodlhnp2/Chell%20%28OH%20My%20GOOD%29%201.jpg?dl=0'
-    //     }
-    //   ]
-    // },
     // {
     //   artist: 'Dima',
     //   date: '12.05.2022',
