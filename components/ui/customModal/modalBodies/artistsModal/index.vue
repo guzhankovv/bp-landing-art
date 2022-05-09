@@ -12,8 +12,12 @@
           {{ artistData.name }}
         </h1>
 
-        <p class="artistsModal__preview">
-          {{ artistData.preview }}
+        <p
+          v-for="(item, index) in artistData.preview"
+          :key="index"
+          class="artistsModal__preview"
+        >
+          {{ item }}
         </p>
 
         <div class="artistsModal__social">

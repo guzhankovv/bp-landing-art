@@ -5,7 +5,7 @@ export default {
       date: '27.04.2022',
       avatar: '/images/avatars/hoshi.png',
       name: 'Hoshi',
-      preview: 'My name is Egor. My nickname on social networks is Hoshi. I came up with it in my school years. In Japanese, it means a star. I\'m not a star yet, but I still have it all to face. I am 20 years old, and I have been drawing for 4 years.',
+      preview: ['My name is Egor. My nickname on social networks is Hoshi. I came up with it in my school years. In Japanese, it means a star. I\'m not a star yet, but I still have it all to face. I am 20 years old, and I have been drawing for 4 years.'],
       links: {
         instagram: 'https://www.instagram.com/00_hoshi_00/',
         twitter: 'https://twitter.com/Egor_Khanenko',
@@ -168,7 +168,7 @@ export default {
       date: '30.04.2022',
       avatar: '/images/avatars/niko.png',
       name: 'Niko',
-      preview: 'Former art curator at a five-storey art gallery in Denmark. Creator of WOM_NFT together with Disney Veteran Gregg Azzopardi.',
+      preview: ['Former art curator at a five-storey art gallery in Denmark. Creator of WOM_NFT together with Disney Veteran Gregg Azzopardi.'],
       links: {
         instagram: 'https://www.instagram.com/ninjagraphicstm/',
         twitter: 'https://twitter.com/ninjagraphicstm',
@@ -329,7 +329,7 @@ export default {
       date: '03.05.2022',
       avatar: '/images/avatars/imbttg.png',
       name: 'IM BTTG',
-      preview: 'International Artist. Conceptual artist and designer. In his work, he uses various formats, ranging from visual arts, such as canvases, to monumental graphics and font compositions. The artistic language of his works is a dialogue between calligraphy and figurative image. It organically combines elements and principles of modern graphics, antique images and abstract art.',
+      preview: ['International Artist. Conceptual artist and designer. In his work, he uses various formats, ranging from visual arts, such as canvases, to monumental graphics and font compositions. The artistic language of his works is a dialogue between calligraphy and figurative image. It organically combines elements and principles of modern graphics, antique images and abstract art.'],
       links: {
         instagram: 'https://instagram.com/maslenikovilya',
         foundation: 'https://foundation.app/maslenikovilya',
@@ -491,7 +491,7 @@ export default {
       date: '06.05.2022',
       avatar: '/images/avatars/ermkv.png',
       name: 'ERMKV',
-      preview: 'Graphic Designer. Digital artist. Experimenter.',
+      preview: ['Graphic Designer. Digital artist. Experimenter.'],
       links: {
         instagram: 'https://instagram.com/ermkv.world',
         foundation: 'https://foundation.app/@ERMKV',
