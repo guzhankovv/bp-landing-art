@@ -818,7 +818,7 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '12.05.2022',
       avatar: '/images/avatars/dima.png',
       name: 'Dima',

@@ -136,44 +136,44 @@ export default {
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052226640651223041'
         }
       ]
+    },
+    {
+      artist: 'dima',
+      date: '12.05.2022',
+      avatar: '/images/avatars/dima.png',
+      nftList: [
+        {
+          name: 'cryptoangelo',
+          prcie: '0.15 ETH 1/1',
+          img: 'cryptoangelo.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052232138209361921'
+        },
+        {
+          name: 'ocean',
+          prcie: '0.09 ETH 1/3',
+          img: 'mage(Dima).jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052256327465172993'
+        },
+        {
+          name: 'piramid',
+          prcie: '0.07 ETH 1/5',
+          img: 'piramid(Dima).jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052233237720989697'
+        },
+        {
+          name: 'warior',
+          prcie: '0.05 ETH 1/7',
+          img: 'warior(Dima).jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052238735279128577'
+        },
+        {
+          name: 'electricfog',
+          prcie: '0.03 ETH 1/9',
+          img: 'electricfog(Dima).jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052246431860523009'
+        }
+      ]
     }
-    // {
-    //   artist: 'Dima',
-    //   date: '12.05.2022',
-    //   avatar: '/images/avatars/dima.png',
-    //   nftList: [
-    //     {
-    //       name: 'cryptoangelo',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'cryptoangelo.jpg',
-    //       link: 'https://www.dropbox.com/s/r391f72enqq4wuf/cryptoangelo%20%28Dima%29.jpg?dl=0'
-    //     },
-    //     {
-    //       name: 'Mage',
-    //       // prcie: '0.07 ETH 1/5',
-    //       img: 'mage(Dima).jpg',
-    //       link: 'https://www.dropbox.com/s/58kcaxjriawamrb/opensea%20%28Dima%29.jpg?dl=0'
-    //     },
-    //     {
-    //       name: 'piramid',
-    //       prcie: '0.07 ETH 1/5',
-    //       img: 'piramid(Dima).jpg',
-    //       link: 'https://www.dropbox.com/s/rhkb3bq7sh4tb6c/piramid%20%28Dima%29.jpg?dl=0'
-    //     },
-    //     {
-    //       name: 'warior',
-    //       prcie: '0.05 ETH 1/7',
-    //       img: 'warior(Dima).jpg',
-    //       link: 'https://www.dropbox.com/s/0mcoso8q1rlh7n9/warior%20%28Dima%29.jpg?dl=0'
-    //     },
-    //     {
-    //       name: 'electricfog',
-    //       prcie: '0.03 ETH 1/9',
-    //       img: 'electricfog(Dima).jpg',
-    //       link: 'https://www.dropbox.com/s/iu6kduw71dl8iiy/electricfog%20%28Dima%29.jpg?dl=0'
-    //     }
-    //   ]
-    // },
     // {
     //   artist: 'NIKVSIO',
     //   date: '15.05.2022',
