@@ -985,7 +985,7 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '15.05.2022',
       avatar: '/images/avatars/nikvsio.png',
       name: 'NIKVSIO',

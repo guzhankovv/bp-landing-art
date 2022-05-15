@@ -254,6 +254,56 @@ export default {
     //       link: 'https://www.dropbox.com/s/08z1juuras971xl/ayuev_throne1_out.mp4?dl=0'
     //     }
     //   ]
-    // }
+    // },
+    // {
+    //   artist: 'thisworldout',
+    //   date: '24.05.2022',
+    //   avatar: '/images/avatars/thisWorldOut.png',
+    //   nftList: [
+    //     {
+    //       name: 'Human Mage',
+    //       prcie: '0.15 ETH 1/1',
+    //       img: 'humanMage.jpg',
+    //       link: '/'
+    //     },
+    //     {
+    //       name: 'Magic Orb',
+    //       prcie: '0,09 ETH 1/3',
+    //       img: 'magicOrb.jpg',
+    //       link: '/'
+    //     },
+    //     {
+    //       name: 'Arcanite Sword',
+    //       prcie: '0.07 ETH 1/5',
+    //       img: 'arcaniteSword.jpg',
+    //       link: '/'
+    //     },
+    //     {
+    //       name: 'CryptoPotion of Mana',
+    //       prcie: '0.03 ETH 1/9',
+    //       img: 'cryptoPotionOfMana.jpg',
+    //       link: '/'
+    //     }
+    //   ]
+    // },
+    // {
+    //   artist: 'bxb.std',
+    //   date: '27.05.2022',
+    //   avatar: '/images/avatars/bxb.png',
+    //   nftList: [
+    //     {
+    //       name: 'Lagertha',
+    //       prcie: '0.15 ETH 1/1',
+    //       img: 'lagertha.jpg',
+    //       link: '/'
+    //     },
+    //     {
+    //       name: 'Anariel',
+    //       prcie: '0,09 ETH 1/3',
+    //       img: 'anariel.jpg',
+    //       link: '/'
+    //     },
+    //   ]
+    // },
   ]
 }
