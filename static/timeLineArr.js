@@ -173,32 +173,32 @@ export default {
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052246431860523009'
         }
       ]
+    },
+    {
+      artist: 'NIKVSIO',
+      date: '15.05.2022',
+      avatar: '/images/avatars/nikvsio.png',
+      nftList: [
+        {
+          name: 'KNIGHT OF LIGHT',
+          prcie: '0.15 ETH 1/1',
+          img: 'knight.jpg',
+          link: 'https://www.dropbox.com/s/bbvt2e5mi9pbvp2/NIKVSIO.png?dl=0'
+        },
+        {
+          name: 'BOLD POINT',
+          prcie: '0,09 ETH 1/3',
+          img: 'bold.jpg',
+          link: 'https://www.dropbox.com/s/hngzhqclhc7f4ur/NIKVSIO2.png?dl=0'
+        },
+        {
+          name: 'GOLDEN CROW',
+          prcie: '0.07 ETH 1/5',
+          img: 'crow.jpg',
+          link: 'https://www.dropbox.com/s/7avc8fnhry3khzh/NIKVSIO3.png?dl=0'
+        }
+      ]
     }
-    // {
-    //   artist: 'NIKVSIO',
-    //   date: '15.05.2022',
-    //   avatar: '/images/avatars/nikvsio.png',
-    //   nftList: [
-    //     {
-    //       name: 'KNIGHT OF LIGHT',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'knight.jpg',
-    //       link: 'https://www.dropbox.com/s/bbvt2e5mi9pbvp2/NIKVSIO.png?dl=0'
-    //     },
-    //     {
-    //       name: 'BOLD POINT',
-    //       prcie: '0,09 ETH 1/3',
-    //       img: 'bold.jpg',
-    //       link: 'https://www.dropbox.com/s/hngzhqclhc7f4ur/NIKVSIO2.png?dl=0'
-    //     },
-    //     {
-    //       name: 'GOLDEN CROW',
-    //       prcie: '0.07 ETH 1/5',
-    //       img: 'crow.jpg',
-    //       link: 'https://www.dropbox.com/s/7avc8fnhry3khzh/NIKVSIO3.png?dl=0'
-    //     }
-    //   ]
-    // },
     // {
     //   artist: 'Tim Yarzhombek',
     //   date: '18.05.2022',
