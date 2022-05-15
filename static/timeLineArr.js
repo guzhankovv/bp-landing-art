@@ -175,7 +175,7 @@ export default {
       ]
     },
     {
-      artist: 'NIKVSIO',
+      artist: 'nikvsio',
       date: '15.05.2022',
       avatar: '/images/avatars/nikvsio.png',
       nftList: [
