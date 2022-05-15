@@ -183,19 +183,19 @@ export default {
           name: 'knight of light',
           prcie: '0.15 ETH 1/1',
           img: 'knight.jpg',
-          link: 'https://www.dropbox.com/s/bbvt2e5mi9pbvp2/NIKVSIO.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052259626000056321'
         },
         {
           name: 'bold point',
           prcie: '0,09 ETH 1/3',
           img: 'bold.jpg',
-          link: 'https://www.dropbox.com/s/hngzhqclhc7f4ur/NIKVSIO2.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052260725511684097'
         },
         {
           name: 'golden crow',
           prcie: '0.07 ETH 1/5',
           img: 'crow.jpg',
-          link: 'https://www.dropbox.com/s/7avc8fnhry3khzh/NIKVSIO3.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052264024046567425'
         }
       ]
     }
