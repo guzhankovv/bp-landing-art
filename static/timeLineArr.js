@@ -180,19 +180,19 @@ export default {
       avatar: '/images/avatars/nikvsio.png',
       nftList: [
         {
-          name: 'KNIGHT OF LIGHT',
+          name: 'knight of light',
           prcie: '0.15 ETH 1/1',
           img: 'knight.jpg',
           link: 'https://www.dropbox.com/s/bbvt2e5mi9pbvp2/NIKVSIO.png?dl=0'
         },
         {
-          name: 'BOLD POINT',
+          name: 'bold point',
           prcie: '0,09 ETH 1/3',
           img: 'bold.jpg',
           link: 'https://www.dropbox.com/s/hngzhqclhc7f4ur/NIKVSIO2.png?dl=0'
         },
         {
-          name: 'GOLDEN CROW',
+          name: 'golden crow',
           prcie: '0.07 ETH 1/5',
           img: 'crow.jpg',
           link: 'https://www.dropbox.com/s/7avc8fnhry3khzh/NIKVSIO3.png?dl=0'
