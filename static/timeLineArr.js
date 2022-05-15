@@ -175,84 +175,78 @@ export default {
       ]
     },
     {
-      artist: 'NIKVSIO',
+      artist: 'nikvsio',
       date: '15.05.2022',
       avatar: '/images/avatars/nikvsio.png',
       nftList: [
         {
-          name: 'KNIGHT OF LIGHT',
+          name: 'knight of light',
           prcie: '0.15 ETH 1/1',
           img: 'knight.jpg',
-          link: 'https://www.dropbox.com/s/bbvt2e5mi9pbvp2/NIKVSIO.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052259626000056321'
         },
         {
-          name: 'BOLD POINT',
+          name: 'bold point',
           prcie: '0,09 ETH 1/3',
           img: 'bold.jpg',
-          link: 'https://www.dropbox.com/s/hngzhqclhc7f4ur/NIKVSIO2.png?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052260725511684097'
         },
         {
-          name: 'GOLDEN CROW',
+          name: 'golden crow',
           prcie: '0.07 ETH 1/5',
           img: 'crow.jpg',
-          link: 'https://www.dropbox.com/s/7avc8fnhry3khzh/NIKVSIO3.png?dl=0'
-        }
-      ]
-    },
-    {
-      artist: 'Tim Yarzhombek',
-      date: '18.05.2022',
-      avatar: '/images/avatars/timYar.png',
-      nftList: [
-        {
-          name: 'wizard/viza',
-          prcie: '0.15 ETH 1/1',
-          img: 'visard.jpg',
-          link: 'https://www.dropbox.com/s/pxmpdax8clex12e/crown%28tim%20yarzhombek%29.jpg?dl=0'
-        },
-        {
-          name: 'tyrany/teraphy',
-          prcie: '0,09 ETH 1/3',
-          img: 'teraphy.jpg',
-          link: 'https://www.dropbox.com/s/t4saj2wj63tx0cp/gloves%28tim%20yarzhombek%29.jpg?dl=0'
-        },
-        {
-          name: 'gLOVES',
-          prcie: '0.07 ETH 1/5',
-          img: 'gloves.jpg',
-          link: 'https://www.dropbox.com/s/0slba89no133pty/teraphy%28tim%20yarzhombek%29.jpg?dl=0'
-        },
-        {
-          name: 'crowN',
-          prcie: '0.05 ETH 1/7',
-          img: 'crown.jpg',
-          link: 'https://www.dropbox.com/s/8xvhleuv224scey/visard%28tim%20yarzhombek%29.jpg?dl=0'
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052264024046567425'
         }
       ]
     }
     // {
-    //   artist: 'vladimir ayuev',
-    //   date: '21.05.2022',
-    //   avatar: '/images/avatars/vladimir.png',
+    //   artist: 'Tim Yarzhombek',
+    //   date: '18.05.2022',
+    //   avatar: '/images/avatars/timYar.png',
     //   nftList: [
     //     {
-    //       name: 'Throne of the Unknown Ruler #1',
+    //       name: 'Human Mage',
     //       prcie: '0.15 ETH 1/1',
-    //       img: 'throne.jpg',
-    //       link: 'https://www.dropbox.com/s/yoogj3xamntqyvd/ayuev_throne2_out.mov?dl=0'
+    //       img: 'humanMage.jpg',
+    //       link: '/'
     //     },
     //     {
-    //       name: 'Throne of the Unknown Ruler #2',
+    //       name: 'Magic Orb',
     //       prcie: '0,09 ETH 1/3',
-    //       img: 'throne2.jpg',
-    //       link: 'https://www.dropbox.com/s/vjz3du39uaxjnuc/ayuev_throne1_out.mp4?dl=0'
+    //       img: 'magicOrb.jpg',
+    //       link: '/'
     //     },
     //     {
-    //       name: 'Throne of the Unknown Ruler #3',
+    //       name: 'Arcanite Sword',
     //       prcie: '0.07 ETH 1/5',
-    //       img: 'throne3.jpg',
-    //       link: 'https://www.dropbox.com/s/08z1juuras971xl/ayuev_throne1_out.mp4?dl=0'
+    //       img: 'arcaniteSword.jpg',
+    //       link: '/'
+    //     },
+    //     {
+    //       name: 'CryptoPotion of Mana',
+    //       prcie: '0.03 ETH 1/9',
+    //       img: 'cryptoPotionOfMana.jpg',
+    //       link: '/'
     //     }
+    //   ]
+    // },
+    // {
+    //   artist: 'bxb.std',
+    //   date: '27.05.2022',
+    //   avatar: '/images/avatars/bxb.png',
+    //   nftList: [
+    //     {
+    //       name: 'Lagertha',
+    //       prcie: '0.15 ETH 1/1',
+    //       img: 'lagertha.jpg',
+    //       link: '/'
+    //     },
+    //     {
+    //       name: 'Anariel',
+    //       prcie: '0,09 ETH 1/3',
+    //       img: 'anariel.jpg',
+    //       link: '/'
+    //     },
     //   ]
     // },
     // {

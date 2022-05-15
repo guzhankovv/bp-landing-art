@@ -249,6 +249,7 @@ export default {
   &__msgText {
     font-family: "Inter";
     line-height: 32px;
+    word-break: break-word;
   }
 }
 </style>

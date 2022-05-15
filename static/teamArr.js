@@ -989,7 +989,9 @@ export default {
       date: '15.05.2022',
       avatar: '/images/avatars/nikvsio.png',
       name: 'NIKVSIO',
-      preview: 'My name is Nika Kutelia. I am a digital artist, illustrator, and designer with 8 years of experience.',
+      preview: [
+        'My name is Nika Kutelia. I am a digital artist, illustrator, and designer with 8 years of experience.'
+      ],
       links: {
         instagram: 'https://www.instagram.com/nikvsio/',
         twitter: 'https://twitter.com/nikvsio',
