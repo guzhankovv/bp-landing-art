@@ -80,7 +80,7 @@ export default {
   props: {
     artistData: {
       type: Object,
-      default: () => {}
+      default: () => { }
     }
   }
 }
@@ -112,11 +112,9 @@ export default {
     width: calc(100% - 14px);
     height: 305px;
 
-    background: linear-gradient(
-      360deg,
-      #000000 40.03%,
-      rgba(0, 0, 0, 0) 111.5%
-    );
+    background: linear-gradient(360deg,
+        #000000 40.03%,
+        rgba(0, 0, 0, 0) 111.5%);
 
     pointer-events: none;
 
@@ -151,7 +149,7 @@ export default {
 
   &__name {
     margin-bottom: 14px;
-    padding: 0 90px 10px 0;
+    padding-bottom: 10px;
 
     width: fit-content;
 
