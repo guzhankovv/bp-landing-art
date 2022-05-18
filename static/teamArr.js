@@ -1154,11 +1154,13 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '18.05.2022',
       avatar: '/images/avatars/timYar.png',
       name: 'Tim Yarzhombek',
-      preview: 'I have been drawing pictures and illustrations for almost 20 years. On average, I create one illustration per day. Magazines, newspapers, books, and countless modern illustration formats. I\'m the curator at the HSE School of Design, a member of the bang-bang agency, and a full-time illustrator at Yandex Practicum.',
+      preview: [
+        'I have been drawing pictures and illustrations for almost 20 years. On average, I create one illustration per day. Magazines, newspapers, books, and countless modern illustration formats. I\'m the curator at the HSE School of Design, a member of the bang-bang agency, and a full-time illustrator at Yandex Practicum.'
+      ],
       links: {
         instagram: 'https://www.instagram.com/timbek/',
         behance: 'https://www.behance.net/yarzhombek'
