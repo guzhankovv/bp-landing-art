@@ -435,6 +435,11 @@ export default {
 }
 
 .avatar {
+  display: grid;
+  justify-items: center;
+
+  max-width: 320px;
+
   &__inner {
     position: relative;
 
@@ -452,6 +457,7 @@ export default {
       left: 0;
 
       background: url("/images/hexagonBase.png");
+      background-repeat: no-repeat;
     }
   }
 
