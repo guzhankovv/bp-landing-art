@@ -1316,11 +1316,13 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '21.05.2022',
       avatar: '/images/avatars/vladimir.png',
       name: 'Vladimir Ayuev',
-      preview: 'I am a graphic designer and art director, and teacher of Visual Communications at the HSE School of Design and BBE. Also, I am an expert in brand design.',
+      preview: [
+        'I am a graphic designer and art director, and teacher of Visual Communications at the HSE School of Design and BBE. Also, I am an expert in brand design.'
+      ],
       links: {
         instagram: 'https://www.instagram.com/auev/',
         behance: ' https://www.behance.net/ayuev',

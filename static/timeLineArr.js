@@ -229,26 +229,32 @@ export default {
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052279417209356289'
         }
       ]
+    },
+    {
+      artist: 'Vladimir Ayuev',
+      date: '21.05.2022',
+      avatar: '/images/avatars/vladimir.png',
+      nftList: [
+        {
+          name: 'Throne of the Unknown Ruler #1',
+          prcie: '0.15 ETH 1/1',
+          img: 'throne.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052287113790750721'
+        },
+        {
+          name: 'Throne of the Unknown Ruler #2',
+          prcie: '0.09 ETH 1/3',
+          img: 'throne2.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052288213302378497'
+        },
+        {
+          name: 'Throne of the Unknown Ruler #3',
+          prcie: '0.07 ETH 1/5',
+          img: 'throne3.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052291511837261825'
+        }
+      ]
     }
-    // {
-    //   artist: 'Vladimir Ayuev',
-    //   date: '21.05.2022',
-    //   avatar: '/images/avatars/vladimir.png',
-    //   nftList: [
-    //     {
-    //       name: 'Lagertha',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'lagertha.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Anariel',
-    //       prcie: '0,09 ETH 1/3',
-    //       img: 'anariel.jpg',
-    //       link: '/'
-    //     },
-    //   ]
-    // },
     // {
     //   artist: 'thisworldout',
     //   date: '24.05.2022',
@@ -279,7 +285,7 @@ export default {
     //       link: '/'
     //     }
     //   ]
-    // },
+    // }
     // {
     //   artist: 'bxb.std',
     //   date: '27.05.2022',
