@@ -100,7 +100,7 @@
         </div>
 
         <a
-          onClick="ym(88590499,'reachGoal','joinvrgallery'); return true;"
+          onClick="ym(88590499,'reachGoal','JoinVRGallery'); return true;"
           class="header__btn"
           href="https://spatial.io/s/Discover-a-new-dimension-Bold-Point-Gallery-6253f98e153bbf000171a699?share=2082928520569155812"
         >

@@ -100,7 +100,7 @@
         </div>
 
         <a
-          onClick="ym(88590499,'reachGoal','buy-nft'); return true;"
+          onClick="ym(88590499,'reachGoal','buy-nft-footer'); return true;"
           class="collab__link btn"
           href="https://opensea.io/collection/boldpoint"
         >
