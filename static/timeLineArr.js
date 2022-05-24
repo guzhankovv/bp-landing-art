@@ -254,38 +254,44 @@ export default {
           link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052291511837261825'
         }
       ]
+    },
+    {
+      artist: 'thisworldout',
+      date: '24.05.2022',
+      avatar: '/images/avatars/thisWorldOut.png',
+      nftList: [
+        {
+          name: 'Human Mage',
+          prcie: '0.15 ETH 1/1',
+          img: 'humanMage.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052297009395400705'
+        },
+        {
+          name: 'Magic Orb',
+          prcie: '0,09 ETH 1/3',
+          img: 'magicOrb.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052298108907028481'
+        },
+        {
+          name: 'Arcanite Sword',
+          prcie: '0.07 ETH 1/5',
+          img: 'arcaniteSword.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052301407441911809'
+        },
+        {
+          name: 'CryptoPotion of Health',
+          prcie: '0.05 ETH 1/7',
+          img: 'cryptoPotionOfHealth.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052301407441911809'
+        },
+        {
+          name: 'CryptoPotion of Mana',
+          prcie: '0.03 ETH 1/9',
+          img: 'cryptoPotionOfMana.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052314601581445121'
+        }
+      ]
     }
-    // {
-    //   artist: 'thisworldout',
-    //   date: '24.05.2022',
-    //   avatar: '/images/avatars/thisWorldOut.png',
-    //   nftList: [
-    //     {
-    //       name: 'Human Mage',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'humanMage.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Magic Orb',
-    //       prcie: '0,09 ETH 1/3',
-    //       img: 'magicOrb.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Arcanite Sword',
-    //       prcie: '0.07 ETH 1/5',
-    //       img: 'arcaniteSword.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'CryptoPotion of Mana',
-    //       prcie: '0.03 ETH 1/9',
-    //       img: 'cryptoPotionOfMana.jpg',
-    //       link: '/'
-    //     }
-    //   ]
-    // }
     // {
     //   artist: 'bxb.std',
     //   date: '27.05.2022',
