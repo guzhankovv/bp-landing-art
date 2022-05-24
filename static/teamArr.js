@@ -1461,11 +1461,13 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '24.05.2022',
       avatar: '/images/avatars/thisWorldOut.png',
       name: 'thisworldout',
-      preview: 'I am a digital/multimedia artist and designer, working on the borderline of analog and digital technology. Currently, I am working as an independent designer, artist, and curator on self-initiated and commissioned projects. Those projects take roots from my position as an international designer and a frequent traveler, allowing me to study and experience often diverse perspectives. My interests span over a wide range of topics. They include various critical social-political issues that are often given form through high-tech experiments and multimedia platforms questioning on and offline realities.',
+      preview: [
+        'I am a digital/multimedia artist and designer, working on the borderline of analog and digital technology. Currently, I am working as an independent designer, artist, and curator on self-initiated and commissioned projects. Those projects take roots from my position as an international designer and a frequent traveler, allowing me to study and experience often diverse perspectives. My interests span over a wide range of topics. They include various critical social-political issues that are often given form through high-tech experiments and multimedia platforms questioning on and offline realities.'
+      ],
       links: {
         instagram: 'https://www.instagram.com/thisworldout',
         site: 'www.thisworldout.nl',
