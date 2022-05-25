@@ -1154,11 +1154,13 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '18.05.2022',
       avatar: '/images/avatars/timYar.png',
       name: 'Tim Yarzhombek',
-      preview: 'I have been drawing pictures and illustrations for almost 20 years. On average, I create one illustration per day. Magazines, newspapers, books, and countless modern illustration formats. I\'m the curator at the HSE School of Design, a member of the bang-bang agency, and a full-time illustrator at Yandex Practicum.',
+      preview: [
+        'I have been drawing pictures and illustrations for almost 20 years. On average, I create one illustration per day. Magazines, newspapers, books, and countless modern illustration formats. I\'m the curator at the HSE School of Design, a member of the bang-bang agency, and a full-time illustrator at Yandex Practicum.'
+      ],
       links: {
         instagram: 'https://www.instagram.com/timbek/',
         behance: 'https://www.behance.net/yarzhombek'
@@ -1314,11 +1316,13 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '21.05.2022',
       avatar: '/images/avatars/vladimir.png',
       name: 'Vladimir Ayuev',
-      preview: 'I am a graphic designer and art director, and teacher of Visual Communications at the HSE School of Design and BBE. Also, I am an expert in brand design.',
+      preview: [
+        'I am a graphic designer and art director, and teacher of Visual Communications at the HSE School of Design and BBE. Also, I am an expert in brand design.'
+      ],
       links: {
         instagram: 'https://www.instagram.com/auev/',
         behance: ' https://www.behance.net/ayuev',
@@ -1457,11 +1461,13 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '24.05.2022',
       avatar: '/images/avatars/thisWorldOut.png',
       name: 'thisworldout',
-      preview: 'I am a digital/multimedia artist and designer, working on the borderline of analog and digital technology. Currently, I am working as an independent designer, artist, and curator on self-initiated and commissioned projects. Those projects take roots from my position as an international designer and a frequent traveler, allowing me to study and experience often diverse perspectives. My interests span over a wide range of topics. They include various critical social-political issues that are often given form through high-tech experiments and multimedia platforms questioning on and offline realities.',
+      preview: [
+        'I am a digital/multimedia artist and designer, working on the borderline of analog and digital technology. Currently, I am working as an independent designer, artist, and curator on self-initiated and commissioned projects. Those projects take roots from my position as an international designer and a frequent traveler, allowing me to study and experience often diverse perspectives. My interests span over a wide range of topics. They include various critical social-political issues that are often given form through high-tech experiments and multimedia platforms questioning on and offline realities.'
+      ],
       links: {
         instagram: 'https://www.instagram.com/thisworldout',
         site: 'www.thisworldout.nl',

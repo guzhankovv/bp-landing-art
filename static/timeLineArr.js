@@ -198,88 +198,100 @@ export default {
           link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052264024046567425'
         }
       ]
+    },
+    {
+      artist: 'Tim Yarzhombek',
+      date: '18.05.2022',
+      avatar: '/images/avatars/timYar.png',
+      nftList: [
+        {
+          name: 'wizard/viza',
+          prcie: '0.15 ETH 1/1',
+          img: 'visard.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052269521604706305'
+        },
+        {
+          name: 'tyrany/teraphy',
+          prcie: '0,09 ETH 1/3',
+          img: 'teraphy.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052270621116334081'
+        },
+        {
+          name: 'gLOVES',
+          prcie: '0.07 ETH 1/5',
+          img: 'gloves.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052273919651217409'
+        },
+        {
+          name: 'crowN',
+          prcie: '0.05 ETH 1/7',
+          img: 'crown.jpg',
+          link: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052279417209356289'
+        }
+      ]
+    },
+    {
+      artist: 'Vladimir Ayuev',
+      date: '21.05.2022',
+      avatar: '/images/avatars/vladimir.png',
+      nftList: [
+        {
+          name: 'Throne of the Unknown Ruler #1',
+          prcie: '0.15 ETH 1/1',
+          img: 'throne.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052287113790750721'
+        },
+        {
+          name: 'Throne of the Unknown Ruler #2',
+          prcie: '0.09 ETH 1/3',
+          img: 'throne2.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052288213302378497'
+        },
+        {
+          name: 'Throne of the Unknown Ruler #3',
+          prcie: '0.07 ETH 1/5',
+          img: 'throne3.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052291511837261825'
+        }
+      ]
+    },
+    {
+      artist: 'thisworldout',
+      date: '24.05.2022',
+      avatar: '/images/avatars/thisWorldOut.png',
+      nftList: [
+        {
+          name: 'Human Mage',
+          prcie: '0.15 ETH 1/1',
+          img: 'humanMage.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052297009395400705'
+        },
+        {
+          name: 'Magic Orb',
+          prcie: '0,09 ETH 1/3',
+          img: 'magicOrb.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052298108907028481'
+        },
+        {
+          name: 'Arcanite Sword',
+          prcie: '0.07 ETH 1/5',
+          img: 'arcaniteSword.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052301407441911809'
+        },
+        {
+          name: 'CryptoPotion of Health',
+          prcie: '0.05 ETH 1/7',
+          img: 'cryptoPotionOfHealth.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052301407441911809'
+        },
+        {
+          name: 'CryptoPotion of Mana',
+          prcie: '0.03 ETH 1/9',
+          img: 'cryptoPotionOfMana.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052314601581445121'
+        }
+      ]
     }
-    // {
-    //   artist: 'Tim Yarzhombek',
-    //   date: '18.05.2022',
-    //   avatar: '/images/avatars/timYar.png',
-    //   nftList: [
-    //     {
-    //       name: 'Human Mage',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'humanMage.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Magic Orb',
-    //       prcie: '0,09 ETH 1/3',
-    //       img: 'magicOrb.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Arcanite Sword',
-    //       prcie: '0.07 ETH 1/5',
-    //       img: 'arcaniteSword.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'CryptoPotion of Mana',
-    //       prcie: '0.03 ETH 1/9',
-    //       img: 'cryptoPotionOfMana.jpg',
-    //       link: '/'
-    //     }
-    //   ]
-    // },
-    // {
-    //   artist: 'bxb.std',
-    //   date: '27.05.2022',
-    //   avatar: '/images/avatars/bxb.png',
-    //   nftList: [
-    //     {
-    //       name: 'Lagertha',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'lagertha.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Anariel',
-    //       prcie: '0,09 ETH 1/3',
-    //       img: 'anariel.jpg',
-    //       link: '/'
-    //     },
-    //   ]
-    // },
-    // {
-    //   artist: 'thisworldout',
-    //   date: '24.05.2022',
-    //   avatar: '/images/avatars/thisWorldOut.png',
-    //   nftList: [
-    //     {
-    //       name: 'Human Mage',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'humanMage.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Magic Orb',
-    //       prcie: '0,09 ETH 1/3',
-    //       img: 'magicOrb.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Arcanite Sword',
-    //       prcie: '0.07 ETH 1/5',
-    //       img: 'arcaniteSword.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'CryptoPotion of Mana',
-    //       prcie: '0.03 ETH 1/9',
-    //       img: 'cryptoPotionOfMana.jpg',
-    //       link: '/'
-    //     }
-    //   ]
-    // },
     // {
     //   artist: 'bxb.std',
     //   date: '27.05.2022',
