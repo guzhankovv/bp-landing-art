@@ -1625,11 +1625,11 @@ export default {
       ]
     },
     {
-      locked: true,
+      locked: false,
       date: '27.05.2022',
       avatar: '/images/avatars/bxb.png',
       name: 'BXB.STD',
-      preview: 'My name is Anastasia, I am 24 years old. At the moment, my focus is on NFT, Digital art, and 3D Modeling. I am actively developing my studio and dream that my works will be on the billboards of Times Square in New York.',
+      preview: ['My name is Anastasia, I am 24 years old. At the moment, my focus is on NFT, Digital art, and 3D Modeling. I am actively developing my studio and dream that my works will be on the billboards of Times Square in New York.'],
       links: {
         instagram: 'https://www.instagram.com/bxb.std',
         twitter: 'https://twitter.com/BxBstd',

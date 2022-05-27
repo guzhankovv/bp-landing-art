@@ -291,25 +291,25 @@ export default {
           link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052314601581445121'
         }
       ]
+    },
+    {
+      artist: 'bxb.std',
+      date: '27.05.2022',
+      avatar: '/images/avatars/bxb.png',
+      nftList: [
+        {
+          name: 'Lagertha',
+          prcie: '0.15 ETH 1/1',
+          img: 'lagertha.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052324497186095105'
+        },
+        {
+          name: 'Anariel',
+          prcie: '0,09 ETH 1/3',
+          img: 'anariel.jpg',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/34421031415970950286101163622191489157320889034924944611203052325596697722881'
+        }
+      ]
     }
-    // {
-    //   artist: 'bxb.std',
-    //   date: '27.05.2022',
-    //   avatar: '/images/avatars/bxb.png',
-    //   nftList: [
-    //     {
-    //       name: 'Lagertha',
-    //       prcie: '0.15 ETH 1/1',
-    //       img: 'lagertha.jpg',
-    //       link: '/'
-    //     },
-    //     {
-    //       name: 'Anariel',
-    //       prcie: '0,09 ETH 1/3',
-    //       img: 'anariel.jpg',
-    //       link: '/'
-    //     },
-    //   ]
-    // },
   ]
 }
