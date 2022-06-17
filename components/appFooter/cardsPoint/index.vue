@@ -74,9 +74,11 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/scss/styles/variables.scss";
 .card {
+  max-width: 1240px;
+   margin: 0 auto;
   &__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
     gap: 32px;
 
     overflow: auto;
@@ -88,6 +90,7 @@ export default {
 
   &__listItem {
     cursor: pointer;
+    max-width: 600px;
 
     @media (max-width: $media_md) {
       min-width: 280px;
