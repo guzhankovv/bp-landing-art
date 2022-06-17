@@ -31,14 +31,14 @@
           </span>
         </a>
 
-        <a class="footer__socialLink footer__socialImg" href="https://yay-games.medium.com/">
+        <!-- <a class="footer__socialLink footer__socialImg" href="https://yay-games.medium.com/">
           <span>
             <img
               src="/images/social/socialM.svg"
               alt="medium"
             >
           </span>
-        </a>
+        </a> -->
 
         <a class="footer__socialLink footer__socialImg" href="https://discord.com/invite/dNUdTDQr8r">
           <span>

@@ -21,12 +21,12 @@
           Twitter
         </a>
 
-        <a
+        <!-- <a
           class="banner__link"
           href="https://yay-games.medium.com/"
         >
           medium
-        </a>
+        </a> -->
 
         <a
           href="https://discord.com/invite/dNUdTDQr8r"

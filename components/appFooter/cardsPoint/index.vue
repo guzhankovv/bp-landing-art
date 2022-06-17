@@ -42,13 +42,13 @@ export default {
   data () {
     return {
       cardPointList: [
-        {
-          link: 'https://yay-games.medium.com/yay-games-pool-on-dexsport-is-live-64946626b82d',
-          bg: '/images/cardPoint/pool.jpg',
-          title: 'YAY Games Pool on Dexsport is LIVE',
-          text: 'One of the core missions of the YAY team is a consistent increase of token demand. And it’s a true pleasure to see our partners’ contribution to $YAY growth. Today we’re...',
-          time: '1 day ago'
-        },
+        // {
+        //   link: 'https://yay-games.medium.com/yay-games-pool-on-dexsport-is-live-64946626b82d',
+        //   bg: '/images/cardPoint/pool.jpg',
+        //   title: 'YAY Games Pool on Dexsport is LIVE',
+        //   text: 'One of the core missions of the YAY team is a consistent increase of token demand. And it’s a true pleasure to see our partners’ contribution to $YAY growth. Today we’re...',
+        //   time: '1 day ago'
+        // },
 
         {
           link: 'https://yay-games.medium.com/bold-point-token-utilization-gaming-mechanics-and-gamecore-protocol-dc32e85f8ba3',
@@ -76,8 +76,8 @@ export default {
 .card {
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
 
     overflow: auto;
 
