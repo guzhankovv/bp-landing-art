@@ -1635,9 +1635,9 @@ export default {
         twitter: 'https://twitter.com/BxBstd',
         site: 'https://bxbstd.com/',
         foundation: 'https://foundation.app/@bxbstd',
-        rarible: 'https://rarible.com/bxbstd',
-        babylons: 'https://app.babylons.io/bxbstd',
-        knowOrigin: 'https://knownorigin.io/bxb-std'
+        rarible: 'https://rarible.com/bxbstd'
+        // babylons: 'https://app.babylons.io/bxbstd',
+        // knowOrigin: 'https://knownorigin.io/bxb-std'
       },
       messagesList: [
         {

@@ -75,12 +75,12 @@ export default {
         {
           head: 'How can I participate in your project as an artist',
           body: 'We always welcome new artists who have a feel for the Bold Point metaverse to join. If you are interested in partaking in our project – feel free to contact us.'
-        },
-
-        {
-          head: 'How is this project related to YAY Games?',
-          body: 'The idea behind this project is to attract new members to the Bold Point game and expand its opportunities for the DeFi games players. BP is part of YAY games, the ultimate GameFi brand that works as an incubator thanks to its ZEUS IGO platform, allowing top gaming projects to have access to a combined expertise, large community, and sophisticated game mining architecture.'
         }
+
+        // {
+        //   head: 'How is this project related to YAY Games?',
+        //   body: 'The idea behind this project is to attract new members to the Bold Point game and expand its opportunities for the DeFi games players. BP is part of YAY games, the ultimate GameFi brand that works as an incubator thanks to its ZEUS IGO platform, allowing top gaming projects to have access to a combined expertise, large community, and sophisticated game mining architecture.'
+        // }
       ]
     }
   }

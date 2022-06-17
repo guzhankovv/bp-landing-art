@@ -33,7 +33,7 @@
 
     <QuestionAnswer id="faq" />
 
-    <BuyToken />
+    <!-- <BuyToken /> -->
   </div>
 </template>
 
@@ -43,7 +43,7 @@ import BoldPoint from '@/components/mainPage/boldPoint/index.vue'
 import ArtistTeam from '@/components/mainPage/artistTeam/index.vue'
 import GalleryBold from '@/components/mainPage/galleryBold/index.vue'
 import QuestionAnswer from '@/components/mainPage/questionAnswer/index.vue'
-import BuyToken from '@/components/mainPage/buyToken/index.vue'
+// import BuyToken from '@/components/mainPage/buyToken/index.vue'
 import MainTimeline from '@/components/mainPage/mainTimeline/index.vue'
 
 export default {
@@ -55,7 +55,7 @@ export default {
     ArtistTeam,
     GalleryBold,
     QuestionAnswer,
-    BuyToken,
+    // BuyToken,
     MainTimeline
   }
 }
